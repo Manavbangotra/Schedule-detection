@@ -51,20 +51,61 @@ measurement is in `TRAINING.md`.
 
 ## Setup
 
+The training set is committed as rendered PNG crops plus YOLO label files.
+**Training does not need the source plansets** — those were only needed to
+produce the crops, and they are deliberately not in this repository. A clone is
+enough to train and evaluate.
+
+Linux / macOS:
+
     python3.12 -m venv .venv
     .venv/bin/pip install torch --index-url https://download.pytorch.org/whl/cu121
     .venv/bin/pip install -r requirements.txt
-    .venv/bin/python -c "import torch; print(torch.cuda.is_available())"   # must be True
+    .venv/bin/python -c "import torch; print(torch.cuda.is_available())"
+
+Windows (PowerShell) — the venv puts python in `Scripts`, not `bin`:
+
+    py -3.12 -m venv .venv
+    .venv\Scripts\pip install torch --index-url https://download.pytorch.org/whl/cu121
+    .venv\Scripts\pip install -r requirements.txt
+    .venv\Scripts\python -c "import torch; print(torch.cuda.is_available())"
+
+That last line must print `True`. Install torch **before** `requirements.txt`:
+otherwise pip resolves `ultralytics` to a CPU torch build, and you get a
+12-hour run on a card that should take under an hour, with nothing in the logs
+explaining why.
 
 ## Train
 
     .venv/bin/python -m schedext.cli train --arms all
     .venv/bin/python -m schedext.cli evaluate out/dataset/v1/runs/coco-s/weights/best.pt
 
+    # Windows
+    .venv\Scripts\python -m schedext.cli train --arms all
+    .venv\Scripts\python -m schedext.cli evaluate out\dataset\v1\runs\coco-s\weights\best.pt
+
 `torch.cuda.is_available()` picks the device and the recipe adapts, so the same
-command is correct on CPU and GPU. On a GPU all three arms take roughly two
-hours; read `TRAINING.md` before changing any setting, since most of the
-departures from ultralytics defaults are there for a measured reason.
+command is correct on CPU and GPU. `train.py` also rewrites the dataset yaml's
+`path:` to wherever the clone actually landed, so nothing needs editing after
+`git clone` — on either platform.
+
+On a GPU all three arms take roughly two hours. Read `TRAINING.md` before
+changing any setting: most departures from ultralytics defaults are there for a
+measured reason, and `nbs=8` in particular silently cripples the run if it
+drifts back to the default.
+
+### What needs the source plansets, and what does not
+
+| Command | Needs plansets? |
+|---|---|
+| `train`, `evaluate` | **no** — reads only `out/dataset/v1/` |
+| `export-dataset` | yes — re-renders crops from the PDFs |
+| `locate`, `detect`, `viewer` | yes |
+| `dataset-creator` | yes — you upload a PDF to it |
+
+So a machine with a GPU but no plansets can train, evaluate and iterate on the
+recipe. To *grow* the dataset you need the PDFs, which means annotating on the
+machine that has them and pushing a re-export.
 
 ## Re-exporting after more annotation
 
