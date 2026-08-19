@@ -1,0 +1,9 @@
+# Exported from human-verified annotations.
+# Split by planset (hash-stable), never by page: plansets repeat
+# near-identical sheets, and a page-level split leaks.
+path: /home/sunday/Downloads/takeoff_plansets_s3/out/dataset/v1
+train: train.txt
+val: val.txt
+names:
+  0: window
+  1: door

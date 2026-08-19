@@ -1,0 +1,38 @@
+# --- environment -------------------------------------------------------
+.venv/
+__pycache__/
+*.pyc
+
+# --- client data: never commit -----------------------------------------
+# The source plansets are client drawings. The exported dataset under
+# out/dataset/ is committed deliberately (it is the training set), so keep
+# this repository PRIVATE.
+all_plansets/
+all_plansets.zip
+dataset-creator/data/
+
+# --- model weights (large, and reproducible) ---------------------------
+*.pt
+*.onnx
+*.engine
+
+# --- generated output --------------------------------------------------
+# Everything under out/ is derived except the exported dataset, which is
+# whitelisted below.
+out/*
+!out/dataset/
+out/dataset/*/bench/
+out/dataset/*/runs/
+out/dataset/*/_overfit/
+out/dataset/*/eval_preview/
+out/dataset/*/crops/
+out/dataset/*/preview/
+out/dataset/*/labels.cache
+
+# 300MB of rendered page PNGs, regenerable with `cli viewer --no-serve`
+viewer/pages/
+
+# Annotator undo history: 29MB, and the current JSON is the source of truth
+annotations/.history/
+
+*.tgz

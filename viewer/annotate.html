@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Opening Annotator</title>
+<style>
+:root{
+  --paper:#F4F7F7; --surface:#fff; --surface-2:#EDF2F2;
+  --ink:#0F1A1C; --muted:#5B6B6E; --faint:#8A9A9C;
+  --rule:#D5DFDF; --rule-strong:#B4C4C4;
+  --accent:#0E5C63;
+  --window:#15803D; --door:#0E5C63; --garage:#7A5CC4;
+  --mixed:#C026A3; --unknown:#B45309; --exclude:#8A9A9C;
+  --pending:#B45309; --rejected:#8A9A9C; --ok:#15803D; --bad:#B3261E;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --body:system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --paper:#0B1315; --surface:#111E20; --surface-2:#16282B;
+  --ink:#E7EFEF; --muted:#94A8A9; --faint:#6E8384;
+  --rule:#23393B; --rule-strong:#33504F; --accent:#5FBEC2;
+  --window:#5FBE86; --door:#5FBEC2; --garage:#B9A2F0;
+  --mixed:#F07AD4; --unknown:#E0A159; --exclude:#6E8384;
+  --pending:#E0A159; --rejected:#6E8384; --ok:#5FBE86; --bad:#E88A82;
+}}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
+  display:grid;grid-template-columns:300px 1fr;overflow:hidden;font-size:14px}
+aside{border-right:1px solid var(--rule);background:var(--surface);display:flex;flex-direction:column;min-height:0}
+.head{padding:12px 14px;border-bottom:1px solid var(--rule)}
+h1{font-size:14px;margin:0 0 4px}
+.prog{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.pbar{height:4px;background:var(--surface-2);border-radius:2px;margin-top:6px;overflow:hidden}
+.pbar i{display:block;height:100%;background:var(--ok)}
+.filters{padding:8px 14px;border-bottom:1px solid var(--rule);display:flex;gap:6px;flex-direction:column}
+input,select,button{font:inherit;font-size:13px;padding:5px 8px;border:1px solid var(--rule-strong);
+  border-radius:3px;background:var(--surface);color:var(--ink)}
+.list{overflow-y:auto;flex:1;min-height:0}
+.row{padding:7px 14px;border-bottom:1px solid var(--rule);cursor:pointer;display:grid;
+  grid-template-columns:1fr auto;gap:2px 8px;align-items:center}
+.row:hover{background:var(--surface-2)}
+.row.on{background:var(--surface-2);box-shadow:inset 3px 0 0 var(--accent)}
+.row b{font-weight:600;font-size:13px}
+.row .meta{grid-column:1/-1;font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.pill{font-size:10px;font-family:var(--mono);padding:1px 5px;border-radius:8px;background:var(--surface-2);color:var(--muted)}
+.pill.verified{background:var(--ok);color:#fff}
+.pill.needs_recheck{background:var(--unknown);color:#fff}
+.pill.in_progress{background:var(--accent);color:#fff}
+main{position:relative;overflow:auto;background:var(--surface-2)}
+.bar{position:sticky;top:0;z-index:30;display:flex;gap:8px;align-items:center;flex-wrap:wrap;
+  padding:7px 12px;background:var(--surface);border-bottom:1px solid var(--rule);font-size:12.5px}
+.bar .sp{margin-left:auto;display:flex;gap:8px;align-items:center}
+.bar b{font-family:var(--mono);font-size:12px}
+.mode{padding:3px 8px;border-radius:3px;background:var(--accent);color:#fff;font-family:var(--mono);font-size:11px}
+.dirty{width:8px;height:8px;border-radius:50%;background:transparent;border:1.5px solid var(--faint)}
+.dirty.on{background:var(--bad);border-color:var(--bad)}
+.dirty.saving{background:var(--faint);border-color:var(--faint)}
+.stage{position:relative;transform-origin:0 0}
+.stage img{display:block;width:100%;height:auto;user-select:none;-webkit-user-drag:none}
+.ov{position:absolute;pointer-events:auto}
+.area{border:3px solid;background:transparent}
+.area.window_area{border-color:var(--window)} .area.door_area{border-color:var(--door)}
+.area.garage_area{border-color:var(--garage)} .area.mixed{border-color:var(--mixed)}
+.area.unknown{border-color:var(--unknown);border-style:dashed}
+.area.exclude{border-color:var(--exclude);border-style:dotted;opacity:.55}
+.op{border:2px solid}
+.op.window{border-color:var(--window);background:rgba(21,128,61,.09)}
+.op.door{border-color:var(--door);background:rgba(14,92,99,.09)}
+.op.garage_door{border-color:var(--garage);background:rgba(122,92,196,.09)}
+.op.none{border-color:var(--pending);background:rgba(180,83,9,.08)}
+.op.pending{border-style:dotted}
+.op.rejected{border-style:dashed;opacity:.35;background:none}
+.ov.sel{outline:2px solid var(--accent);outline-offset:2px}
+.tag{position:absolute;top:0;left:0;transform:translateY(-100%);font:600 10px/1.5 var(--mono);
+  padding:1px 5px;white-space:nowrap;color:#fff;background:var(--accent)}
+.h{position:absolute;width:9px;height:9px;background:var(--surface);border:1.5px solid var(--accent);z-index:5}
+.hint{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);background:var(--surface);
+  border:1px solid var(--rule-strong);border-radius:4px;padding:8px 12px;font-size:12px;
+  box-shadow:0 8px 24px -12px rgba(0,0,0,.5);z-index:60;max-width:90vw}
+.hint kbd{font-family:var(--mono);background:var(--surface-2);padding:1px 4px;border-radius:3px;font-size:11px}
+dialog{border:1px solid var(--rule-strong);border-radius:5px;background:var(--surface);color:var(--ink);
+  max-width:620px;padding:18px 22px}
+dialog::backdrop{background:rgba(0,0,0,.4)}
+dialog h2{margin:0 0 10px;font-size:15px}
+dialog table{border-collapse:collapse;font-size:12.5px;width:100%}
+dialog td{padding:2px 8px 2px 0;vertical-align:top}
+dialog kbd{font-family:var(--mono);background:var(--surface-2);padding:1px 5px;border-radius:3px}
+.banner{padding:6px 12px;background:var(--unknown);color:#fff;font-size:12.5px}
+</style>
+</head>
+<body>
+<aside>
+  <div class="head">
+    <h1>Opening Annotator</h1>
+    <div class="prog" id="prog">loading…</div>
+    <div class="pbar"><i id="pbar" style="width:0%"></i></div>
+  </div>
+  <div class="filters">
+    <input type="search" id="q" placeholder="Filter sheets…">
+    <select id="sort">
+      <option value="order">Planset order</option>
+      <option value="hard">Hardest first</option>
+      <option value="unverified">Unverified only</option>
+    </select>
+  </div>
+  <div class="list" id="list"></div>
+</aside>
+<main>
+  <div class="bar">
+    <span class="mode" id="mode">SELECT</span>
+    <button id="bArea">Area (a)</button>
+    <button id="bOpen">Opening (o)</button>
+    <button id="bVerify">Verify (v)</button>
+    <span id="sel"></span>
+    <span class="sp">
+      <span class="dirty" id="dirty" title="unsaved changes"></span>
+      <b id="saved"></b>
+      <button id="zout">−</button><button id="zin">+</button><button id="zfit">Fit</button>
+      <button id="help">?</button>
+    </span>
+  </div>
+  <div id="banner"></div>
+  <div id="wrap"><div style="padding:40px;color:var(--muted)">Pick a sheet.</div></div>
+</main>
+<div class="hint" id="hint" hidden></div>
+<dialog id="dlg">
+  <h2>Shortcuts</h2>
+  <table>
+    <tr><td><kbd>a</kbd> / <kbd>o</kbd></td><td>draw area / draw opening (one shot)</td></tr>
+    <tr><td><kbd>Esc</kbd></td><td>back to select</td></tr>
+    <tr><td><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><kbd>4</kbd><kbd>0</kbd></td><td>area type: window / door / garage / mixed / exclude</td></tr>
+    <tr><td><kbd>w</kbd> <kbd>e</kbd> <kbd>g</kbd></td><td>force opening class: window / door / garage</td></tr>
+    <tr><td><kbd>Enter</kbd> / <kbd>Del</kbd></td><td>accept / reject selected</td></tr>
+    <tr><td><kbd>A</kbd> / <kbd>X</kbd></td><td>accept all pending / reject all outside any area</td></tr>
+    <tr><td><kbd>v</kbd></td><td>verify sheet and jump to the next unverified</td></tr>
+    <tr><td><kbd>j</kbd> / <kbd>k</kbd></td><td>next / previous sheet</td></tr>
+    <tr><td><kbd>arrows</kbd></td><td>nudge 1px · <kbd>Shift</kbd> 10px · <kbd>Alt</kbd> resize</td></tr>
+    <tr><td><kbd>Ctrl+Z</kbd></td><td>undo · <kbd>Ctrl+Shift+Z</kbd> redo</td></tr>
+    <tr><td><kbd>p</kbd></td><td>show/hide rejected</td></tr>
+  </table>
+</dialog>
+<script type="module" src="annotate.js"></script>
+</body>
+</html>

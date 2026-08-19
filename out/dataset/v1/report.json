@@ -1,0 +1,50 @@
+{
+  "tag": "v1",
+  "images": 90,
+  "positives": 77,
+  "negatives": 13,
+  "boxes": 579,
+  "classes": {
+    "door": 327,
+    "window": 252
+  },
+  "train": {
+    "images": 62,
+    "boxes": 383,
+    "by_class": {
+      "door": 204,
+      "window": 179
+    }
+  },
+  "val": {
+    "images": 28,
+    "boxes": 196,
+    "by_class": {
+      "door": 123,
+      "window": 73
+    }
+  },
+  "plansets": {
+    "train": 18,
+    "val": 5
+  },
+  "duplicates_dropped": [
+    [
+      "543_fc78c1f7_p3",
+      "558_e59b8693_p1"
+    ],
+    [
+      "543_fc78c1f7_p3",
+      "559_78a49b54_p1"
+    ],
+    [
+      "543_fc78c1f7_p5",
+      "559_78a49b54_p2"
+    ],
+    [
+      "585_6c8ee4d3_p11",
+      "585_6c8ee4d3_p27"
+    ]
+  ],
+  "warnings": []
+}

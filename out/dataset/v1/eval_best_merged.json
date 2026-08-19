@@ -1,0 +1,212 @@
+{
+  "weights": "/var/www/html/WindowsDoorsClassification/best.pt",
+  "conf": 0.1,
+  "merged": true,
+  "val_images": 28,
+  "map50_class_agnostic": 0.4184,
+  "precision": 0.5342,
+  "recall": 0.5969,
+  "per_class": {
+    "window": {
+      "ap50": 0.1576,
+      "val_boxes": 73
+    },
+    "door": {
+      "ap50": 0.4609,
+      "val_boxes": 123
+    }
+  },
+  "per_planset": {
+    "543_fc78c1f7": {
+      "ap50": 0.6265,
+      "val_boxes": 51
+    },
+    "658_38ee4786": {
+      "ap50": 0.4892,
+      "val_boxes": 42
+    },
+    "733_871e0c28": {
+      "ap50": 0.0708,
+      "val_boxes": 28
+    },
+    "739_733399c1": {
+      "ap50": 0.4943,
+      "val_boxes": 60
+    },
+    "744_2273d2d4": {
+      "ap50": 0.8667,
+      "val_boxes": 15
+    }
+  },
+  "exact_count_rate": 0.2222,
+  "within_one_rate": 0.3704,
+  "hard_negatives": {
+    "areas": 1,
+    "fired": 1,
+    "boxes": 5
+  },
+  "counts": [
+    {
+      "planset": "543_fc78c1f7",
+      "area": "door_area",
+      "truth": 11,
+      "pred": 9
+    },
+    {
+      "planset": "543_fc78c1f7",
+      "area": "window_area",
+      "truth": 4,
+      "pred": 4
+    },
+    {
+      "planset": "543_fc78c1f7",
+      "area": "door_area",
+      "truth": 7,
+      "pred": 6
+    },
+    {
+      "planset": "543_fc78c1f7",
+      "area": "door_area",
+      "truth": 21,
+      "pred": 21
+    },
+    {
+      "planset": "543_fc78c1f7",
+      "area": "window_area",
+      "truth": 5,
+      "pred": 5
+    },
+    {
+      "planset": "543_fc78c1f7",
+      "area": "door_area",
+      "truth": 3,
+      "pred": 11
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "window_area",
+      "truth": 4,
+      "pred": 4
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "window_area",
+      "truth": 9,
+      "pred": 0
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "door_area",
+      "truth": 6,
+      "pred": 4
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "door_area",
+      "truth": 11,
+      "pred": 11
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "window_area",
+      "truth": 3,
+      "pred": 5
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "door_area",
+      "truth": 7,
+      "pred": 3
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "door_area",
+      "truth": 2,
+      "pred": 1
+    },
+    {
+      "planset": "733_871e0c28",
+      "area": "door_area",
+      "truth": 15,
+      "pred": 55
+    },
+    {
+      "planset": "733_871e0c28",
+      "area": "window_area",
+      "truth": 13,
+      "pred": 9
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "door_area",
+      "truth": 6,
+      "pred": 5
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "window_area",
+      "truth": 2,
+      "pred": 4
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "door_area",
+      "truth": 3,
+      "pred": 5
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "window_area",
+      "truth": 24,
+      "pred": 7
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "door_area",
+      "truth": 7,
+      "pred": 6
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "door_area",
+      "truth": 4,
+      "pred": 10
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "window_area",
+      "truth": 2,
+      "pred": 5
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "door_area",
+      "truth": 6,
+      "pred": 4
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "window_area",
+      "truth": 2,
+      "pred": 4
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "door_area",
+      "truth": 4,
+      "pred": 8
+    },
+    {
+      "planset": "744_2273d2d4",
+      "area": "door_area",
+      "truth": 10,
+      "pred": 8
+    },
+    {
+      "planset": "744_2273d2d4",
+      "area": "window_area",
+      "truth": 5,
+      "pred": 5
+    }
+  ]
+}

@@ -1,0 +1,1017 @@
+{
+ "areas": [
+  {
+   "edited": true,
+   "id": "a_p2_b0",
+   "origin": "model",
+   "rect": [
+    11.358139427601941,
+    73.11138819322649,
+    2368.531886769521,
+    362.1675542461428
+   ],
+   "seed": {
+    "block_id": "p2_b0",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "DOOR SCHEDULE:",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "human"
+  },
+  {
+   "edited": true,
+   "id": "a_p2_b1",
+   "origin": "model",
+   "rect": [
+    6.066636918042548,
+    560,
+    1090.6656266476703,
+    858.6296006498566
+   ],
+   "seed": {
+    "block_id": "p2_b1",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "DOOR SCHEDULE COMMON AREAS:",
+    "type": "door_area"
+   },
+   "type": "garage_area",
+   "type_source": "human"
+  },
+  {
+   "edited": true,
+   "id": "a_p2_b2",
+   "origin": "model",
+   "rect": [
+    2.5964599137289923,
+    932,
+    1077.2937874759477,
+    1207.067513112608
+   ],
+   "seed": {
+    "block_id": "p2_b2",
+    "category": "window",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "WINDOW SCHEDULE:",
+    "type": "window_area"
+   },
+   "type": "window_area",
+   "type_source": "human"
+  }
+ ],
+ "file": "project_461_20260526_184427_aaa865c6.pdf",
+ "notes": "",
+ "openings": [
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.777,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_2_000",
+   "origin": "model",
+   "rect": [
+    1300.89,
+    186.22,
+    1393.5,
+    307.89
+   ],
+   "seed": {
+    "confidence": 0.777,
+    "rect": [
+     1300.89,
+     186.22,
+     1393.5,
+     307.89
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.904,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_2_001",
+   "origin": "model",
+   "rect": [
+    2223.39,
+    186.56,
+    2278.5,
+    306.72
+   ],
+   "seed": {
+    "confidence": 0.904,
+    "rect": [
+     2223.39,
+     186.56,
+     2278.5,
+     306.72
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.725,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_2_002",
+   "origin": "model",
+   "rect": [
+    1641.61,
+    186.67,
+    1691.39,
+    306.61
+   ],
+   "seed": {
+    "confidence": 0.725,
+    "rect": [
+     1641.61,
+     186.67,
+     1691.39,
+     306.61
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.513,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_2_003",
+   "origin": "model",
+   "rect": [
+    1002.17,
+    186.78,
+    1061.06,
+    306.83
+   ],
+   "seed": {
+    "confidence": 0.513,
+    "rect": [
+     1002.17,
+     186.78,
+     1061.06,
+     306.83
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.701,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_2_004",
+   "origin": "model",
+   "rect": [
+    251.11,
+    186.89,
+    307.39,
+    307.11
+   ],
+   "seed": {
+    "confidence": 0.701,
+    "rect": [
+     251.11,
+     186.89,
+     307.39,
+     307.11
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.673,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": true,
+   "flags": [],
+   "group_id": "",
+   "id": "o_2_005",
+   "origin": "model",
+   "rect": [
+    639.4050885021567,
+    187.5,
+    746.6750885021568,
+    307.39
+   ],
+   "seed": {
+    "confidence": 0.673,
+    "rect": [
+     637.67,
+     187.5,
+     744.94,
+     307.39
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.647,
+   "containment": 1.0,
+   "detector_source": "block",
+   "edited": true,
+   "flags": [],
+   "group_id": "",
+   "id": "o_2_006",
+   "origin": "model",
+   "rect": [
+    434.03017700431354,
+    190.17508850215677,
+    573.06,
+    306.5
+   ],
+   "seed": {
+    "confidence": 0.647,
+    "rect": [
+     430.56,
+     188.44,
+     573.06,
+     306.5
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.831,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": true,
+   "flags": [],
+   "group_id": "",
+   "id": "o_2_007",
+   "origin": "model",
+   "rect": [
+    835.17,
+    188.1721588984611,
+    885.72,
+    306.94
+   ],
+   "seed": {
+    "confidence": 0.831,
+    "rect": [
+     835.17,
+     189.89,
+     885.72,
+     306.94
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.545,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_2_008",
+   "origin": "model",
+   "rect": [
+    2378.78,
+    229.11,
+    2418.56,
+    274.28
+   ],
+   "seed": {
+    "confidence": 0.545,
+    "rect": [
+     2378.78,
+     229.11,
+     2418.56,
+     274.28
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.209,
+   "containment": 1.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_2_009",
+   "origin": "model",
+   "rect": [
+    841.67,
+    352.67,
+    849.11,
+    358.22
+   ],
+   "seed": {
+    "confidence": 0.209,
+    "rect": [
+     841.67,
+     352.67,
+     849.11,
+     358.22
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.258,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_2_010",
+   "origin": "model",
+   "rect": [
+    279.11,
+    435.56,
+    285.39,
+    439.72
+   ],
+   "seed": {
+    "confidence": 0.258,
+    "rect": [
+     279.11,
+     435.56,
+     285.39,
+     439.72
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.299,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_2_011",
+   "origin": "model",
+   "rect": [
+    306.78,
+    445.89,
+    312,
+    451.78
+   ],
+   "seed": {
+    "confidence": 0.299,
+    "rect": [
+     306.78,
+     445.89,
+     312,
+     451.78
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.368,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny"
+   ],
+   "group_id": "",
+   "id": "o_2_012",
+   "origin": "model",
+   "rect": [
+    867.39,
+    454.39,
+    873.67,
+    460.72
+   ],
+   "seed": {
+    "confidence": 0.368,
+    "rect": [
+     867.39,
+     454.39,
+     873.67,
+     460.72
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.232,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": true,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_2_013",
+   "origin": "model",
+   "rect": [
+    822.3653368676828,
+    454.39,
+    863.83,
+    467.31136440615563
+   ],
+   "seed": {
+    "confidence": 0.232,
+    "rect": [
+     858.44,
+     454.39,
+     863.83,
+     460.44
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.291,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_2_014",
+   "origin": "model",
+   "rect": [
+    307.22,
+    457.28,
+    312.56,
+    462.83
+   ],
+   "seed": {
+    "confidence": 0.291,
+    "rect": [
+     307.22,
+     457.28,
+     312.56,
+     462.83
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.207,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": true,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_2_015",
+   "origin": "model",
+   "rect": [
+    295.28,
+    479.89,
+    374.2842139754069,
+    485.83
+   ],
+   "seed": {
+    "confidence": 0.207,
+    "rect": [
+     290.11,
+     479.89,
+     295.28,
+     485.83
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.21,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_2_016",
+   "origin": "model",
+   "rect": [
+    322.83,
+    491,
+    328.39,
+    497.39
+   ],
+   "seed": {
+    "confidence": 0.21,
+    "rect": [
+     322.83,
+     491,
+     328.39,
+     497.39
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.242,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_2_017",
+   "origin": "model",
+   "rect": [
+    316,
+    514,
+    321.33,
+    519.78
+   ],
+   "seed": {
+    "confidence": 0.242,
+    "rect": [
+     316,
+     514,
+     321.33,
+     519.78
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.284,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_2_018",
+   "origin": "model",
+   "rect": [
+    307.39,
+    514.06,
+    313,
+    519.72
+   ],
+   "seed": {
+    "confidence": 0.284,
+    "rect": [
+     307.39,
+     514.06,
+     313,
+     519.72
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "a_p2_b1",
+   "cls": "garage_door",
+   "cls_source": "human",
+   "confidence": 0.916,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_2_019",
+   "origin": "model",
+   "rect": [
+    644.33,
+    642.67,
+    820,
+    801.56
+   ],
+   "seed": {
+    "confidence": 0.916,
+    "rect": [
+     644.33,
+     642.67,
+     820,
+     801.56
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b1",
+   "cls": "garage_door",
+   "cls_source": "human",
+   "confidence": 0.912,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_2_020",
+   "origin": "model",
+   "rect": [
+    415.5,
+    674.28,
+    575.44,
+    802
+   ],
+   "seed": {
+    "confidence": 0.912,
+    "rect": [
+     415.5,
+     674.28,
+     575.44,
+     802
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b1",
+   "cls": "window",
+   "cls_source": "human",
+   "confidence": 0.853,
+   "containment": 1.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_2_021",
+   "origin": "model",
+   "rect": [
+    263.83,
+    756.72,
+    297.22,
+    800.78
+   ],
+   "seed": {
+    "confidence": 0.853,
+    "rect": [
+     263.83,
+     756.72,
+     297.22,
+     800.78
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b2",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.886,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_2_022",
+   "origin": "model",
+   "rect": [
+    162.39,
+    1032.44,
+    216.22,
+    1123
+   ],
+   "seed": {
+    "confidence": 0.886,
+    "rect": [
+     162.39,
+     1032.44,
+     216.22,
+     1123
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b2",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.618,
+   "containment": 1.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_2_023",
+   "origin": "model",
+   "rect": [
+    511,
+    1032.56,
+    548.28,
+    1087.89
+   ],
+   "seed": {
+    "confidence": 0.618,
+    "rect": [
+     511,
+     1032.56,
+     548.28,
+     1087.89
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b2",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.881,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_2_024",
+   "origin": "model",
+   "rect": [
+    305.11,
+    1032.67,
+    413.22,
+    1123.83
+   ],
+   "seed": {
+    "confidence": 0.881,
+    "rect": [
+     305.11,
+     1032.67,
+     413.22,
+     1123.83
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b2",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.482,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_2_025",
+   "origin": "model",
+   "rect": [
+    694.5,
+    1032.94,
+    828.11,
+    1122.72
+   ],
+   "seed": {
+    "confidence": 0.482,
+    "rect": [
+     694.5,
+     1032.94,
+     828.11,
+     1122.72
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 1,
+   "containment": 1.0,
+   "detector_source": "human",
+   "edited": true,
+   "flags": [],
+   "group_id": "",
+   "id": "o_hmsybjj1b",
+   "origin": "human",
+   "rect": [
+    1173.2854723510786,
+    185.52683896620277,
+    1221.3850231941683,
+    307.4935571754657
+   ],
+   "seed": {},
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 1,
+   "containment": 1.0,
+   "detector_source": "human",
+   "edited": true,
+   "flags": [],
+   "group_id": "",
+   "id": "o_hmsybjw0g",
+   "origin": "human",
+   "rect": [
+    1465.3184596126941,
+    187.2446800677417,
+    1556.3640379942565,
+    307.4935571754657
+   ],
+   "seed": {},
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 1,
+   "containment": 1.0,
+   "detector_source": "human",
+   "edited": true,
+   "flags": [],
+   "group_id": "",
+   "id": "o_hmsybk2ag",
+   "origin": "human",
+   "rect": [
+    1963.4923790589792,
+    187.2446800677417,
+    1999.5670421912964,
+    305.7757160739268
+   ],
+   "seed": {},
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 1,
+   "containment": 1.0,
+   "detector_source": "human",
+   "edited": true,
+   "flags": [],
+   "group_id": "",
+   "id": "o_hmsybk7so",
+   "origin": "human",
+   "rect": [
+    1807.1688388189382,
+    185.52683896620277,
+    1858.7040718651056,
+    305.7757160739268
+   ],
+   "seed": {},
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 1,
+   "containment": 1.0,
+   "detector_source": "human",
+   "edited": true,
+   "flags": [],
+   "group_id": "",
+   "id": "o_hmsybkf41",
+   "origin": "human",
+   "rect": [
+    2094.048302775937,
+    187.2446800677417,
+    2119.8159192990206,
+    307.4935571754657
+   ],
+   "seed": {},
+   "state": "accepted"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 1,
+   "containment": 0.0,
+   "detector_source": "human",
+   "edited": true,
+   "flags": [],
+   "group_id": "",
+   "id": "o_hmsyo5ppo",
+   "origin": "human",
+   "rect": [
+    1273.5549605830731,
+    537.8774356686004,
+    1355.1041201844414,
+    619.4265952699687
+   ],
+   "seed": {},
+   "state": "rejected"
+  }
+ ],
+ "page": 2,
+ "page_rect_pt": [
+  0,
+  0,
+  2592.2,
+  1728.3
+ ],
+ "pdf_sha256": "1249fd34c67b3a3a8b8d65e8a0db5e658bc4fb077b796c4480dcba58178744f2",
+ "planset_key": "461_1249fd34",
+ "project_id": "461",
+ "render": {
+  "h": 3111,
+  "image": "pages/461_1249fd34_p2.jpg",
+  "w": 4666,
+  "zoom": 1.8
+ },
+ "rev": 94,
+ "rotation": 270,
+ "schema_version": 1,
+ "sheet_key": "461_1249fd34_p2",
+ "skip_reason": "",
+ "status": "verified",
+ "time_spent_s": 395,
+ "updated_at": "2026-08-19T10:43:32+00:00"
+}

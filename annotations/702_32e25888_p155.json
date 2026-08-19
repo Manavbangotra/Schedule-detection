@@ -1,0 +1,562 @@
+{
+ "areas": [
+  {
+   "edited": false,
+   "id": "a_p155_b0",
+   "origin": "model",
+   "rect": [
+    1606.28,
+    67.5,
+    2774.0,
+    556.0
+   ],
+   "seed": {
+    "block_id": "p155_b0",
+    "category": "unknown",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "SPLIT SYSTEM DX COOLING / HEAT PUMP SCHEDULE",
+    "type": "unknown"
+   },
+   "type": "unknown",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p155_b1",
+   "origin": "model",
+   "rect": [
+    2026.0,
+    578.0,
+    2770.0,
+    806.0
+   ],
+   "seed": {
+    "block_id": "p155_b1",
+    "category": "unknown",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "DIFFUSER SCHEDULE",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p155_b2",
+   "origin": "model",
+   "rect": [
+    2168.0,
+    812.0,
+    2768.0,
+    1258.0
+   ],
+   "seed": {
+    "block_id": "p155_b2",
+    "category": "unknown",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "VVT DAMPER SCHEDULE",
+    "type": "unknown"
+   },
+   "type": "unknown",
+   "type_source": "seed"
+  }
+ ],
+ "file": "project_702_20260714_044805_75c11fd9.pdf",
+ "notes": "",
+ "openings": [
+  {
+   "area_id": "a_p155_b0",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.239,
+   "containment": 1.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_155_000",
+   "origin": "model",
+   "rect": [
+    2119.39,
+    72.83,
+    2130.44,
+    92.06
+   ],
+   "seed": {
+    "confidence": 0.239,
+    "rect": [
+     2119.39,
+     72.83,
+     2130.44,
+     92.06
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p155_b0",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.436,
+   "containment": 1.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny"
+   ],
+   "group_id": "",
+   "id": "o_155_001",
+   "origin": "model",
+   "rect": [
+    2136.5,
+    73.28,
+    2146.33,
+    92.06
+   ],
+   "seed": {
+    "confidence": 0.436,
+    "rect": [
+     2136.5,
+     73.28,
+     2146.33,
+     92.06
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p155_b0",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.291,
+   "containment": 1.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_155_002",
+   "origin": "model",
+   "rect": [
+    2150.28,
+    73.56,
+    2163.11,
+    91.33
+   ],
+   "seed": {
+    "confidence": 0.291,
+    "rect": [
+     2150.28,
+     73.56,
+     2163.11,
+     91.33
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p155_b0",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.365,
+   "containment": 1.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny"
+   ],
+   "group_id": "",
+   "id": "o_155_003",
+   "origin": "model",
+   "rect": [
+    1729.22,
+    73.94,
+    1739.33,
+    91.56
+   ],
+   "seed": {
+    "confidence": 0.365,
+    "rect": [
+     1729.22,
+     73.94,
+     1739.33,
+     91.56
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p155_b0",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.37,
+   "containment": 1.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny"
+   ],
+   "group_id": "",
+   "id": "o_155_004",
+   "origin": "model",
+   "rect": [
+    1774.06,
+    74.22,
+    1786.11,
+    91.61
+   ],
+   "seed": {
+    "confidence": 0.37,
+    "rect": [
+     1774.06,
+     74.22,
+     1786.11,
+     91.61
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p155_b0",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.921,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_155_005",
+   "origin": "model",
+   "rect": [
+    2645.33,
+    95.89,
+    2699.39,
+    194.56
+   ],
+   "seed": {
+    "confidence": 0.921,
+    "rect": [
+     2645.33,
+     95.89,
+     2699.39,
+     194.56
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p155_b0",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.356,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_155_006",
+   "origin": "model",
+   "rect": [
+    2592.0,
+    96.39,
+    2645.83,
+    194.28
+   ],
+   "seed": {
+    "confidence": 0.356,
+    "rect": [
+     2592.0,
+     96.39,
+     2645.83,
+     194.28
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p155_b0",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.707,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_155_007",
+   "origin": "model",
+   "rect": [
+    2698.72,
+    96.89,
+    2760.0,
+    193.83
+   ],
+   "seed": {
+    "confidence": 0.707,
+    "rect": [
+     2698.72,
+     96.89,
+     2760.0,
+     193.83
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p155_b0",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.418,
+   "containment": 1.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny"
+   ],
+   "group_id": "",
+   "id": "o_155_008",
+   "origin": "model",
+   "rect": [
+    2299.28,
+    349.0,
+    2310.61,
+    367.78
+   ],
+   "seed": {
+    "confidence": 0.418,
+    "rect": [
+     2299.28,
+     349.0,
+     2310.61,
+     367.78
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p155_b0",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.498,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_155_009",
+   "origin": "model",
+   "rect": [
+    2705.39,
+    372.28,
+    2758.22,
+    439.56
+   ],
+   "seed": {
+    "confidence": 0.498,
+    "rect": [
+     2705.39,
+     372.28,
+     2758.22,
+     439.56
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p155_b0",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.827,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_155_010",
+   "origin": "model",
+   "rect": [
+    2642.56,
+    372.83,
+    2705.44,
+    439.33
+   ],
+   "seed": {
+    "confidence": 0.827,
+    "rect": [
+     2642.56,
+     372.83,
+     2705.44,
+     439.33
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.284,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_155_011",
+   "origin": "model",
+   "rect": [
+    2285.44,
+    592.5,
+    2298.83,
+    610.67
+   ],
+   "seed": {
+    "confidence": 0.284,
+    "rect": [
+     2285.44,
+     592.5,
+     2298.83,
+     610.67
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.302,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_155_012",
+   "origin": "model",
+   "rect": [
+    2367.22,
+    592.56,
+    2376.44,
+    610.39
+   ],
+   "seed": {
+    "confidence": 0.302,
+    "rect": [
+     2367.22,
+     592.56,
+     2376.44,
+     610.39
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.275,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_155_013",
+   "origin": "model",
+   "rect": [
+    2448.89,
+    592.94,
+    2457.89,
+    610.28
+   ],
+   "seed": {
+    "confidence": 0.275,
+    "rect": [
+     2448.89,
+     592.94,
+     2457.89,
+     610.28
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.261,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_155_014",
+   "origin": "model",
+   "rect": [
+    2509.67,
+    593.06,
+    2519.22,
+    610.28
+   ],
+   "seed": {
+    "confidence": 0.261,
+    "rect": [
+     2509.67,
+     593.06,
+     2519.22,
+     610.28
+    ]
+   },
+   "state": "rejected"
+  }
+ ],
+ "page": 155,
+ "page_rect_pt": [
+  0,
+  0,
+  3024.4,
+  2160.0
+ ],
+ "pdf_sha256": "32e258889ba4f095b7828e7665d09f3d3354604eff373dc3cebfb5c48102d496",
+ "planset_key": "702_32e25888",
+ "project_id": "702",
+ "render": {
+  "h": 3888,
+  "image": "pages/702_32e25888_p155.jpg",
+  "w": 5444,
+  "zoom": 1.8
+ },
+ "rev": 2,
+ "rotation": 90,
+ "schema_version": 1,
+ "sheet_key": "702_32e25888_p155",
+ "skip_reason": "",
+ "status": "skipped",
+ "time_spent_s": 0,
+ "updated_at": "2026-08-18T11:48:46+00:00"
+}

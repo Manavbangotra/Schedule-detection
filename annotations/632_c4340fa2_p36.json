@@ -1,0 +1,418 @@
+{
+ "areas": [
+  {
+   "edited": false,
+   "id": "a_p36_b0",
+   "origin": "model",
+   "rect": [
+    82,
+    204,
+    532,
+    464
+   ],
+   "seed": {
+    "block_id": "p36_b0",
+    "category": "window",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "WINDOW SCHEDULE",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": true,
+   "id": "a_p36_b1",
+   "origin": "model",
+   "rect": [
+    905.9662353116169,
+    159.82968912687804,
+    2165.2052655064704,
+    527.6470325747437
+   ],
+   "seed": {
+    "block_id": "p36_b1",
+    "category": "window",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "title": "WINDOW TYPES",
+    "type": "window_area"
+   },
+   "type": "window_area",
+   "type_source": "seed"
+  }
+ ],
+ "file": "project_632_20260617_170100_28155c86.pdf",
+ "notes": "",
+ "openings": [
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.646,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_36_000",
+   "origin": "model",
+   "rect": [
+    2426.83,
+    52.5,
+    2538.44,
+    163.11
+   ],
+   "seed": {
+    "confidence": 0.646,
+    "rect": [
+     2426.83,
+     52.5,
+     2538.44,
+     163.11
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.561,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_36_001",
+   "origin": "model",
+   "rect": [
+    156.83,
+    212.39,
+    165.33,
+    225.94
+   ],
+   "seed": {
+    "confidence": 0.561,
+    "rect": [
+     156.83,
+     212.39,
+     165.33,
+     225.94
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "a_p36_b1",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.772,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_36_002",
+   "origin": "model",
+   "rect": [
+    1611.67,
+    238.78,
+    1673.39,
+    346.5
+   ],
+   "seed": {
+    "confidence": 0.772,
+    "rect": [
+     1611.67,
+     238.78,
+     1673.39,
+     346.5
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p36_b1",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.802,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_36_003",
+   "origin": "model",
+   "rect": [
+    1152.83,
+    238.89,
+    1241.83,
+    382.28
+   ],
+   "seed": {
+    "confidence": 0.802,
+    "rect": [
+     1152.83,
+     238.89,
+     1241.83,
+     382.28
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p36_b1",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.65,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_36_004",
+   "origin": "model",
+   "rect": [
+    1476.83,
+    239.17,
+    1538.89,
+    382.5
+   ],
+   "seed": {
+    "confidence": 0.65,
+    "rect": [
+     1476.83,
+     239.17,
+     1538.89,
+     382.5
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.347,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": true,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_36_005",
+   "origin": "model",
+   "rect": [
+    885.0143358619664,
+    123.13907035549605,
+    926.0143358619664,
+    190.80907035549606
+   ],
+   "seed": {
+    "confidence": 0.347,
+    "rect": [
+     996.06,
+     239.39,
+     1037.06,
+     307.06
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "a_p36_b1",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.512,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": true,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_36_006",
+   "origin": "model",
+   "rect": [
+    1317.44,
+    239.10190242451284,
+    1404.11,
+    382
+   ],
+   "seed": {
+    "confidence": 0.512,
+    "rect": [
+     1317.44,
+     299.83,
+     1404.11,
+     382
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p36_b1",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.291,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": true,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_36_007",
+   "origin": "model",
+   "rect": [
+    953.78,
+    242.0968139223561,
+    1079.67,
+    381.5
+   ],
+   "seed": {
+    "confidence": 0.291,
+    "rect": [
+     953.78,
+     304.56,
+     1079.67,
+     381.5
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.514,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_36_008",
+   "origin": "model",
+   "rect": [
+    1988.33,
+    1108.72,
+    2024.11,
+    1132.89
+   ],
+   "seed": {
+    "confidence": 0.514,
+    "rect": [
+     1988.33,
+     1108.72,
+     2024.11,
+     1132.89
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.236,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_36_009",
+   "origin": "model",
+   "rect": [
+    1988.06,
+    1133.83,
+    2024.17,
+    1207.94
+   ],
+   "seed": {
+    "confidence": 0.236,
+    "rect": [
+     1988.06,
+     1133.83,
+     2024.17,
+     1207.94
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.533,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_36_010",
+   "origin": "model",
+   "rect": [
+    1986.94,
+    1463.11,
+    2024.61,
+    1488.22
+   ],
+   "seed": {
+    "confidence": 0.533,
+    "rect": [
+     1986.94,
+     1463.11,
+     2024.61,
+     1488.22
+    ]
+   },
+   "state": "rejected"
+  }
+ ],
+ "page": 36,
+ "page_rect_pt": [
+  0,
+  0,
+  2592.2,
+  1728.3
+ ],
+ "pdf_sha256": "c4340fa2a74494b953625b36ab0bda8052ac9b7dbb19ea534360a0a4a3cc873d",
+ "planset_key": "632_c4340fa2",
+ "project_id": "632",
+ "render": {
+  "h": 3111,
+  "image": "pages/632_c4340fa2_p36.jpg",
+  "w": 4666,
+  "zoom": 1.8
+ },
+ "rev": 18,
+ "rotation": 270,
+ "schema_version": 1,
+ "sheet_key": "632_c4340fa2_p36",
+ "skip_reason": "",
+ "status": "verified",
+ "time_spent_s": 58,
+ "updated_at": "2026-08-18T13:02:46+00:00"
+}

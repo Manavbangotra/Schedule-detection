@@ -1,0 +1,242 @@
+{
+ "areas": [
+  {
+   "edited": false,
+   "id": "a_p18_b0",
+   "origin": "model",
+   "rect": [
+    1638.0,
+    622.0,
+    2394.0,
+    1212.0
+   ],
+   "seed": {
+    "block_id": "p18_b0",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "DOOR SCHEDULE",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  }
+ ],
+ "file": "project_593_20260604_153057_54625a6c.pdf",
+ "notes": "",
+ "openings": [
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.306,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_18_000",
+   "origin": "model",
+   "rect": [
+    1482.83,
+    191.78,
+    1497.72,
+    207.39
+   ],
+   "seed": {
+    "confidence": 0.306,
+    "rect": [
+     1482.83,
+     191.78,
+     1497.72,
+     207.39
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.304,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_18_001",
+   "origin": "model",
+   "rect": [
+    1482.89,
+    361.67,
+    1497.67,
+    377.89
+   ],
+   "seed": {
+    "confidence": 0.304,
+    "rect": [
+     1482.89,
+     361.67,
+     1497.67,
+     377.89
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p18_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.317,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_18_002",
+   "origin": "model",
+   "rect": [
+    2089.06,
+    895.78,
+    2374.67,
+    988.17
+   ],
+   "seed": {
+    "confidence": 0.317,
+    "rect": [
+     2089.06,
+     895.78,
+     2374.67,
+     988.17
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p18_b0",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.209,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_18_003",
+   "origin": "model",
+   "rect": [
+    1696.33,
+    1050.06,
+    1716.78,
+    1075.39
+   ],
+   "seed": {
+    "confidence": 0.209,
+    "rect": [
+     1696.33,
+     1050.06,
+     1716.78,
+     1075.39
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.691,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_18_004",
+   "origin": "model",
+   "rect": [
+    1481.0,
+    1090.06,
+    1593.22,
+    1132.83
+   ],
+   "seed": {
+    "confidence": 0.691,
+    "rect": [
+     1481.0,
+     1090.06,
+     1593.22,
+     1132.83
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.361,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_18_005",
+   "origin": "model",
+   "rect": [
+    915.0,
+    1408.11,
+    1084.06,
+    1499.83
+   ],
+   "seed": {
+    "confidence": 0.361,
+    "rect": [
+     915.0,
+     1408.11,
+     1084.06,
+     1499.83
+    ]
+   },
+   "state": "pending"
+  }
+ ],
+ "page": 18,
+ "page_rect_pt": [
+  0,
+  0,
+  2592.2,
+  1728.3
+ ],
+ "pdf_sha256": "e01c7d13e0b5f8f358b9eab0c3ecd4429180f066837b4aa0d9a64d6795e3a0e9",
+ "planset_key": "593_e01c7d13",
+ "project_id": "593",
+ "render": {
+  "h": 3111,
+  "image": "pages/593_e01c7d13_p18.jpg",
+  "w": 4666,
+  "zoom": 1.8
+ },
+ "rev": 2,
+ "rotation": 270,
+ "schema_version": 1,
+ "sheet_key": "593_e01c7d13_p18",
+ "skip_reason": "",
+ "status": "skipped",
+ "time_spent_s": 0,
+ "updated_at": "2026-08-18T11:48:46+00:00"
+}

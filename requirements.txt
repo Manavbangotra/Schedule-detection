@@ -1,0 +1,12 @@
+# Python 3.12. Ultralytics pulls torch in as a dependency; on a CUDA machine
+# install the matching torch wheel FIRST or you will silently get the CPU build
+# and wonder why training takes 12 hours:
+#
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+#   pip install -r requirements.txt
+#
+# Verify before training:  python -c "import torch; print(torch.cuda.is_available())"
+
+ultralytics==8.4.121
+pymupdf==1.28.2
+pillow>=11.0
