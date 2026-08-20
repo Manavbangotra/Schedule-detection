@@ -19,10 +19,28 @@ whether the size hurts. A1 vs A3 alone would tell you neither.
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 
-BEST_PT = "/var/www/html/WindowsDoorsClassification/best.pt"
+
+def _find_best_pt() -> str:
+    """Locate the incumbent checkpoint on whichever box this is.
+
+    It lives outside the repo because it is 53MB of gitignored weights, so its
+    path is machine-specific: /var/www on the original Linux box, a sibling
+    checkout of WindowsDoorsClassification anywhere else. Checked in that order
+    after an explicit override, so neither box has to edit this file.
+    """
+    linux = "/var/www/html/WindowsDoorsClassification/best.pt"
+    sibling = Path(__file__).resolve().parents[2] / "WindowsDoorsClassification" / "best.pt"
+    for candidate in (os.environ.get("SCHEDEXT_BEST_PT"), linux, sibling):
+        if candidate and Path(candidate).exists():
+            return str(candidate)
+    return linux            # nothing found: name the canonical path in the error
+
+
+BEST_PT = _find_best_pt()
 
 ARMS = {
     "best": {"weights": BEST_PT, "note": "incumbent, YOLOv12-L 26.4M"},
@@ -168,7 +186,14 @@ def train_arm(arm: str, data: Path, out: Path, **overrides) -> dict:
 
     spec = ARMS[arm]
     print(f"\n=== arm '{arm}' — {spec['note']} ===")
-    model = YOLO(spec["weights"])
+    # Fail here, not four hours in: a bare name like "yolo11s.pt" gets
+    # downloaded by ultralytics, but a path that does not exist is a dead
+    # machine-specific checkpoint and every later error would be about
+    # something else.
+    src = spec["weights"]
+    if ("/" in src or "\\" in src) and not Path(src).exists():
+        raise FileNotFoundError(f"arm '{arm}' needs weights at {src}")
+    model = YOLO(src)
     cfg = dict(RECIPE)
     if _device() == "cpu":
         cfg.update(CPU_OVERRIDES)
@@ -206,6 +231,19 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--skip-gate", action="store_true")
     parser.add_argument("--imgsz", type=int, default=None)
     parser.add_argument("--epochs", type=int, default=None)
+    # Pass-throughs. All default to None so RECIPE stays the documented recipe
+    # for anyone who passes nothing; these only exist so a run can be adapted to
+    # the machine without editing the recipe and invalidating the comparison.
+    parser.add_argument("--patience", type=int, default=None,
+                        help="close_mosaic is scheduled against the PLANNED "
+                             "epoch count, so a run that early-stops never "
+                             "reaches the clean phase. Set == epochs to land it")
+    parser.add_argument("--batch", type=int, default=None,
+                        help="lower it if VRAM is short; leave nbs alone")
+    parser.add_argument("--workers", type=int, default=None)
+    parser.add_argument("--cache", action="store_true",
+                        help="hold images in RAM after the resize to imgsz — "
+                             "these crops run to 38MP and decoding dominates")
     args = parser.parse_args(argv)
 
     root = Path("out/dataset") / args.tag
@@ -224,6 +262,14 @@ def main(argv: list[str]) -> int:
         overrides["imgsz"] = args.imgsz
     if args.epochs:
         overrides["epochs"] = args.epochs
+    if args.patience:
+        overrides["patience"] = args.patience
+    if args.batch:
+        overrides["batch"] = args.batch
+    if args.workers is not None:
+        overrides["workers"] = args.workers
+    if args.cache:
+        overrides["cache"] = True
 
     arms = list(ARMS) if args.arms == "all" else [a.strip() for a in args.arms.split(",")]
     results = [train_arm(a, data, root / "runs", **overrides) for a in arms if a in ARMS]
