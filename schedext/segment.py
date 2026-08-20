@@ -163,6 +163,23 @@ MAX_COMPONENT_AREA_RATIO = 0.55
 # ground truth: a title past two thirds of the sheet is a caption, one at half
 # way is still a heading.
 CAPTION_BAND = 0.65
+# A block may be cut at an internal whitespace gutter only when that gutter is an
+# outlier: at least GUTTER_MIN_PT wide AND GUTTER_RATIO times the next widest gap
+# in the same block. Both conditions matter -- the median block already carries
+# an 87pt gap between table columns, so width alone would shred real tables.
+GUTTER_RATIO = 3.0
+# Swept against coverage, wrong-class rate, region area and test_extract:
+#   100pt  57.0% coverage,  77 wrong,  9.2% area, tests green
+#   150pt  60.8% coverage,  92 wrong,  9.6% area, tests green   <- chosen
+#   450pt  64.9% coverage, 119 wrong, 10.5% area, 1 failure
+#   off    66.2% coverage, 121 wrong, 12.6% area, 1 failure
+# Headline coverage is highest with the guard off, and that is the one measure
+# it wins: turning it on drops 5.4 points of coverage but removes 29 wrong-class
+# openings, tightens regions towards the human 7.2%, and turns the suite green.
+# A wrong class is worse than a missing one -- it is inherited by every opening
+# in the region -- and a smaller region also keeps openings larger in the
+# stage-2 crop, where they are already only 23px at p10.
+GUTTER_MIN_PT = 150.0
 
 
 def _blocked_by_other_title(rect: pymupdf.Rect, anchor_title, titles, own: int) -> bool:
@@ -248,6 +265,105 @@ def _assign_components(page: pymupdf.Page, titles: list[TitleHit],
     return owned
 
 
+def _trim_gutter(block: "Block", words: list[geom.Word],
+                 ratio: float | None = None, floor: float | None = None) -> None:
+    """Cut a block at an outlier whitespace gutter, in place.
+
+    A block can reach past its own content into untitled material beside it,
+    where `_blocked_by_other_title` has no rival title to fire on. project_486
+    p18's "DOOR SCHEDULE - COMMON AREA" spans 877-2774pt that way and
+    `table.parse` then finds no coherent table at all.
+
+    A flat width threshold cannot do this: measured over 138 blocks the *median*
+    block already has an 87pt internal gap, because schedule tables have wide
+    column gutters, and cutting at 100pt would fire on 41% of them. What marks
+    the real boundary is that the gap is an **outlier** -- on 486 p18 it is 197pt
+    against a next-widest of 41pt.
+
+    So cut only when the widest gap both exceeds ``floor`` and is ``ratio`` times
+    the second widest, and always keep the side holding the title.
+    """
+    # Read the module constants at call time, not as default arguments: a
+    # default binds once at import and a sweep that reassigns the constant then
+    # measures the same run six times over. That mistake cost an hour here.
+    ratio = GUTTER_RATIO if ratio is None else ratio
+    floor = GUTTER_MIN_PT if floor is None else floor
+
+    inside = [w for w in words if block.rect.contains(w.rect)]
+    if len(inside) < 5:
+        return
+    # Both axes: a block over-reaches sideways into a neighbouring table and
+    # downwards into the next one. On 486 p18 the horizontal cut alone left the
+    # block 817pt tall against a true 208pt, and the extra rows merged the
+    # header tiers just as badly as the extra columns did.
+    _trim_axis(block, inside, ratio, floor, horizontal=True)
+    _trim_axis(block, [w for w in inside if block.rect.contains(w.rect)],
+               ratio, floor, horizontal=False)
+
+
+def _trim_axis(block: "Block", inside: list[geom.Word], ratio: float,
+               floor: float, horizontal: bool) -> None:
+    """Keep only the band of content the block's own title sits in.
+
+    Not "cut at the widest gap": a block that over-reaches usually spans several
+    neighbours, so the separating gaps are all about the same size and no single
+    one is an outlier. On 486 p18 the vertical gaps are 154pt and 152pt -- ratio
+    1.0 -- and the real table is the band between them, which is exactly the one
+    holding the title.
+
+    Horizontally the floor has to be higher and the outlier test still applies,
+    because a schedule table's own column gutters are wide: measured over 138
+    blocks the median block already carries an 87pt horizontal gap.
+    """
+    lo = (lambda w: w.x0) if horizontal else (lambda w: w.y0)
+    hi = (lambda w: w.x1) if horizontal else (lambda w: w.y1)
+    inside = sorted(inside, key=lo)
+    if len(inside) < 5:
+        return
+
+    gaps: list[tuple[float, float, float]] = []
+    edge = hi(inside[0])
+    for word in inside[1:]:
+        if lo(word) > edge:
+            gaps.append((lo(word) - edge, edge, lo(word)))
+        edge = max(edge, hi(word))
+    if not gaps:
+        return
+
+    wide = [g for g in gaps if g[0] >= floor]
+    if not wide:
+        return
+    if horizontal:
+        # Only an outlier gutter may split a table sideways.
+        widest = max(gaps)
+        others = [g[0] for g in gaps if g is not widest]
+        if not others or widest[0] < max(others) * ratio:
+            return
+        wide = [widest]
+
+    pad = DILATE_X_PT if horizontal else DILATE_Y_PT
+    title = ((block.title_rect.x0 + block.title_rect.x1) / 2 if horizontal
+             else block.title_rect.y1)
+    low = max((g[2] for g in wide if g[2] <= title), default=None)
+    high = min((g[1] for g in wide if g[1] >= title), default=None)
+
+    if low is not None:
+        low = max(low - pad, block.rect.y0 if not horizontal else block.rect.x0)
+    if high is not None:
+        high = min(high + pad, block.rect.y1 if not horizontal else block.rect.x1)
+
+    if horizontal:
+        if low is not None:
+            block.rect.x0 = max(block.rect.x0, low)
+        if high is not None:
+            block.rect.x1 = min(block.rect.x1, high)
+    else:
+        if low is not None:
+            block.rect.y0 = max(block.rect.y0, low)
+        if high is not None:
+            block.rect.y1 = min(block.rect.y1, high)
+
+
 def _resolve_overlaps(blocks: list["Block"]) -> None:
     """Trim overlapping blocks apart, in place.
 
@@ -328,6 +444,10 @@ def segment(page: pymupdf.Page, candidate: PageCandidate) -> list[Block]:
         )
 
     _resolve_overlaps(blocks)
+    for block in blocks:
+        # After overlaps are settled, not before: trimming first would change
+        # the rects _resolve_overlaps compares.
+        _trim_gutter(block, words)
 
     # Word counts and header vocabulary are measured only after the boundaries
     # are final, so a block is never described by content it does not own.
