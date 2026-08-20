@@ -96,7 +96,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "new_since_seed": true,
     "title": "STOREFRONT LEGEND",
     "type": "door_area"
    },
@@ -1211,12 +1210,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 63,
+ "rev": 64,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "739_733399c1_p61",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 10313,
- "updated_at": "2026-08-20T05:57:53+00:00"
+ "updated_at": "2026-08-20T07:04:50+00:00"
 }

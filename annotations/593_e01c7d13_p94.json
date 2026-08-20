@@ -60,7 +60,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "schedule",
-    "new_since_seed": true,
     "title": "DOOR SCHEDULE",
     "type": "door_area"
    },
@@ -83,7 +82,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "new_since_seed": true,
     "title": "DOOR LEGEND",
     "type": "door_area"
    },
@@ -3054,12 +3052,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 30,
+ "rev": 31,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "593_e01c7d13_p94",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 95,
- "updated_at": "2026-08-20T05:57:52+00:00"
+ "updated_at": "2026-08-20T07:04:48+00:00"
 }

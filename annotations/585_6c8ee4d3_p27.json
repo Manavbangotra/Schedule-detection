@@ -35,6 +35,29 @@
    "seed": {},
    "type": "window_area",
    "type_source": "human"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b1",
+   "origin": "model",
+   "rect": [
+    1454.0,
+    1391.78,
+    2308.0,
+    1698.0
+   ],
+   "seed": {
+    "block_id": "p27_b1",
+    "category": "window",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "new_since_seed": true,
+    "title": "Window Schedule",
+    "type": "window_area"
+   },
+   "type": "window_area",
+   "type_source": "seed"
   }
  ],
  "file": "project_585_20260602_170809_cb03e5f7.pdf",
@@ -541,12 +564,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 24,
+ "rev": 25,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "585_6c8ee4d3_p27",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 80,
- "updated_at": "2026-08-20T05:57:52+00:00"
+ "updated_at": "2026-08-20T07:04:48+00:00"
 }

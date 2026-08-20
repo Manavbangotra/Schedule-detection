@@ -52,7 +52,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "new_since_seed": true,
     "title": "SF-1 - STOREFRONT ELEVATION",
     "type": "door_area"
    },
@@ -75,7 +74,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "new_since_seed": true,
     "title": "SF-2 - STOREFRONT ELEVATION",
     "type": "door_area"
    },
@@ -98,7 +96,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "new_since_seed": true,
     "title": "SF-3 - STOREFRONT ELEVATION",
     "type": "door_area"
    },
@@ -121,7 +118,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "new_since_seed": true,
     "title": "SF-4 - STOREFRONT ELEVATION",
     "type": "door_area"
    },
@@ -908,12 +904,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 87,
+ "rev": 88,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "5449_9211017b_p4",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 278,
- "updated_at": "2026-08-20T05:57:51+00:00"
+ "updated_at": "2026-08-20T07:04:48+00:00"
 }

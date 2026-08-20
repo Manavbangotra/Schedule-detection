@@ -156,10 +156,13 @@ def _assign_components(page: pymupdf.Page, titles: list[TitleHit],
         best_index, best_cost = None, MAX_ASSIGN_COST_PT
         for index, title in enumerate(titles):
             anchor = title.as_rect
-            if rect.y0 >= anchor.y1 - 2:
-                # The normal case: content sits under its heading.
+            if rect.y1 >= anchor.y0 - 2:
+                # The normal case: content sits under its heading. The test is
+                # on the component's *bottom* edge, not its top -- a component
+                # frequently overlaps its own title vertically, and requiring it
+                # to start below the title drops ordinary schedules wholesale.
                 gap = max(0.0, rect.y0 - anchor.y1)
-            elif rect.y1 <= anchor.y0 + 2 and anchor.y0 > caption_y:
+            elif anchor.y0 > caption_y:
                 # Caption: the title is near the foot of the sheet, so its
                 # drawing is above it. Deliberately not allowed for titles
                 # higher up -- there, content above a title belongs to whatever

@@ -60,7 +60,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "new_since_seed": true,
     "title": "FRAME TYPES",
     "type": "unknown"
    },
@@ -889,12 +888,12 @@
   "w": 4667,
   "zoom": 1.8
  },
- "rev": 20,
+ "rev": 21,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "738_f66be1e1_p28",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 71,
- "updated_at": "2026-08-20T05:57:53+00:00"
+ "updated_at": "2026-08-20T07:04:50+00:00"
 }

@@ -5,10 +5,10 @@
    "id": "a_p125_b0",
    "origin": "model",
    "rect": [
-    588.0,
-    60.0,
-    1542.0,
-    1342.0
+    588,
+    60,
+    1542,
+    878.78
    ],
    "seed": {
     "block_id": "p125_b0",
@@ -27,10 +27,10 @@
    "id": "a_p125_b1",
    "origin": "model",
    "rect": [
-    1742.0,
-    76.0,
-    2400.0,
-    1310.0
+    1742,
+    76,
+    2400,
+    1310
    ],
    "seed": {
     "block_id": "p125_b1",
@@ -54,7 +54,15 @@
     2066.490406068719,
     1676.0954930834448
    ],
-   "seed": {},
+   "seed": {
+    "block_id": "p125_b3",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "title": "DOOR TYPES",
+    "type": "door_area"
+   },
    "type": "window_area",
    "type_source": "human"
   },
@@ -74,15 +82,24 @@
   },
   {
    "edited": true,
-   "id": "a_hmszshq5l",
-   "origin": "human",
+   "id": "a_p125_b2",
+   "origin": "model",
    "rect": [
-    595.135356239774,
-    668.0090733303584,
-    884.8951360999553,
-    727.0020824036887
+    117.73508850215677,
+    942.2385839654916,
+    1015.7350885021567,
+    1654.2385839654917
    ],
-   "seed": {},
+   "seed": {
+    "block_id": "p125_b2",
+    "category": "both",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "new_since_seed": true,
+    "title": "DOOR & WINDOW FRAME TYPES",
+    "type": "mixed"
+   },
    "type": "window_area",
    "type_source": "human"
   }
@@ -281,7 +298,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmszshq5l",
+   "area_id": "a_hmszsftqp",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.664,
@@ -562,7 +579,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_hmszsftqp",
+   "area_id": "a_p125_b2",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.203,
@@ -594,13 +611,13 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmszsftqp",
+   "area_id": "a_p125_b2",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.854,
    "containment": 1.0,
    "detector_source": "sheet",
-   "edited": false,
+   "edited": true,
    "flags": [
     "outside_area"
    ],
@@ -608,10 +625,10 @@
    "id": "o_125_016",
    "origin": "model",
    "rect": [
-    456.56,
-    1019.17,
-    507.89,
-    1151.17
+    458.29508850215683,
+    1017.4349114978432,
+    509.6250885021568,
+    1149.4349114978434
    ],
    "seed": {
     "confidence": 0.854,
@@ -625,7 +642,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmszsftqp",
+   "area_id": "a_p125_b2",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.492,
@@ -656,13 +673,13 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_hmszsftqp",
+   "area_id": "a_p125_b2",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.554,
    "containment": 1.0,
    "detector_source": "sheet",
-   "edited": false,
+   "edited": true,
    "flags": [
     "outside_area"
    ],
@@ -672,7 +689,7 @@
    "rect": [
     194.39,
     1023.78,
-    406.28,
+    244.9167692994199,
     1149.61
    ],
    "seed": {
@@ -703,7 +720,7 @@
    "rect": [
     2126.33,
     1139.83,
-    2376.0,
+    2376,
     1205.17
    ],
    "seed": {
@@ -711,7 +728,7 @@
     "rect": [
      2126.33,
      1139.83,
-     2376.0,
+     2376,
      1205.17
     ]
    },
@@ -735,7 +752,7 @@
     2124.89,
     1233.17,
     2376.17,
-    1308.0
+    1308
    ],
    "seed": {
     "confidence": 0.797,
@@ -743,7 +760,7 @@
      2124.89,
      1233.17,
      2376.17,
-     1308.0
+     1308
     ]
    },
    "state": "rejected"
@@ -780,7 +797,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_hmszsftqp",
+   "area_id": "a_p125_b2",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.811,
@@ -811,7 +828,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmszsftqp",
+   "area_id": "a_p125_b2",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.393,
@@ -842,7 +859,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmszsftqp",
+   "area_id": "a_p125_b2",
    "cls": "door",
    "cls_source": "human",
    "confidence": 0.74,
@@ -864,7 +881,7 @@
    "seed": {
     "confidence": 0.74,
     "rect": [
-     208.0,
+     208,
      1325.5,
      264.22,
      1450.94
@@ -1315,7 +1332,7 @@
     711.3862858842778,
     728.7371709058456,
     785.9950914770191,
-    848.458277554663
+    853.6635430611334
    ],
    "seed": {},
    "state": "accepted"
@@ -1384,7 +1401,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmszsftqp",
+   "area_id": "a_p125_b2",
    "cls": "window",
    "cls_source": "human",
    "confidence": 1,
@@ -1405,7 +1422,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmszsftqp",
+   "area_id": "a_p125_b2",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 1,
@@ -1426,7 +1443,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmszsftqp",
+   "area_id": "a_p125_b2",
    "cls": "window",
    "cls_source": "human",
    "confidence": 1,
@@ -1478,7 +1495,70 @@
      433.72
     ]
    },
-   "state": "pending"
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p125_b2",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 1,
+   "containment": 1.0,
+   "detector_source": "human",
+   "edited": true,
+   "flags": [],
+   "group_id": "",
+   "id": "o_hmt173pfd",
+   "origin": "human",
+   "rect": [
+    355.6931429421389,
+    1021.9671277703405,
+    402.5405325003718,
+    1150.363676929942
+   ],
+   "seed": {},
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p125_b2",
+   "cls": "door",
+   "cls_source": "human",
+   "confidence": 1,
+   "containment": 1.0,
+   "detector_source": "human",
+   "edited": true,
+   "flags": [],
+   "group_id": "",
+   "id": "o_hmt173usq",
+   "origin": "human",
+   "rect": [
+    248.11765580841882,
+    1023.7022162724974,
+    348.7527889335118,
+    1150.363676929942
+   ],
+   "seed": {},
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_hmszsftqp",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 1,
+   "containment": 1.0,
+   "detector_source": "human",
+   "edited": true,
+   "flags": [],
+   "group_id": "",
+   "id": "o_hmt174htn",
+   "origin": "human",
+   "rect": [
+    600.3406217462442,
+    671.479250334672,
+    884.8951360999553,
+    728.7371709058456
+   ],
+   "seed": {},
+   "state": "accepted"
   }
  ],
  "page": 125,
@@ -1497,12 +1577,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 63,
+ "rev": 86,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "699_b670e56b_p125",
  "skip_reason": "",
- "status": "needs_recheck",
- "time_spent_s": 321,
- "updated_at": "2026-08-20T05:57:52+00:00"
+ "status": "verified",
+ "time_spent_s": 414,
+ "updated_at": "2026-08-20T07:26:04+00:00"
 }

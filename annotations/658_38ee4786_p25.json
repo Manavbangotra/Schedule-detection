@@ -123,13 +123,13 @@
    "seed": {
     "block_id": "p25_b6",
     "category": "unknown",
-    "exclude_reason": "not an opening schedule (MEP/structural)",
+    "exclude_reason": "",
     "genre": "pictorial",
     "kind": "schedule",
     "title": "HARDWARE SCHEDULE",
     "type": "unknown"
    },
-   "type": "exclude",
+   "type": "unknown",
    "type_source": "seed"
   },
   {
@@ -182,7 +182,7 @@
     416.61,
     1140.61,
     772.0,
-    1636.0
+    1516.11
    ],
    "seed": {
     "block_id": "p25_b5",
@@ -202,8 +202,8 @@
    "origin": "model",
    "rect": [
     600.0,
-    1640.0,
-    1110.0,
+    1518.0,
+    1486.0,
     1878.0
    ],
    "seed": {
@@ -212,7 +212,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "new_since_seed": true,
     "title": "DOOR LEGEND",
     "type": "door_area"
    },
@@ -1858,11 +1857,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
-   "cls": "",
-   "cls_source": "required",
+   "area_id": "a_p25_b7",
+   "cls": "door",
+   "cls_source": "inherited",
    "confidence": 0.879,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -1889,11 +1888,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
-   "cls": "",
-   "cls_source": "required",
+   "area_id": "a_p25_b7",
+   "cls": "door",
+   "cls_source": "inherited",
    "confidence": 0.913,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -1920,11 +1919,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
-   "cls": "",
-   "cls_source": "required",
+   "area_id": "a_p25_b7",
+   "cls": "door",
+   "cls_source": "inherited",
    "confidence": 0.831,
-   "containment": 0.0,
+   "containment": 0.892,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -1951,11 +1950,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
+   "area_id": "a_p25_b6",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.83,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -1982,11 +1981,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
+   "area_id": "a_p25_b6",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.74,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -2013,11 +2012,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
+   "area_id": "a_p25_b6",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.761,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -2044,11 +2043,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
+   "area_id": "a_p25_b6",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.6,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -2075,11 +2074,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
+   "area_id": "a_p25_b6",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.493,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -2106,11 +2105,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
+   "area_id": "a_p25_b6",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.558,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -2137,11 +2136,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
-   "cls": "",
-   "cls_source": "required",
+   "area_id": "a_p25_b7",
+   "cls": "door",
+   "cls_source": "inherited",
    "confidence": 0.552,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -2168,11 +2167,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
+   "area_id": "a_p25_b6",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.7,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -2215,12 +2214,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 82,
+ "rev": 83,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "658_38ee4786_p25",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 270,
- "updated_at": "2026-08-20T06:10:42+00:00"
+ "updated_at": "2026-08-20T07:04:48+00:00"
 }

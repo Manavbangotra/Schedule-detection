@@ -148,7 +148,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "new_since_seed": true,
     "title": "WINDOW TYPES",
     "type": "window_area"
    },
@@ -1077,12 +1076,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 16,
+ "rev": 17,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "570_13cb4fd7_p12",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 70,
- "updated_at": "2026-08-20T05:57:52+00:00"
+ "updated_at": "2026-08-20T07:04:48+00:00"
 }

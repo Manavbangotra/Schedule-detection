@@ -35,6 +35,29 @@
    "seed": {},
    "type": "window_area",
    "type_source": "human"
+  },
+  {
+   "edited": false,
+   "id": "a_p8_b1",
+   "origin": "model",
+   "rect": [
+    826.0,
+    1739.28,
+    1746.0,
+    2148.0
+   ],
+   "seed": {
+    "block_id": "p8_b1",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "new_since_seed": true,
+    "title": "DOOR TYPE LEGEND",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
   }
  ],
  "file": "project_744_20260715_112209_7f3edc3e.pdf",
@@ -372,7 +395,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p8_b0",
+   "area_id": "a_p8_b1",
    "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.824,
@@ -401,7 +424,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p8_b0",
+   "area_id": "a_p8_b1",
    "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.248,
@@ -432,7 +455,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p8_b0",
+   "area_id": "a_p8_b1",
    "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.849,
@@ -498,12 +521,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 18,
+ "rev": 19,
  "rotation": 90,
  "schema_version": 1,
  "sheet_key": "744_2273d2d4_p8",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 60,
- "updated_at": "2026-08-20T05:57:53+00:00"
+ "updated_at": "2026-08-20T07:04:50+00:00"
 }

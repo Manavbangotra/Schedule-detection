@@ -5,10 +5,10 @@
    "id": "a_p10_b0",
    "origin": "model",
    "rect": [
-    50.0,
-    1428.0,
-    834.0,
-    1500.0
+    50,
+    1428,
+    834,
+    1500
    ],
    "seed": {
     "block_id": "p10_b0",
@@ -21,6 +21,20 @@
    },
    "type": "exclude",
    "type_source": "seed"
+  },
+  {
+   "edited": true,
+   "id": "a_hmt16xi25",
+   "origin": "human",
+   "rect": [
+    782.5249144727055,
+    1356.839208686598,
+    1695.1814666071693,
+    1688.241112598542
+   ],
+   "seed": {},
+   "type": "door_area",
+   "type_source": "human"
   }
  ],
  "file": "project_716_20260707_113247_d763b6c1.pdf",
@@ -55,7 +69,7 @@
      332.44
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -86,7 +100,7 @@
      441.5
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -117,7 +131,7 @@
      634.83
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -149,7 +163,7 @@
      609.83
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -181,7 +195,7 @@
      742.89
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -198,7 +212,7 @@
    "id": "o_10_005",
    "origin": "model",
    "rect": [
-    1205.0,
+    1205,
     747.89,
     1237.94,
     792.33
@@ -206,13 +220,13 @@
    "seed": {
     "confidence": 0.399,
     "rect": [
-     1205.0,
+     1205,
      747.89,
      1237.94,
      792.33
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -244,7 +258,7 @@
      759.78
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -276,7 +290,7 @@
      780.11
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -309,7 +323,7 @@
      773.22
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -342,7 +356,7 @@
      777.61
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -361,21 +375,21 @@
    "id": "o_10_010",
    "origin": "model",
    "rect": [
-    260.0,
-    798.0,
+    260,
+    798,
     271.44,
     813.17
    ],
    "seed": {
     "confidence": 0.278,
     "rect": [
-     260.0,
-     798.0,
+     260,
+     798,
      271.44,
      813.17
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -408,7 +422,7 @@
      821.67
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -440,7 +454,7 @@
      885.56
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -473,7 +487,7 @@
      885.94
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -506,7 +520,7 @@
      979.39
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -525,7 +539,7 @@
    "id": "o_10_015",
    "origin": "model",
    "rect": [
-    169.0,
+    169,
     985.72,
     179.22,
     995.17
@@ -533,13 +547,13 @@
    "seed": {
     "confidence": 0.269,
     "rect": [
-     169.0,
+     169,
      985.72,
      179.22,
      995.17
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -570,7 +584,7 @@
      1092.22
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -603,7 +617,7 @@
      1261.06
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -636,7 +650,7 @@
      1330.83
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
    "area_id": "",
@@ -669,14 +683,14 @@
      1330.11
     ]
    },
-   "state": "pending"
+   "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_hmt16xi25",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.781,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -689,7 +703,7 @@
     1320.94,
     1475.22,
     1402.89,
-    1668.0
+    1668
    ],
    "seed": {
     "confidence": 0.781,
@@ -697,17 +711,17 @@
      1320.94,
      1475.22,
      1402.89,
-     1668.0
+     1668
     ]
    },
-   "state": "pending"
+   "state": "accepted"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_hmt16xi25",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.845,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -731,7 +745,7 @@
      1669.72
     ]
    },
-   "state": "pending"
+   "state": "accepted"
   },
   {
    "area_id": "",
@@ -782,7 +796,7 @@
    "id": "o_10_023",
    "origin": "model",
    "rect": [
-    151.0,
+    151,
     1479.72,
     156.67,
     1488.44
@@ -790,7 +804,7 @@
    "seed": {
     "confidence": 0.26,
     "rect": [
-     151.0,
+     151,
      1479.72,
      156.67,
      1488.44
@@ -864,13 +878,13 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_hmt16xi25",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.817,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
-   "edited": false,
+   "edited": true,
    "flags": [
     "outside_area"
    ],
@@ -878,8 +892,8 @@
    "id": "o_10_026",
    "origin": "model",
    "rect": [
-    1483.61,
-    1488.83,
+    1476.6696459913728,
+    1476.6843804849025,
     1640.06,
     1667.78
    ],
@@ -892,7 +906,7 @@
      1667.78
     ]
    },
-   "state": "pending"
+   "state": "accepted"
   }
  ],
  "page": 10,
@@ -911,12 +925,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 2,
+ "rev": 14,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "716_1426c195_p10",
  "skip_reason": "",
- "status": "untouched",
- "time_spent_s": 0,
- "updated_at": "2026-08-20T05:57:52+00:00"
+ "status": "verified",
+ "time_spent_s": 35,
+ "updated_at": "2026-08-20T07:20:22+00:00"
 }

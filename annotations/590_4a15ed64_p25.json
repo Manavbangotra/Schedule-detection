@@ -57,6 +57,29 @@
    "seed": {},
    "type": "door_area",
    "type_source": "human"
+  },
+  {
+   "edited": false,
+   "id": "a_p25_b2",
+   "origin": "model",
+   "rect": [
+    350.0,
+    1836.0,
+    830.0,
+    2116.0
+   ],
+   "seed": {
+    "block_id": "p25_b2",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "new_since_seed": true,
+    "title": "STOREFRONT ELEVATIONS",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
   }
  ],
  "file": "project_590_20260603_202322_a0b29024.pdf",
@@ -772,12 +795,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 46,
+ "rev": 47,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "590_4a15ed64_p25",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 151,
- "updated_at": "2026-08-20T05:57:52+00:00"
+ "updated_at": "2026-08-20T07:04:48+00:00"
 }
