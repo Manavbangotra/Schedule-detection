@@ -140,11 +140,21 @@ def cmd_export_dataset(tag: str, no_negatives: bool) -> None:
     print(f"  -> {OUT_DIR / 'dataset' / tag}")
 
 
-def cmd_train(tag: str, arms: str, skip_gate: bool) -> None:
+def cmd_train(tag: str, arms: str, skip_gate: bool, imgsz, epochs,
+              patience, batch, workers, cache) -> None:
     """Train the stage-2 opening detector."""
     from . import train as train_mod
 
-    argv = ["--tag", tag, "--arms", arms] + (["--skip-gate"] if skip_gate else [])
+    argv = ["--tag", tag, "--arms", arms]
+    if skip_gate:
+        argv.append("--skip-gate")
+    if cache:
+        argv.append("--cache")
+    for flag, value in (("--imgsz", imgsz), ("--epochs", epochs),
+                        ("--patience", patience), ("--batch", batch),
+                        ("--workers", workers)):
+        if value is not None:
+            argv += [flag, str(value)]
     train_mod.main(argv)
 
 
@@ -223,6 +233,12 @@ def main(argv: list[str] | None = None) -> int:
     trn.add_argument("--arms", default="coco-s",
                      help="comma-separated: best,coco-l,coco-s  (or 'all')")
     trn.add_argument("--skip-gate", action="store_true")
+    trn.add_argument("--imgsz", type=int, default=None)
+    trn.add_argument("--epochs", type=int, default=None)
+    trn.add_argument("--patience", type=int, default=None)
+    trn.add_argument("--batch", type=int, default=None)
+    trn.add_argument("--workers", type=int, default=None)
+    trn.add_argument("--cache", action="store_true")
     ev = sub.add_parser("evaluate")
     ev.add_argument("weights")
     ev.add_argument("--tag", default="v1")
@@ -254,7 +270,9 @@ def main(argv: list[str] | None = None) -> int:
     elif args.command == "export-dataset":
         cmd_export_dataset(args.tag, args.no_negatives)
     elif args.command == "train":
-        cmd_train(args.tag, args.arms, args.skip_gate)
+        cmd_train(args.tag, args.arms, args.skip_gate, args.imgsz,
+                  args.epochs, args.patience, args.batch, args.workers,
+                  args.cache)
     elif args.command == "evaluate":
         cmd_evaluate(args.weights, args.tag, args.conf)
     elif args.command == "viewer":
