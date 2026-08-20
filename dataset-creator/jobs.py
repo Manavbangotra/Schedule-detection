@@ -60,12 +60,16 @@ class Job:
 class Runner:
     """Serial job queue with a warm model."""
 
-    def __init__(self, data_dir: Path, weights: str):
+    def __init__(self, data_dir: Path, weights: str, ann_dir: Path | None = None):
         self.data = data_dir
         self.weights = weights
         self.pdfs = data_dir / "pdfs"
         self.sheets = data_dir / "sheets"
-        self.ann_dir = data_dir / "annotations"
+        # The annotation store is deliberately NOT under data_dir. The server
+        # lists the repo-level annotations/ so this tool and `cli annotate`
+        # share one store; defaulting it to data_dir/annotations here meant
+        # uploads were seeded into a directory nothing ever read.
+        self.ann_dir = ann_dir if ann_dir is not None else data_dir / "annotations"
         for d in (self.pdfs, self.sheets, self.ann_dir):
             d.mkdir(parents=True, exist_ok=True)
 

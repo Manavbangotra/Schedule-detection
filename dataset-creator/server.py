@@ -376,8 +376,7 @@ def main() -> int:
     port = int(sys.argv[1]) if len(sys.argv) > 1 else 8010
     DATA.mkdir(parents=True, exist_ok=True)
     (DATA / "sheets").mkdir(exist_ok=True)
-    runner = jobs_mod.Runner(DATA, WEIGHTS)
-    runner.ann_dir = ANN_DIR
+    runner = jobs_mod.Runner(DATA, WEIGHTS, ann_dir=ANN_DIR)
 
     handler = partial(Handler, directory=str(STATIC))
     ThreadingHTTPServer.allow_reuse_address = True

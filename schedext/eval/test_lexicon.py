@@ -55,6 +55,59 @@ CASES = [
     # ...while a genuinely door-scoped material schedule still counts.
     ("DOOR MATERIAL SCHEDULE", 1.0, "door", "schedule"),
     ("GLAZING SCHEDULE", 1.0, "window", "schedule"),
+
+    # --- from the corpus-wide title scan (3,746 pages, 44 plansets) ---------
+    # Every case below was found by scanning every large-text line in the
+    # corpus and listing what the vocabulary rejected. Counts are hits on
+    # pages that already hold a located schedule sheet.
+
+    # Dropped over punctuation. x1, and not a judgement anyone meant to make.
+    ("DOOR TYPES,", 1.0, "door", "type_legend"),
+    # ELEVATION singular was missing from KIND_LEGEND; only the plural was
+    # listed. x14 across the SF-/ISF- storefront series on located sheets.
+    ("SF-1 - STOREFRONT ELEVATION", 1.0, "door", "type_legend"),
+    ("SF-4 - STOREFRONT ELEVATION", 1.0, "door", "type_legend"),
+    # ...while a subject word is still required, so the 158 KITCHEN and 50
+    # BATHROOM elevations stay out.
+    ("BATHROOM ELEVATION", 0.0, "unknown", "type_legend"),
+    ("KITCHEN ELEVATION", 0.0, "unknown", "type_legend"),
+    ("EXTERIOR ELEVATIONS", 0.0, "unknown", "type_legend"),
+    ("COURTYARD ELEVATION", 0.0, "unknown", "type_legend"),
+
+    # Implied subject: weak tier, promoted by locate only when the sheet also
+    # carries a strong door/window title. x6 in the corpus.
+    ("FRAME TYPES", 0.35, "unknown", "type_legend"),
+    ("FRAME TYPE", 0.35, "unknown", "type_legend"),
+    ("PANEL TYPES", 0.35, "unknown", "type_legend"),
+    ("LOUVER TYPES", 0.35, "unknown", "type_legend"),
+    ("MULLION TYPES", 0.35, "unknown", "type_legend"),
+    # ...but only bare. A stated non-opening subject still wins.
+    ("WALL PANEL TYPES", 0.0, "unknown", "type_legend"),
+    ("WALL TYPES", 0.0, "unknown", "type_legend"),
+    # ...and the electrical homonym must stay dead.
+    ("PANEL SCHEDULE", 0.0, "unknown", "schedule"),
+
+    # Structural/MEP schedules that were leaking through at the weak 0.35 tier.
+    ("WOOD JOIST SCHEDULE", 0.0, "unknown", "schedule"),
+    ("WOOD HEADER SCHEDULE", 0.0, "unknown", "schedule"),
+    ("WALL HEADER SCHEDULE", 0.0, "unknown", "schedule"),
+    ("CONCRETE PIER SCHEDULE", 0.0, "unknown", "schedule"),
+    ("FAN SCHEDULE", 0.0, "unknown", "schedule"),
+    ("FIRE EXTINGUISHER SCHEDULE", 0.0, "unknown", "schedule"),
+    # HEADER is scoped to "HEADER SCHEDULE", so a door-frame legend survives.
+    ("DOOR HEADER TYPES", 1.0, "door", "type_legend"),
+    ("WINDOW HEADER SCHEDULE", 1.0, "window", "schedule"),
+
+    # Code-compliance elevations. Adding singular ELEVATION to KIND_LEGEND made
+    # these read as perfect matches -- OPENING is a subject word -- and pulled
+    # 10 false sheets out of projects 5416 and 5418. They are IBC 705.8
+    # exterior-wall studies counting glazed area against a property line.
+    ("UNPROTECTED OPENINGS - COURTYARD WEST ELEVATION", 0.0, "door", "type_legend"),
+    ("UNPROTECTED OPENINGS - SOUTH ELEVATION", 0.0, "door", "type_legend"),
+    ("ALLOWABLE AREA OF OPENINGS", 0.0, "door", "unknown"),
+    # ...while the genuine finds from the same change must survive.
+    ("OPENING ELEVATION", 1.0, "door", "type_legend"),
+    ("STOREFRONT ELEVATION", 1.0, "door", "type_legend"),
 ]
 
 

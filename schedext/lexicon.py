@@ -23,16 +23,33 @@ KIND_TABLE = r"(?:SCHEDULE|SCHEDULES|CHART)"
 # A pictogram legend is titled "DOOR TYPES" / "WINDOW ELEVATIONS" -- the kind
 # word comes *last*. Anchoring it to the end is what keeps "TYPE A UNIT DOOR
 # CLEARANCES" (project_486 p7) from reading as a door-type legend.
-KIND_LEGEND = r"(?:TYPES|TYPE|ELEVATIONS|LEGENDS|LEGEND)"
+# ELEVATION singular matters: the corpus carries "SF-1 - STOREFRONT ELEVATION"
+# and its ISF interior siblings 14 times on located schedule sheets, and only
+# the plural was listed. The singular is safe because a subject word is still
+# required -- "BATHROOM ELEVATION" (50 hits) and "KITCHEN ELEVATION" (158) have
+# none and stay rejected.
+KIND_LEGEND = r"(?:TYPES|TYPE|ELEVATIONS|ELEVATION|LEGENDS|LEGEND)"
+# Titles whose subject is implied by the sheet rather than written on the block:
+# a door sheet's frame legend is headed just "FRAME TYPES". Weak on their own --
+# "PANEL SCHEDULE" is electrical and "WALL TYPES" is partitions -- so these score
+# the same 0.35 as a bare "SCHEDULES" and are promoted only when a strong
+# door/window title sits on the same sheet (see locate._title_signal).
+IMPLIED_SUBJECT = r"(?:FRAME|FRAMES|PANEL|PANELS|MULLION|MULLIONS|LOUVER|LOUVERS)"
 
 TITLE_STRONG = re.compile(rf"\b{SUBJECT}\b.{{0,30}}?\b{KIND_TABLE}\b", re.I)
 TITLE_REVERSE = re.compile(rf"\b{KIND_TABLE}\b.{{0,20}}?\b{SUBJECT}\b", re.I)
 # Trailing "& DETAILS" is common on legend sheets ("WINDOW & DOOR LEGENDS &
 # DETAILS", project_744 A-004) and does not change what the block is.
+# The trailing class allows a comma: the corpus has a block titled "DOOR TYPES,"
+# and dropping it over punctuation is not a judgement anyone meant to make.
 TITLE_LEGEND = re.compile(
-    rf"\b{SUBJECT}\b.{{0,24}}?\b{KIND_LEGEND}\b(?:[\s,&]+(?:AND\s+)?DETAILS?)?[\s:.]*$",
+    rf"\b{SUBJECT}\b.{{0,24}}?\b{KIND_LEGEND}\b(?:[\s,&]+(?:AND\s+)?DETAILS?)?[\s:.,]*$",
     re.I,
 )
+# Anchored at the start so only a bare "FRAME TYPES" qualifies. "WALL PANEL
+# TYPES" keeps its subject and stays rejected, which is right -- it is
+# partitions, not openings.
+TITLE_IMPLIED = re.compile(rf"^{IMPLIED_SUBJECT}\s+{KIND_LEGEND}\b[\s:.,]*$", re.I)
 # "SCHEDULES" on its own -- weak, needs corroboration from another signal.
 TITLE_WEAK = re.compile(r"\b(?:SCHEDULES|SCHEDULE|CHART)\b", re.I)
 
@@ -48,7 +65,18 @@ NOT_A_SCHEDULE = re.compile(
     r"\bSHEAR\b|\bFOOTING\b|\bBEAM\b|\bCOLUMN\b|\bLINTEL\b|\bTRUSS\b|\bSLAB\b|"
     r"\bFINISH\b|\bROOM\b|\bLIGHTING\b|\bFIXTURE\b|\bEQUIPMENT\b|\bPLUMBING\b|"
     r"\bMATERIAL\b|\bINSULATION\b|\bPIPE\b|\bDUCT\b|\bPAINT\b|\bFLOOR(?:ING)?\b|"
-    r"PANEL\s+SCHEDULE|\bMECHANICAL\b|\bELECTRICAL\b",
+    r"PANEL\s+SCHEDULE|\bMECHANICAL\b|\bELECTRICAL\b|"
+    # Measured leaks: these reached the weak 0.35 tier on located sheets.
+    # HEADER is scoped to "HEADER SCHEDULE" rather than the bare word, because
+    # a door sheet may legitimately carry a "DOOR HEADER TYPES" legend.
+    r"\bJOIST\b|\bPIER\b|\bFAN\b|\bEXTINGUISHER\b|\bSTUD\b|\bRAFTER\b|"
+    r"\bGIRDER\b|HEADER\s+SCHEDULE|"
+    # Code-compliance elevations. "UNPROTECTED OPENINGS - COURTYARD WEST
+    # ELEVATION" is an IBC 705.8 exterior-wall study, not an opening legend --
+    # it counts glazed area against a property line. OPENING is a subject word
+    # and ELEVATION is a legend word, so without this the title reads as a
+    # perfect match. Cost measured: 10 false sheets across projects 5416/5418.
+    r"\bUNPROTECTED\b|\bALLOWABLE\b|\bSEPARATION\b|\bSETBACK\b",
     re.I,
 )
 
@@ -84,6 +112,12 @@ def title_score(text: str) -> float:
         return 0.0
     if TITLE_LEGEND.search(clean):
         return 1.0
+    # "FRAME TYPES" over a grid of door-frame elevations is obvious to a human
+    # and ambiguous to a regex, so it lands in the weak tier rather than being
+    # either accepted outright or dropped. locate promotes it when the sheet
+    # carries a strong door/window title.
+    if TITLE_IMPLIED.search(clean):
+        return 0.35
     if TITLE_WEAK.search(clean):
         return 0.35
     return 0.0

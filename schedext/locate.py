@@ -106,6 +106,33 @@ def _body_size(page_lines: list[geom.Line]) -> float:
     return max(counts.items(), key=lambda kv: kv[1])[0] if counts else 10.0
 
 
+def _promote_implied(on_sheet: list[TitleHit]) -> None:
+    """Give a bare "FRAME TYPES" the category of the sheet it sits on.
+
+    A door sheet's frame legend is often headed just "FRAME TYPES" -- obvious to
+    a human reading the sheet, invisible to a regex reading the line. The title
+    already scores 0.35 via ``lexicon.TITLE_IMPLIED``, so it reaches segmentation;
+    what it lacks is a category, and ``unknown`` gets it dropped downstream.
+
+    Inherit only when the sheet's strong titles agree. If a sheet carries both
+    "DOOR SCHEDULE" and "WINDOW SCHEDULE", a bare "FRAME TYPES" is genuinely
+    ambiguous and guessing would be worse than leaving it for review. Mutates in
+    place; the caller owns the list.
+    """
+    implied = [h for h in on_sheet
+               if h.category == "unknown" and lexicon.TITLE_IMPLIED.search(h.text)]
+    if not implied:
+        return
+    strong = {h.category for h in on_sheet
+              if lexicon.title_score(h.text) >= 1.0
+              and h.category in {"door", "window", "garage_door"}}
+    if len(strong) != 1:
+        return
+    category = strong.pop()
+    for hit in implied:
+        hit.category = category
+
+
 def _title_signal(page: pymupdf.Page) -> tuple[float, list[TitleHit]]:
     page_lines = geom.lines(page)
     if not page_lines:
@@ -144,6 +171,7 @@ def _title_signal(page: pymupdf.Page) -> tuple[float, list[TitleHit]]:
     titleblock_x = geom.titleblock_x(page)
     on_sheet = [h for h in hits if h.as_rect.x0 < titleblock_x]
     in_titleblock = [h for h in hits if h.as_rect.x0 >= titleblock_x]
+    _promote_implied(on_sheet)
 
     score = 0.0
     if on_sheet:
