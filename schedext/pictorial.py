@@ -54,6 +54,9 @@ COLUMN_GAP_RATIO = 0.35
 # An item ends at a vertical gap this many times the usual line spacing.
 ITEM_BREAK_FACTOR = 2.5
 MIN_ITEMS = 2
+# Marks in one row share a baseline within a few points; 12pt is wide enough for
+# mixed label sizes and far tighter than the gap to the spec lines below.
+MARK_BAND_PT = 12.0
 
 
 @dataclass
@@ -111,7 +114,15 @@ def _column_bands(lines: list[geom.Line], block: Block) -> list[tuple[float, flo
         line.rect.x0 for line in lines if _bullet_depth(line.text) == 1
     )
     if len(anchors) < 2:
-        return []
+        # No bullets to anchor on. Measured: 44 of the 52 pictorial/schedule
+        # blocks that yield nothing at all fail exactly here, and between them
+        # they hold 1,897 feet-inch tokens. The marks are a second anchor and a
+        # better one -- they are what a reader uses -- so fall back to their
+        # centres. Uses geom.cluster_1d, which was written for this ("column
+        # anchors in pictorial schedules") and never called.
+        anchors = _mark_anchors(lines)
+        if len(anchors) < 2:
+            return []
 
     # Collapse near-identical left edges (all bullets in a column share one).
     edges: list[float] = []
@@ -141,6 +152,31 @@ def _column_bands(lines: list[geom.Line], block: Block) -> list[tuple[float, flo
         right = (start + starts[index + 1]) / 2 if index + 1 < len(starts) else block.rect.x1
         bands.append((max(left, block.rect.x0), min(right, block.rect.x1)))
     return bands
+
+
+def _mark_anchors(lines: list[geom.Line]) -> list[float]:
+    """Column anchors from the mark row, for blocks with no bullets.
+
+    A pictorial schedule labels every item -- 01, 02, A, B -- and those labels
+    share one horizontal band under the drawings. Clustering their *centres*
+    rather than left edges is what matters: a mark is centred under its drawing
+    the way a title is centred over its table, so left edges drift with the
+    width of the label while centres do not.
+
+    Returns left edges so the caller's pitch arithmetic is unchanged.
+    """
+    marks = [line for line in lines if MARK_LINE.match(line.text.strip())]
+    if len(marks) < MIN_ITEMS:
+        return []
+    # The mark row is the band holding the most marks; anything else is a stray
+    # code in a spec list.
+    bands = geom.cluster_1d([m.rect.y0 for m in marks], MARK_BAND_PT)
+    if not bands:
+        return []
+    row = max(bands, key=len)
+    if len(row) < MIN_ITEMS:
+        return []
+    return sorted(marks[i].rect.x0 for i in row)
 
 
 def _tidy_dimension(text: str) -> str:

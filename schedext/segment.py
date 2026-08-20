@@ -135,11 +135,14 @@ def _stats_rect(stats, label: int, origin, scale) -> pymupdf.Rect:
 # region starts in the right place and stops too early, so the horizontal axis
 # was the one being over-penalised.
 #
-# Swept against eval/coverage.py: opening coverage 41.7% -> 65.5%, median region
-# area 6.1% -> 14.4% of the page (human regions are 7.2%). Raising the cap
-# further, or dropping the weight to 0, both score worse.
+# Swept against BOTH eval/coverage.py and eval/test_extract.py, because they
+# disagree: a wider cap lifts coverage and simultaneously merges neighbouring
+# blocks, which breaks table parsing on side-by-side schedules and column
+# detection on pictorial ones. 3000 scores 68.8% coverage with 3 regressions;
+# 1500 scores 66.2% with 1. Coverage is a corpus-wide average and the
+# regression test is specific ground truth, so the specific evidence wins.
 X_MISALIGN_WEIGHT = 0.8
-MAX_ASSIGN_COST_PT = 3000.0
+MAX_ASSIGN_COST_PT = 1500.0
 # Components larger than this share of the page are sheet borders or the
 # drawing frame, not schedule content.
 MAX_COMPONENT_AREA_RATIO = 0.55
@@ -154,9 +157,45 @@ MAX_COMPONENT_AREA_RATIO = 0.55
 # components and 14.6% of the door components that provably belong inside a
 # human-verified region, because a title only has to be *below its own drawing*,
 # not near the foot of the sheet. Window regions sit around 0.67 down the page
-# and straddled the old threshold. 0.50 recovers them; coverage 65.5% -> 66.6%
-# with median region area slightly DOWN, at 14.1%.
-CAPTION_BAND = 0.50
+# and straddled the old threshold. 0.50 recovers them, but it also let
+# project_559 p1's WINDOW SCHEDULE (title 53% down the page) claim the door
+# schedule above it and lose marks A and B. 0.65 keeps the recovery and the
+# ground truth: a title past two thirds of the sheet is a caption, one at half
+# way is still a heading.
+CAPTION_BAND = 0.65
+
+
+def _blocked_by_other_title(rect: pymupdf.Rect, anchor_title, titles, own: int) -> bool:
+    """True when another title's centre sits between the component and its title.
+
+    The cost function picks the *nearest* title, but nearest is not the same as
+    unobstructed: with a generous cost cap a block will happily reach across a
+    neighbouring schedule to claim content on its far side. Measured on
+    project_486 p18, "DOOR SCHEDULE - COMMON AREA" grew from 697pt to 1897pt by
+    reaching over "DOOR HARDWARE TYPES", and `table.parse` then found no
+    coherent table at all.
+
+    Titles are compared on their *centres*, for the reason `_resolve_overlaps`
+    already documents: a schedule title is centred over its table, not
+    left-aligned. Only titles sharing the component's vertical band count -- a
+    title on another row of the sheet obstructs nothing.
+    """
+    anchor = anchor_title.as_rect
+    own_x = (anchor.x0 + anchor.x1) / 2
+    comp_x = (rect.x0 + rect.x1) / 2
+    low, high = min(own_x, comp_x), max(own_x, comp_x)
+    for index, other in enumerate(titles):
+        if index == own:
+            continue
+        rival = other.as_rect
+        # Same band: the rival's title must sit near the component vertically,
+        # otherwise it belongs to a different row of the sheet entirely.
+        if rival.y0 > rect.y1 or rival.y1 < anchor.y0 - 2:
+            continue
+        rival_x = (rival.x0 + rival.x1) / 2
+        if low < rival_x < high:
+            return True
+    return False
 
 
 def _assign_components(page: pymupdf.Page, titles: list[TitleHit],
@@ -197,8 +236,11 @@ def _assign_components(page: pymupdf.Page, titles: list[TitleHit],
             else:
                 continue
             cost = gap + abs(rect.x0 - anchor.x0) * X_MISALIGN_WEIGHT
-            if cost < best_cost:
-                best_index, best_cost = index, cost
+            if cost >= best_cost:
+                continue
+            if _blocked_by_other_title(rect, title, titles, index):
+                continue
+            best_index, best_cost = index, cost
 
         if best_index is not None:
             owned.setdefault(best_index, []).append(rect)
