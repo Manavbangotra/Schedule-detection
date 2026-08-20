@@ -233,10 +233,14 @@ def classify(text: str, block_category: str = "unknown",
 # --- dimensions -------------------------------------------------------------
 
 _FEET_INCHES = re.compile(r"(?P<ft>\d+)\s*'\s*-?\s*(?P<in>\d+)?\s*[\"']?")
+# Architectural slash shorthand: 3/0 is 3'-0", 2/10 is 2'-10". Found on 11 rows
+# in this corpus, all door widths. The inches part is bounded to 11 so a genuine
+# fraction like "6 3/4" thickness cannot be read as 3 feet 4 inches.
+_SLASH_FEET = re.compile(r"^\s*(?P<ft>\d{1,2})\s*/\s*(?P<in>\d{1,2})\s*$")
 
 
 def to_inches(text: str) -> float | None:
-    """``3' - 6"`` -> 42.0. Returns ``None`` when nothing parses."""
+    """``3' - 6"`` -> 42.0, ``3/0`` -> 36.0. ``None`` when nothing parses."""
     if not text:
         return None
     if re.search(r"VARIES", text, re.I):
@@ -246,5 +250,8 @@ def to_inches(text: str) -> float | None:
         feet = int(match.group("ft"))
         inches = int(match.group("in") or 0)
         return float(feet * 12 + inches)
+    slash = _SLASH_FEET.match(text)
+    if slash and int(slash.group("in")) < 12:
+        return float(int(slash.group("ft")) * 12 + int(slash.group("in")))
     bare = re.fullmatch(r"\s*(\d+(?:\.\d+)?)\s*\"?\s*", text)
     return float(bare.group(1)) if bare else None

@@ -21,7 +21,7 @@ import sys
 from pathlib import Path
 
 from . import (annotate, annserver, dataset, detect, evaluate, export, locate,
-               manifest as manifest_mod, pdfio, pipeline, viewer)
+               manifest as manifest_mod, pdfio, pipeline, regions, viewer)
 
 PDF_DIR = Path("all_plansets")
 OUT_DIR = Path("out")
@@ -142,6 +142,31 @@ def cmd_export_dataset(tag: str, no_negatives: bool) -> None:
     print(f"  -> {OUT_DIR / 'dataset' / tag}")
 
 
+def cmd_export_regions(tag: str, no_negatives: bool) -> None:
+    """Turn verified areas into a stage-1 whole-page region dataset."""
+    report = regions.build(ANN_DIR, MANIFEST, OUT_DIR / "regions",
+                           tag=tag, negatives=not no_negatives)
+    t, v = report["train"], report["val"]
+    print(f"exported {report['images']} pages")
+    print(f"  train {t['images']:3d} ({t['positives']} pos / {t['negatives']} bg)"
+          f"  {t['boxes']} boxes  {t['by_class']}")
+    print(f"  val   {v['images']:3d} ({v['positives']} pos / {v['negatives']} bg)"
+          f"  {v['boxes']} boxes  {v['by_class']}")
+    print(f"  plansets {report['plansets']['train']} train / {report['plansets']['val']} val")
+    if report["duplicates_dropped"]:
+        print(f"  dropped {len(report['duplicates_dropped'])} duplicate page(s)")
+    if report["dropped_areas"]:
+        print(f"  areas not exported: {report['dropped_areas']}")
+    print(f"  -> {OUT_DIR / 'regions' / tag}")
+
+
+def cmd_coverage(ceiling: bool) -> None:
+    """Score stage 1 by what stage 2 actually consumes."""
+    from .eval import coverage as coverage_mod
+
+    print(coverage_mod.render(coverage_mod.run(ceiling=ceiling)))
+
+
 def cmd_train(tag: str, arms: str, skip_gate: bool, imgsz, epochs,
               patience, batch, workers, cache) -> None:
     """Train the stage-2 opening detector."""
@@ -230,6 +255,12 @@ def main(argv: list[str] | None = None) -> int:
     exp = sub.add_parser("export-dataset")
     exp.add_argument("--tag", default="v1")
     exp.add_argument("--no-negatives", action="store_true")
+    exr = sub.add_parser("export-regions")
+    exr.add_argument("--tag", default="r1")
+    exr.add_argument("--no-negatives", action="store_true")
+    covp = sub.add_parser("coverage")
+    covp.add_argument("--ceiling", action="store_true",
+                      help="score the human's own areas — the upper bound")
     trn = sub.add_parser("train")
     trn.add_argument("--tag", default="v1")
     trn.add_argument("--arms", default="coco-s",
@@ -271,6 +302,10 @@ def main(argv: list[str] | None = None) -> int:
         cmd_annotate_merge(args.apply)
     elif args.command == "export-dataset":
         cmd_export_dataset(args.tag, args.no_negatives)
+    elif args.command == "export-regions":
+        cmd_export_regions(args.tag, args.no_negatives)
+    elif args.command == "coverage":
+        cmd_coverage(args.ceiling)
     elif args.command == "train":
         cmd_train(args.tag, args.arms, args.skip_gate, args.imgsz,
                   args.epochs, args.patience, args.batch, args.workers,

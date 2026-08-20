@@ -33,6 +33,42 @@ COLUMN_ROLES = {
 _ROLES = {k: re.compile(v, re.I) for k, v in COLUMN_ROLES.items()}
 
 
+# A dimension written the way an architect writes one: feet, then optional
+# inches. Deliberately requires the foot mark, so a thickness ("1 3/4\"") or a
+# fire rating ("20") can never be mistaken for a door width.
+_DIM_TOKEN = re.compile(r"\d{1,2}\s*'\s*-?\s*\d{0,2}\s*[\"\u201d]?")
+
+
+def _recover_size(cells: dict, roles: dict) -> tuple[str, str]:
+    """Width and height for rows where no size column was mapped.
+
+    Two-tier headers defeat the column mapper often enough to matter: on
+    project_682 p26 the leaf tier (WIDTH | LEAVES | HEIGHT) is lost and the
+    group "DOOR SIZE" survives as one cell holding `3'-0" 1 8'-0"`; on
+    project_733 p88 no size column is detected at all. Measured across the 25
+    worst blocks, 221 rows were missing a size and every one of them had the
+    dimensions sitting in the block text -- none were genuinely absent.
+
+    So when the mapper found no size, take the first two foot-marked tokens in
+    reading order. Width precedes height in every schedule in this corpus, and
+    the foot mark is what keeps a leaf count or a fire rating out. Fires only as
+    a fallback: a mapped column always wins.
+    """
+    if roles.get("width") or roles.get("height"):
+        return "", ""
+    skip = {roles.get(k) for k in ("mark", "thickness", "head_height", "quantity")}
+    found: list[str] = []
+    for name, value in cells.items():
+        if name in skip or not value:
+            continue
+        found.extend(m.group(0).strip() for m in _DIM_TOKEN.finditer(value))
+        if len(found) >= 2:
+            break
+    if len(found) < 2:
+        return "", ""
+    return found[0], found[1]
+
+
 @dataclass
 class Item:
     item_id: str
@@ -127,6 +163,12 @@ def _from_table(parsed: table.ParsedTable, block: segment.Block,
         )
         if caption:
             canonical.mapped_by = "legend"
+
+        width_text = cells.get(roles.get("width", ""), "")
+        height_text = cells.get(roles.get("height", ""), "")
+        if not width_text and not height_text:
+            width_text, height_text = _recover_size(cells, roles)
+
         items.append(
             Item(
                 item_id=f"{project}.{block.block_id}.{mark}",
@@ -136,10 +178,10 @@ def _from_table(parsed: table.ParsedTable, block: segment.Block,
                 block_id=block.block_id,
                 raw=cells,
                 verbatim=row.verbatim,
-                width_text=cells.get(roles.get("width", ""), ""),
-                height_text=cells.get(roles.get("height", ""), ""),
-                width_in=normalize.to_inches(cells.get(roles.get("width", ""), "")),
-                height_in=normalize.to_inches(cells.get(roles.get("height", ""), "")),
+                width_text=width_text,
+                height_text=height_text,
+                width_in=normalize.to_inches(width_text),
+                height_in=normalize.to_inches(height_text),
                 head_height_in=normalize.to_inches(
                     cells.get(roles.get("head_height", ""), "")
                 ),
