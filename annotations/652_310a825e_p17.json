@@ -35,6 +35,28 @@
    "seed": {},
    "type": "window_area",
    "type_source": "human"
+  },
+  {
+   "edited": false,
+   "id": "a_p17_b0",
+   "origin": "model",
+   "rect": [
+    1490.0,
+    90.0,
+    2300.0,
+    730.0
+   ],
+   "seed": {
+    "block_id": "p17_b0",
+    "category": "both",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "DOOR AND WINDOW SCHEDULE",
+    "type": "mixed"
+   },
+   "type": "mixed",
+   "type_source": "seed"
   }
  ],
  "file": "project_652_20260622_133448_12408cfb.pdf",
@@ -321,12 +343,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 31,
+ "rev": 33,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "652_310a825e_p17",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 151,
- "updated_at": "2026-08-19T06:50:33+00:00"
+ "updated_at": "2026-08-20T05:57:52+00:00"
 }

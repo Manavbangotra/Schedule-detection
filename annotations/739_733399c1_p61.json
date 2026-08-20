@@ -28,9 +28,9 @@
    "origin": "model",
    "rect": [
     1558.28,
-    660,
-    2230,
-    890
+    660.0,
+    2230.0,
+    890.0
    ],
    "seed": {
     "block_id": "p61_b2",
@@ -57,6 +57,51 @@
    "seed": {},
    "type": "window_area",
    "type_source": "human"
+  },
+  {
+   "edited": false,
+   "id": "a_p61_b1",
+   "origin": "model",
+   "rect": [
+    994.5,
+    58.0,
+    1558.28,
+    822.0
+   ],
+   "seed": {
+    "block_id": "p61_b1",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "DOOR SCHEDULE",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p61_b3",
+   "origin": "model",
+   "rect": [
+    1506.0,
+    920.0,
+    2188.0,
+    1418.0
+   ],
+   "seed": {
+    "block_id": "p61_b3",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "new_since_seed": true,
+    "title": "STOREFRONT LEGEND",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
   }
  ],
  "file": "project_739_20260714_175755_37f7b6a9.pdf",
@@ -78,16 +123,16 @@
    "origin": "model",
    "rect": [
     2400.44,
-    38,
-    2459,
+    38.0,
+    2459.0,
     113.33
    ],
    "seed": {
     "confidence": 0.81,
     "rect": [
      2400.44,
-     38,
-     2459,
+     38.0,
+     2459.0,
      113.33
     ]
    },
@@ -137,7 +182,7 @@
    "id": "o_61_002",
    "origin": "model",
    "rect": [
-    563,
+    563.0,
     67.72,
     577.67,
     85.56
@@ -145,7 +190,7 @@
    "seed": {
     "confidence": 0.384,
     "rect": [
-     563,
+     563.0,
      67.72,
      577.67,
      85.56
@@ -459,7 +504,7 @@
     "rect": [
      1666.5,
      605.11,
-     1740,
+     1740.0,
      770.61
     ]
    },
@@ -481,7 +526,7 @@
    "origin": "model",
    "rect": [
     1478.06,
-    631,
+    631.0,
     1551.83,
     771.06
    ],
@@ -489,7 +534,7 @@
     "confidence": 0.541,
     "rect": [
      1478.06,
-     631,
+     631.0,
      1551.83,
      771.06
     ]
@@ -695,7 +740,7 @@
    "origin": "model",
    "rect": [
     1558.33,
-    660,
+    660.0,
     1664.61,
     775.22
    ],
@@ -703,7 +748,7 @@
     "confidence": 0.884,
     "rect": [
      1558.33,
-     660,
+     660.0,
      1664.61,
      775.22
     ]
@@ -754,9 +799,9 @@
    "id": "o_61_022",
    "origin": "model",
    "rect": [
-    608.4701770043134,
-    957.8601770043136,
-    926.1358857652832,
+    608.4701770043133,
+    957.8601770043138,
+    926.1358857652831,
     1139.5801770043136
    ],
    "seed": {
@@ -788,7 +833,7 @@
     1199.44,
     954.89,
     1307.44,
-    1139
+    1139.0
    ],
    "seed": {
     "confidence": 0.429,
@@ -796,7 +841,7 @@
      1199.44,
      954.89,
      1307.44,
-     1139
+     1139.0
     ]
    },
    "state": "accepted"
@@ -817,7 +862,7 @@
    "origin": "model",
    "rect": [
     1096.56,
-    957,
+    957.0,
     1198.83,
     1136.89
    ],
@@ -825,7 +870,7 @@
     "confidence": 0.833,
     "rect": [
      1096.56,
-     957,
+     957.0,
      1198.83,
      1136.89
     ]
@@ -895,8 +940,8 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmszsp0jm",
-   "cls": "window",
+   "area_id": "a_p61_b3",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.72,
    "containment": 1.0,
@@ -924,8 +969,8 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmszsp0jm",
-   "cls": "window",
+   "area_id": "a_p61_b3",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.522,
    "containment": 1.0,
@@ -953,8 +998,8 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmszsp0jm",
-   "cls": "window",
+   "area_id": "a_p61_b3",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.474,
    "containment": 1.0,
@@ -1085,6 +1130,69 @@
    ],
    "seed": {},
    "state": "accepted"
+  },
+  {
+   "area_id": "a_hmszsp0jm",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.53,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_61_016",
+   "origin": "model",
+   "rect": [
+    869.33,
+    634.39,
+    931.0,
+    723.83
+   ],
+   "seed": {
+    "confidence": 0.53,
+    "rect": [
+     869.33,
+     634.39,
+     931.0,
+     723.83
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_hmszsp0jm",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.622,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_61_022",
+   "origin": "model",
+   "rect": [
+    605.0,
+    954.39,
+    712.72,
+    1136.11
+   ],
+   "seed": {
+    "confidence": 0.622,
+    "rect": [
+     605.0,
+     954.39,
+     712.72,
+     1136.11
+    ]
+   },
+   "state": "accepted"
   }
  ],
  "page": 61,
@@ -1103,12 +1211,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 54,
+ "rev": 63,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "739_733399c1_p61",
  "skip_reason": "",
  "status": "verified",
- "time_spent_s": 10293,
- "updated_at": "2026-08-19T10:43:04+00:00"
+ "time_spent_s": 10313,
+ "updated_at": "2026-08-20T05:57:53+00:00"
 }

@@ -1,0 +1,1371 @@
+{
+ "areas": [
+  {
+   "edited": false,
+   "id": "a_p27_b0",
+   "origin": "model",
+   "rect": [
+    136.0,
+    72.0,
+    1428.0,
+    174.0
+   ],
+   "seed": {
+    "block_id": "p27_b0",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'AA'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b1",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    72.0,
+    2760.0,
+    162.0
+   ],
+   "seed": {
+    "block_id": "p27_b1",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'CA'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b2",
+   "origin": "model",
+   "rect": [
+    136.0,
+    202.0,
+    1428.0,
+    330.0
+   ],
+   "seed": {
+    "block_id": "p27_b2",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'AB'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b3",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    228.0,
+    2760.0,
+    356.0
+   ],
+   "seed": {
+    "block_id": "p27_b3",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'CB'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b4",
+   "origin": "model",
+   "rect": [
+    136.0,
+    360.0,
+    1428.0,
+    462.0
+   ],
+   "seed": {
+    "block_id": "p27_b4",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'AC'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b5",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    386.0,
+    2760.0,
+    474.0
+   ],
+   "seed": {
+    "block_id": "p27_b5",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'CC'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b6",
+   "origin": "model",
+   "rect": [
+    136.0,
+    490.0,
+    1428.0,
+    670.0
+   ],
+   "seed": {
+    "block_id": "p27_b6",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'AD'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b7",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    516.0,
+    2760.0,
+    604.0
+   ],
+   "seed": {
+    "block_id": "p27_b7",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'CD'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b8",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    634.0,
+    2760.0,
+    722.0
+   ],
+   "seed": {
+    "block_id": "p27_b8",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'CE'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b9",
+   "origin": "model",
+   "rect": [
+    136.0,
+    698.0,
+    1428.0,
+    814.0
+   ],
+   "seed": {
+    "block_id": "p27_b9",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'AE'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b10",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    752.0,
+    2760.0,
+    840.0
+   ],
+   "seed": {
+    "block_id": "p27_b10",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'CF'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b11",
+   "origin": "model",
+   "rect": [
+    136.0,
+    842.0,
+    1428.0,
+    956.0
+   ],
+   "seed": {
+    "block_id": "p27_b11",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'AF'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b12",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    870.0,
+    2760.0,
+    998.0
+   ],
+   "seed": {
+    "block_id": "p27_b12",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'CG'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b13",
+   "origin": "model",
+   "rect": [
+    136.0,
+    986.0,
+    1428.0,
+    1100.0
+   ],
+   "seed": {
+    "block_id": "p27_b13",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'AG'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b14",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    1026.0,
+    2760.0,
+    1154.0
+   ],
+   "seed": {
+    "block_id": "p27_b14",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'CH'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b15",
+   "origin": "model",
+   "rect": [
+    136.0,
+    1130.0,
+    1428.0,
+    1232.0
+   ],
+   "seed": {
+    "block_id": "p27_b15",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'AH'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b16",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    1182.0,
+    2760.0,
+    1272.0
+   ],
+   "seed": {
+    "block_id": "p27_b16",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'DA'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b17",
+   "origin": "model",
+   "rect": [
+    136.0,
+    1260.0,
+    1428.0,
+    1374.0
+   ],
+   "seed": {
+    "block_id": "p27_b17",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'AJ'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b18",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    1300.0,
+    2760.0,
+    1390.0
+   ],
+   "seed": {
+    "block_id": "p27_b18",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'DB'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b19",
+   "origin": "model",
+   "rect": [
+    136.0,
+    1404.0,
+    1428.0,
+    1584.0
+   ],
+   "seed": {
+    "block_id": "p27_b19",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'BA'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b20",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    1418.0,
+    2760.0,
+    1506.0
+   ],
+   "seed": {
+    "block_id": "p27_b20",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'DC'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b21",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    1536.0,
+    2760.0,
+    1624.0
+   ],
+   "seed": {
+    "block_id": "p27_b21",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'DD'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b22",
+   "origin": "model",
+   "rect": [
+    136.0,
+    1612.0,
+    1428.0,
+    1766.0
+   ],
+   "seed": {
+    "block_id": "p27_b22",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'BB'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b23",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    1654.0,
+    2760.0,
+    1990.0
+   ],
+   "seed": {
+    "block_id": "p27_b23",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'DE'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p27_b24",
+   "origin": "model",
+   "rect": [
+    136.0,
+    1794.0,
+    1428.0,
+    1962.0
+   ],
+   "seed": {
+    "block_id": "p27_b24",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR AND FRAME SCHEDULE - UNIT TYPE 'BC'",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  }
+ ],
+ "file": "project_682_20260626_122532_371d489c.pdf",
+ "notes": "",
+ "openings": [
+  {
+   "area_id": "a_p27_b2",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.235,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_27_000",
+   "origin": "model",
+   "rect": [
+    152.39,
+    208.89,
+    200.28,
+    326.5
+   ],
+   "seed": {
+    "confidence": 0.235,
+    "rect": [
+     152.39,
+     208.89,
+     200.28,
+     326.5
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b2",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.338,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_27_001",
+   "origin": "model",
+   "rect": [
+    1254.22,
+    230.5,
+    1293.61,
+    324.39
+   ],
+   "seed": {
+    "confidence": 0.338,
+    "rect": [
+     1254.22,
+     230.5,
+     1293.61,
+     324.39
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b2",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.846,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_27_002",
+   "origin": "model",
+   "rect": [
+    1294.61,
+    230.56,
+    1374.72,
+    323.78
+   ],
+   "seed": {
+    "confidence": 0.846,
+    "rect": [
+     1294.61,
+     230.56,
+     1374.72,
+     323.78
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p27_b2",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.25,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_27_003",
+   "origin": "model",
+   "rect": [
+    200.17,
+    234.78,
+    237.72,
+    324.56
+   ],
+   "seed": {
+    "confidence": 0.25,
+    "rect": [
+     200.17,
+     234.78,
+     237.72,
+     324.56
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b2",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.588,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_27_004",
+   "origin": "model",
+   "rect": [
+    236.28,
+    238.33,
+    276.61,
+    324.11
+   ],
+   "seed": {
+    "confidence": 0.588,
+    "rect": [
+     236.28,
+     238.33,
+     276.61,
+     324.11
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p27_b3",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.217,
+   "containment": 1.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_27_005",
+   "origin": "model",
+   "rect": [
+    2044.83,
+    238.61,
+    2051.94,
+    248.11
+   ],
+   "seed": {
+    "confidence": 0.217,
+    "rect": [
+     2044.83,
+     238.61,
+     2051.94,
+     248.11
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b4",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.331,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_27_006",
+   "origin": "model",
+   "rect": [
+    1254.67,
+    387.33,
+    1293.06,
+    455.0
+   ],
+   "seed": {
+    "confidence": 0.331,
+    "rect": [
+     1254.67,
+     387.33,
+     1293.06,
+     455.0
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b4",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.77,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_27_007",
+   "origin": "model",
+   "rect": [
+    1294.06,
+    387.83,
+    1333.44,
+    453.56
+   ],
+   "seed": {
+    "confidence": 0.77,
+    "rect": [
+     1294.06,
+     387.83,
+     1333.44,
+     453.56
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p27_b4",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.4,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_27_008",
+   "origin": "model",
+   "rect": [
+    1332.72,
+    388.39,
+    1375.44,
+    451.83
+   ],
+   "seed": {
+    "confidence": 0.4,
+    "rect": [
+     1332.72,
+     388.39,
+     1375.44,
+     451.83
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b6",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.746,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_27_009",
+   "origin": "model",
+   "rect": [
+    1294.39,
+    518.78,
+    1375.67,
+    661.11
+   ],
+   "seed": {
+    "confidence": 0.746,
+    "rect": [
+     1294.39,
+     518.78,
+     1375.67,
+     661.11
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.284,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_27_010",
+   "origin": "model",
+   "rect": [
+    2844.11,
+    571.72,
+    2987.67,
+    715.44
+   ],
+   "seed": {
+    "confidence": 0.284,
+    "rect": [
+     2844.11,
+     571.72,
+     2987.67,
+     715.44
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b8",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.223,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_27_011",
+   "origin": "model",
+   "rect": [
+    2534.06,
+    662.5,
+    2625.56,
+    715.0
+   ],
+   "seed": {
+    "confidence": 0.223,
+    "rect": [
+     2534.06,
+     662.5,
+     2625.56,
+     715.0
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b9",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.432,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_27_012",
+   "origin": "model",
+   "rect": [
+    1293.67,
+    727.33,
+    1377.5,
+    806.11
+   ],
+   "seed": {
+    "confidence": 0.432,
+    "rect": [
+     1293.67,
+     727.33,
+     1377.5,
+     806.11
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.296,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_27_013",
+   "origin": "model",
+   "rect": [
+    2844.56,
+    728.17,
+    2991.56,
+    1033.17
+   ],
+   "seed": {
+    "confidence": 0.296,
+    "rect": [
+     2844.56,
+     728.17,
+     2991.56,
+     1033.17
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b11",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.38,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_27_014",
+   "origin": "model",
+   "rect": [
+    1293.89,
+    871.61,
+    1375.44,
+    950.0
+   ],
+   "seed": {
+    "confidence": 0.38,
+    "rect": [
+     1293.89,
+     871.61,
+     1375.44,
+     950.0
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b12",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.259,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_27_015",
+   "origin": "model",
+   "rect": [
+    2625.61,
+    897.67,
+    2664.22,
+    975.72
+   ],
+   "seed": {
+    "confidence": 0.259,
+    "rect": [
+     2625.61,
+     897.67,
+     2664.22,
+     975.72
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b11",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.304,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_27_016",
+   "origin": "model",
+   "rect": [
+    1377.0,
+    935.67,
+    1414.89,
+    949.5
+   ],
+   "seed": {
+    "confidence": 0.304,
+    "rect": [
+     1377.0,
+     935.67,
+     1414.89,
+     949.5
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b13",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.711,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_27_017",
+   "origin": "model",
+   "rect": [
+    1293.89,
+    1014.22,
+    1376.5,
+    1092.94
+   ],
+   "seed": {
+    "confidence": 0.711,
+    "rect": [
+     1293.89,
+     1014.22,
+     1376.5,
+     1092.94
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p27_b13",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.619,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_27_018",
+   "origin": "model",
+   "rect": [
+    1377.83,
+    1014.56,
+    1415.33,
+    1094.06
+   ],
+   "seed": {
+    "confidence": 0.619,
+    "rect": [
+     1377.83,
+     1014.56,
+     1415.33,
+     1094.06
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p27_b15",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.214,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_27_019",
+   "origin": "model",
+   "rect": [
+    1255.67,
+    1158.83,
+    1292.61,
+    1224.5
+   ],
+   "seed": {
+    "confidence": 0.214,
+    "rect": [
+     1255.67,
+     1158.83,
+     1292.61,
+     1224.5
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b15",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.268,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "extreme_aspect"
+   ],
+   "group_id": "",
+   "id": "o_27_020",
+   "origin": "model",
+   "rect": [
+    1296.11,
+    1209.06,
+    1417.17,
+    1223.89
+   ],
+   "seed": {
+    "confidence": 0.268,
+    "rect": [
+     1296.11,
+     1209.06,
+     1417.17,
+     1223.89
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b19",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.398,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_27_021",
+   "origin": "model",
+   "rect": [
+    1293.44,
+    1434.0,
+    1374.89,
+    1576.0
+   ],
+   "seed": {
+    "confidence": 0.398,
+    "rect": [
+     1293.44,
+     1434.0,
+     1374.89,
+     1576.0
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b19",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.327,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_27_022",
+   "origin": "model",
+   "rect": [
+    1254.89,
+    1434.06,
+    1292.78,
+    1512.89
+   ],
+   "seed": {
+    "confidence": 0.327,
+    "rect": [
+     1254.89,
+     1434.06,
+     1292.78,
+     1512.89
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b22",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.324,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_27_023",
+   "origin": "model",
+   "rect": [
+    1295.33,
+    1642.5,
+    1378.0,
+    1758.11
+   ],
+   "seed": {
+    "confidence": 0.324,
+    "rect": [
+     1295.33,
+     1642.5,
+     1378.0,
+     1758.11
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p27_b24",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.406,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_27_024",
+   "origin": "model",
+   "rect": [
+    1294.06,
+    1824.0,
+    1376.28,
+    1956.17
+   ],
+   "seed": {
+    "confidence": 0.406,
+    "rect": [
+     1294.06,
+     1824.0,
+     1376.28,
+     1956.17
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.329,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_27_025",
+   "origin": "model",
+   "rect": [
+    2843.89,
+    1982.06,
+    2990.56,
+    2125.28
+   ],
+   "seed": {
+    "confidence": 0.329,
+    "rect": [
+     2843.89,
+     1982.06,
+     2990.56,
+     2125.28
+    ]
+   },
+   "state": "pending"
+  }
+ ],
+ "page": 27,
+ "page_rect_pt": [
+  0,
+  0,
+  3024.4,
+  2160.0
+ ],
+ "pdf_sha256": "b2a41d039e7b81555b87fac45cd4f836abb1c8e3b1e6aa7a99f08d384fae083f",
+ "planset_key": "682_b2a41d03",
+ "project_id": "682",
+ "render": {
+  "h": 3888,
+  "image": "pages/682_b2a41d03_p27.jpg",
+  "w": 5444,
+  "zoom": 1.8
+ },
+ "rev": 2,
+ "rotation": 0,
+ "schema_version": 1,
+ "sheet_key": "682_b2a41d03_p27",
+ "skip_reason": "",
+ "status": "untouched",
+ "time_spent_s": 0,
+ "updated_at": "2026-08-20T05:57:52+00:00"
+}

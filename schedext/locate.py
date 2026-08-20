@@ -37,6 +37,10 @@ HEADER_CONTEXT_RADIUS = 300.0
 
 KEEP_SCORE = 0.6
 
+# Categories that make a title actually about an opening. A page with none of
+# these is not a door/window sheet no matter how many schedules it carries.
+OPENING_CATEGORIES = {"door", "window", "both", "garage_door", "storefront"}
+
 
 @dataclass
 class TitleHit:
@@ -172,6 +176,18 @@ def _title_signal(page: pymupdf.Page) -> tuple[float, list[TitleHit]]:
     on_sheet = [h for h in hits if h.as_rect.x0 < titleblock_x]
     in_titleblock = [h for h in hits if h.as_rect.x0 >= titleblock_x]
     _promote_implied(on_sheet)
+
+    # A page whose every title is category "unknown" is not a door/window sheet,
+    # whatever else corroborates it. Mechanical sheets carry a dozen weak
+    # "<something> SCHEDULE" titles, and toc (0.5) + weak titles (0.45) cleared
+    # KEEP_SCORE on pages about heat pumps and fire sprinklers. Runs after
+    # _promote_implied so a bare "FRAME TYPES" that inherited a category counts.
+    # Only when the page *has* on-sheet titles. An empty list means every title
+    # sat inside the titleblock strip, which is a different situation -- often a
+    # continuation page of a multi-page schedule -- and killing those here would
+    # drop 21 sheets this rule was never aimed at.
+    if on_sheet and not any(h.category in OPENING_CATEGORIES for h in on_sheet):
+        return 0.0, []
 
     score = 0.0
     if on_sheet:

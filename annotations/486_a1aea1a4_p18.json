@@ -27,10 +27,10 @@
    "id": "a_p18_b1",
    "origin": "model",
    "rect": [
-    176,
-    812,
+    176.0,
+    812.0,
     877.11,
-    1480
+    1480.0
    ],
    "seed": {
     "block_id": "p18_b1",
@@ -50,9 +50,9 @@
    "origin": "model",
    "rect": [
     877.11,
-    812,
-    1574,
-    1020
+    812.0,
+    1574.0,
+    1020.0
    ],
    "seed": {
     "block_id": "p18_b2",
@@ -71,10 +71,10 @@
    "id": "a_p18_b3",
    "origin": "model",
    "rect": [
-    2268,
-    1404,
-    2994,
-    2112
+    2268.0,
+    1404.0,
+    2994.0,
+    2112.0
    ],
    "seed": {
     "block_id": "p18_b3",
@@ -129,16 +129,16 @@
    "id": "o_18_000",
    "origin": "model",
    "rect": [
-    647,
-    463,
+    647.0,
+    463.0,
     723.67,
     621.11
    ],
    "seed": {
     "confidence": 0.734,
     "rect": [
-     647,
-     463,
+     647.0,
+     463.0,
      723.67,
      621.11
     ]
@@ -286,7 +286,7 @@
    "rect": [
     1283.22,
     495.39,
-    1352,
+    1352.0,
     630.06
    ],
    "seed": {
@@ -294,7 +294,7 @@
     "rect": [
      1283.22,
      495.39,
-     1352,
+     1352.0,
      630.06
     ]
    },
@@ -531,7 +531,7 @@
    "id": "o_18_013",
    "origin": "model",
    "rect": [
-    641,
+    641.0,
     1633.44,
     749.33,
     1760.61
@@ -539,7 +539,7 @@
    "seed": {
     "confidence": 0.434,
     "rect": [
-     641,
+     641.0,
      1633.44,
      749.33,
      1760.61
@@ -821,7 +821,7 @@
    "confidence": 0.827,
    "containment": 1.0,
    "detector_source": "sheet",
-   "edited": false,
+   "edited": true,
    "flags": [
     "outside_area"
    ],
@@ -829,9 +829,9 @@
    "id": "o_18_023",
    "origin": "model",
    "rect": [
-    1230.61,
+    1232.6343938717832,
     1858.94,
-    1370.67,
+    1372.6943938717834,
     1977.61
    ],
    "seed": {
@@ -959,6 +959,102 @@
    ],
    "seed": {},
    "state": "accepted"
+  },
+  {
+   "area_id": "a_p18_b0",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.818,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_18_001",
+   "origin": "model",
+   "rect": [
+    982.33,
+    463.72,
+    1056.94,
+    620.39
+   ],
+   "seed": {
+    "confidence": 0.818,
+    "rect": [
+     982.33,
+     463.72,
+     1056.94,
+     620.39
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p18_b0",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.793,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_18_003",
+   "origin": "model",
+   "rect": [
+    1143.17,
+    464.83,
+    1219.33,
+    620.67
+   ],
+   "seed": {
+    "confidence": 0.793,
+    "rect": [
+     1143.17,
+     464.83,
+     1219.33,
+     620.67
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p18_b0",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.653,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_18_004",
+   "origin": "model",
+   "rect": [
+    1063.0,
+    465.11,
+    1137.39,
+    620.61
+   ],
+   "seed": {
+    "confidence": 0.653,
+    "rect": [
+     1063.0,
+     465.11,
+     1137.39,
+     620.61
+    ]
+   },
+   "state": "accepted"
   }
  ],
  "page": 18,
@@ -977,12 +1073,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 38,
+ "rev": 45,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "486_a1aea1a4_p18",
  "skip_reason": "",
  "status": "verified",
- "time_spent_s": 147,
- "updated_at": "2026-08-19T10:44:09+00:00"
+ "time_spent_s": 161,
+ "updated_at": "2026-08-20T05:57:51+00:00"
 }

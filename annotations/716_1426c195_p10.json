@@ -1,0 +1,922 @@
+{
+ "areas": [
+  {
+   "edited": false,
+   "id": "a_p10_b0",
+   "origin": "model",
+   "rect": [
+    50.0,
+    1428.0,
+    834.0,
+    1500.0
+   ],
+   "seed": {
+    "block_id": "p10_b0",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "DOOR AND FRAME SCHEDULE",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  }
+ ],
+ "file": "project_716_20260707_113247_d763b6c1.pdf",
+ "notes": "",
+ "openings": [
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.395,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_000",
+   "origin": "model",
+   "rect": [
+    1811.11,
+    266.44,
+    1887.89,
+    332.44
+   ],
+   "seed": {
+    "confidence": 0.395,
+    "rect": [
+     1811.11,
+     266.44,
+     1887.89,
+     332.44
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.444,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_001",
+   "origin": "model",
+   "rect": [
+    1671.89,
+    377.78,
+    1712.72,
+    441.5
+   ],
+   "seed": {
+    "confidence": 0.444,
+    "rect": [
+     1671.89,
+     377.78,
+     1712.72,
+     441.5
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.436,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_002",
+   "origin": "model",
+   "rect": [
+    1130.78,
+    587.33,
+    1170.5,
+    634.83
+   ],
+   "seed": {
+    "confidence": 0.436,
+    "rect": [
+     1130.78,
+     587.33,
+     1170.5,
+     634.83
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.216,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_003",
+   "origin": "model",
+   "rect": [
+    1051.5,
+    587.83,
+    1097.44,
+    609.83
+   ],
+   "seed": {
+    "confidence": 0.216,
+    "rect": [
+     1051.5,
+     587.83,
+     1097.44,
+     609.83
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.405,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_004",
+   "origin": "model",
+   "rect": [
+    322.28,
+    732.33,
+    333.17,
+    742.89
+   ],
+   "seed": {
+    "confidence": 0.405,
+    "rect": [
+     322.28,
+     732.33,
+     333.17,
+     742.89
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.399,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_005",
+   "origin": "model",
+   "rect": [
+    1205.0,
+    747.89,
+    1237.94,
+    792.33
+   ],
+   "seed": {
+    "confidence": 0.399,
+    "rect": [
+     1205.0,
+     747.89,
+     1237.94,
+     792.33
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.443,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_006",
+   "origin": "model",
+   "rect": [
+    325.83,
+    749.22,
+    334.28,
+    759.78
+   ],
+   "seed": {
+    "confidence": 0.443,
+    "rect": [
+     325.83,
+     749.22,
+     334.28,
+     759.78
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.363,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_007",
+   "origin": "model",
+   "rect": [
+    262.39,
+    764.5,
+    273.5,
+    780.11
+   ],
+   "seed": {
+    "confidence": 0.363,
+    "rect": [
+     262.39,
+     764.5,
+     273.5,
+     780.11
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.213,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_008",
+   "origin": "model",
+   "rect": [
+    326.33,
+    765.11,
+    334.06,
+    773.22
+   ],
+   "seed": {
+    "confidence": 0.213,
+    "rect": [
+     326.33,
+     765.11,
+     334.06,
+     773.22
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.207,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_009",
+   "origin": "model",
+   "rect": [
+    223.5,
+    765.17,
+    232.17,
+    777.61
+   ],
+   "seed": {
+    "confidence": 0.207,
+    "rect": [
+     223.5,
+     765.17,
+     232.17,
+     777.61
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.278,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_010",
+   "origin": "model",
+   "rect": [
+    260.0,
+    798.0,
+    271.44,
+    813.17
+   ],
+   "seed": {
+    "confidence": 0.278,
+    "rect": [
+     260.0,
+     798.0,
+     271.44,
+     813.17
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.22,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_011",
+   "origin": "model",
+   "rect": [
+    168.06,
+    812.33,
+    177.78,
+    821.67
+   ],
+   "seed": {
+    "confidence": 0.22,
+    "rect": [
+     168.06,
+     812.33,
+     177.78,
+     821.67
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.26,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_012",
+   "origin": "model",
+   "rect": [
+    243.33,
+    869.56,
+    258.67,
+    885.56
+   ],
+   "seed": {
+    "confidence": 0.26,
+    "rect": [
+     243.33,
+     869.56,
+     258.67,
+     885.56
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.262,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_013",
+   "origin": "model",
+   "rect": [
+    533.28,
+    875.89,
+    544.89,
+    885.94
+   ],
+   "seed": {
+    "confidence": 0.262,
+    "rect": [
+     533.28,
+     875.89,
+     544.89,
+     885.94
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.274,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_014",
+   "origin": "model",
+   "rect": [
+    338.28,
+    968.78,
+    349.56,
+    979.39
+   ],
+   "seed": {
+    "confidence": 0.274,
+    "rect": [
+     338.28,
+     968.78,
+     349.56,
+     979.39
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.269,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_015",
+   "origin": "model",
+   "rect": [
+    169.0,
+    985.72,
+    179.22,
+    995.17
+   ],
+   "seed": {
+    "confidence": 0.269,
+    "rect": [
+     169.0,
+     985.72,
+     179.22,
+     995.17
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.437,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_016",
+   "origin": "model",
+   "rect": [
+    746.39,
+    1032.67,
+    813.06,
+    1092.22
+   ],
+   "seed": {
+    "confidence": 0.437,
+    "rect": [
+     746.39,
+     1032.67,
+     813.06,
+     1092.22
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.218,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_017",
+   "origin": "model",
+   "rect": [
+    222.28,
+    1251.56,
+    232.28,
+    1261.06
+   ],
+   "seed": {
+    "confidence": 0.218,
+    "rect": [
+     222.28,
+     1251.56,
+     232.28,
+     1261.06
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.262,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_018",
+   "origin": "model",
+   "rect": [
+    534.89,
+    1319.56,
+    544.44,
+    1330.83
+   ],
+   "seed": {
+    "confidence": 0.262,
+    "rect": [
+     534.89,
+     1319.56,
+     544.44,
+     1330.83
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.233,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_019",
+   "origin": "model",
+   "rect": [
+    496.5,
+    1320.39,
+    504.06,
+    1330.11
+   ],
+   "seed": {
+    "confidence": 0.233,
+    "rect": [
+     496.5,
+     1320.39,
+     504.06,
+     1330.11
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.781,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_020",
+   "origin": "model",
+   "rect": [
+    1320.94,
+    1475.22,
+    1402.89,
+    1668.0
+   ],
+   "seed": {
+    "confidence": 0.781,
+    "rect": [
+     1320.94,
+     1475.22,
+     1402.89,
+     1668.0
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.845,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_021",
+   "origin": "model",
+   "rect": [
+    861.39,
+    1475.28,
+    953.22,
+    1669.72
+   ],
+   "seed": {
+    "confidence": 0.845,
+    "rect": [
+     861.39,
+     1475.28,
+     953.22,
+     1669.72
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.716,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_10_022",
+   "origin": "model",
+   "rect": [
+    167.94,
+    1479.61,
+    174.11,
+    1488.33
+   ],
+   "seed": {
+    "confidence": 0.716,
+    "rect": [
+     167.94,
+     1479.61,
+     174.11,
+     1488.33
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.26,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_10_023",
+   "origin": "model",
+   "rect": [
+    151.0,
+    1479.72,
+    156.67,
+    1488.44
+   ],
+   "seed": {
+    "confidence": 0.26,
+    "rect": [
+     151.0,
+     1479.72,
+     156.67,
+     1488.44
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.321,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_10_024",
+   "origin": "model",
+   "rect": [
+    176.33,
+    1479.72,
+    182.83,
+    1488.33
+   ],
+   "seed": {
+    "confidence": 0.321,
+    "rect": [
+     176.33,
+     1479.72,
+     182.83,
+     1488.33
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.763,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_10_025",
+   "origin": "model",
+   "rect": [
+    515.61,
+    1479.78,
+    521.61,
+    1488.44
+   ],
+   "seed": {
+    "confidence": 0.763,
+    "rect": [
+     515.61,
+     1479.78,
+     521.61,
+     1488.44
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.817,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_10_026",
+   "origin": "model",
+   "rect": [
+    1483.61,
+    1488.83,
+    1640.06,
+    1667.78
+   ],
+   "seed": {
+    "confidence": 0.817,
+    "rect": [
+     1483.61,
+     1488.83,
+     1640.06,
+     1667.78
+    ]
+   },
+   "state": "pending"
+  }
+ ],
+ "page": 10,
+ "page_rect_pt": [
+  0,
+  0,
+  2592.2,
+  1728.3
+ ],
+ "pdf_sha256": "1426c1958e39e4964f385cdb7e92808143b5f5812cc6a35510fbdb7a9d0b9082",
+ "planset_key": "716_1426c195",
+ "project_id": "716",
+ "render": {
+  "h": 3111,
+  "image": "pages/716_1426c195_p10.jpg",
+  "w": 4666,
+  "zoom": 1.8
+ },
+ "rev": 2,
+ "rotation": 270,
+ "schema_version": 1,
+ "sheet_key": "716_1426c195_p10",
+ "skip_reason": "",
+ "status": "untouched",
+ "time_spent_s": 0,
+ "updated_at": "2026-08-20T05:57:52+00:00"
+}

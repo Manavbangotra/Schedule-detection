@@ -35,6 +35,28 @@
    "seed": {},
    "type": "window_area",
    "type_source": "human"
+  },
+  {
+   "edited": false,
+   "id": "a_p1_b1",
+   "origin": "model",
+   "rect": [
+    82.0,
+    902.0,
+    992.0,
+    1662.0
+   ],
+   "seed": {
+    "block_id": "p1_b1",
+    "category": "window",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "WINDOW SCHEDULE:",
+    "type": "window_area"
+   },
+   "type": "window_area",
+   "type_source": "seed"
   }
  ],
  "file": "project_559_20260708_104642_88bfdb0a.pdf",
@@ -113,7 +135,7 @@
    "id": "o_1_002",
    "origin": "model",
    "rect": [
-    1158,
+    1158.0,
     159.94,
     1185.28,
     279.17
@@ -121,7 +143,7 @@
    "seed": {
     "confidence": 0.309,
     "rect": [
-     1158,
+     1158.0,
      159.94,
      1185.28,
      279.17
@@ -143,17 +165,17 @@
    "origin": "model",
    "rect": [
     1519.61,
-    160,
+    160.0,
     1607.17,
-    280
+    280.0
    ],
    "seed": {
     "confidence": 0.745,
     "rect": [
      1519.61,
-     160,
+     160.0,
      1607.17,
-     280
+     280.0
     ]
    },
    "state": "accepted"
@@ -321,7 +343,7 @@
     2383.28,
     232.78,
     2416.33,
-    271
+    271.0
    ],
    "seed": {
     "confidence": 0.53,
@@ -329,7 +351,7 @@
      2383.28,
      232.78,
      2416.33,
-     271
+     271.0
     ]
    },
    "state": "rejected"
@@ -378,7 +400,7 @@
    "rect": [
     256.89,
     643.28,
-    312,
+    312.0,
     763.5
    ],
    "seed": {
@@ -386,7 +408,7 @@
     "rect": [
      256.89,
      643.28,
-     312,
+     312.0,
      763.5
     ]
    },
@@ -524,7 +546,7 @@
    "origin": "model",
    "rect": [
     1793.72,
-    1399,
+    1399.0,
     1874.83,
     1578.94
    ],
@@ -532,7 +554,7 @@
     "confidence": 0.644,
     "rect": [
      1793.72,
-     1399,
+     1399.0,
      1874.83,
      1578.94
     ]
@@ -540,11 +562,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p1_b1",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.704,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -585,12 +607,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 18,
+ "rev": 20,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "559_78a49b54_p1",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 45,
- "updated_at": "2026-08-19T06:47:13+00:00"
+ "updated_at": "2026-08-20T05:57:51+00:00"
 }

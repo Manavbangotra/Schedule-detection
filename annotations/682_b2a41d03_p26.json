@@ -1,0 +1,975 @@
+{
+ "areas": [
+  {
+   "edited": false,
+   "id": "a_p26_b0",
+   "origin": "model",
+   "rect": [
+    340.0,
+    81.11,
+    947.61,
+    392.22
+   ],
+   "seed": {
+    "block_id": "p26_b0",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "DOOR AND FRAME SCHEDULE - FIRST FLOOR PART A",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p26_b1",
+   "origin": "model",
+   "rect": [
+    136.0,
+    392.22,
+    1428.0,
+    952.0
+   ],
+   "seed": {
+    "block_id": "p26_b1",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "DOOR AND FRAME SCHEDULE - SECOND FLOOR PART A",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p26_b2",
+   "origin": "model",
+   "rect": [
+    1468.0,
+    460.89,
+    2760.0,
+    2072.0
+   ],
+   "seed": {
+    "block_id": "p26_b2",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "DOOR AND FRAME SCHEDULE - SECOND FLOOR UNIT ENTRANCES",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p26_b3",
+   "origin": "model",
+   "rect": [
+    136.0,
+    980.0,
+    1428.0,
+    1612.0
+   ],
+   "seed": {
+    "block_id": "p26_b3",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "DOOR AND FRAME SCHEDULE - FIRST FLOOR PART B",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p26_b4",
+   "origin": "model",
+   "rect": [
+    136.0,
+    1628.0,
+    1428.0,
+    1796.0
+   ],
+   "seed": {
+    "block_id": "p26_b4",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "DOOR AND FRAME SCHEDULE - SECOND FLOOR PART B",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p26_b5",
+   "origin": "model",
+   "rect": [
+    136.0,
+    1880.0,
+    1428.0,
+    2072.0
+   ],
+   "seed": {
+    "block_id": "p26_b5",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "DOOR AND FRAME SCHEDULE - STAIRS",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  }
+ ],
+ "file": "project_682_20260626_122532_371d489c.pdf",
+ "notes": "",
+ "openings": [
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.545,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_000",
+   "origin": "model",
+   "rect": [
+    764.56,
+    82.11,
+    771.72,
+    91.22
+   ],
+   "seed": {
+    "confidence": 0.545,
+    "rect": [
+     764.56,
+     82.11,
+     771.72,
+     91.22
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.548,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_001",
+   "origin": "model",
+   "rect": [
+    726.78,
+    82.22,
+    733.39,
+    91.22
+   ],
+   "seed": {
+    "confidence": 0.548,
+    "rect": [
+     726.78,
+     82.22,
+     733.39,
+     91.22
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.318,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_26_002",
+   "origin": "model",
+   "rect": [
+    2843.78,
+    571.67,
+    2988.22,
+    715.94
+   ],
+   "seed": {
+    "confidence": 0.318,
+    "rect": [
+     2843.78,
+     571.67,
+     2988.22,
+     715.94
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.343,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_26_003",
+   "origin": "model",
+   "rect": [
+    2844.44,
+    728.83,
+    2991.56,
+    1014.44
+   ],
+   "seed": {
+    "confidence": 0.343,
+    "rect": [
+     2844.44,
+     728.83,
+     2991.56,
+     1014.44
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.206,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_004",
+   "origin": "model",
+   "rect": [
+    2557.22,
+    1009.33,
+    2564.94,
+    1024.44
+   ],
+   "seed": {
+    "confidence": 0.206,
+    "rect": [
+     2557.22,
+     1009.33,
+     2564.94,
+     1024.44
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.231,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_005",
+   "origin": "model",
+   "rect": [
+    2114.44,
+    1009.5,
+    2122.17,
+    1024.72
+   ],
+   "seed": {
+    "confidence": 0.231,
+    "rect": [
+     2114.44,
+     1009.5,
+     2122.17,
+     1024.72
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.492,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_006",
+   "origin": "model",
+   "rect": [
+    2557.33,
+    1100.17,
+    2564.94,
+    1115.28
+   ],
+   "seed": {
+    "confidence": 0.492,
+    "rect": [
+     2557.33,
+     1100.17,
+     2564.94,
+     1115.28
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.551,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_007",
+   "origin": "model",
+   "rect": [
+    2114.56,
+    1100.28,
+    2122.22,
+    1115.5
+   ],
+   "seed": {
+    "confidence": 0.551,
+    "rect": [
+     2114.56,
+     1100.28,
+     2122.22,
+     1115.5
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.234,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_008",
+   "origin": "model",
+   "rect": [
+    2557.78,
+    1152.56,
+    2564.78,
+    1166.11
+   ],
+   "seed": {
+    "confidence": 0.234,
+    "rect": [
+     2557.78,
+     1152.56,
+     2564.78,
+     1166.11
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.292,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_009",
+   "origin": "model",
+   "rect": [
+    2115.17,
+    1152.72,
+    2122.17,
+    1166.22
+   ],
+   "seed": {
+    "confidence": 0.292,
+    "rect": [
+     2115.17,
+     1152.72,
+     2122.17,
+     1166.22
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.487,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_010",
+   "origin": "model",
+   "rect": [
+    2114.78,
+    1190.61,
+    2122.22,
+    1205.83
+   ],
+   "seed": {
+    "confidence": 0.487,
+    "rect": [
+     2114.78,
+     1190.61,
+     2122.22,
+     1205.83
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.289,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_011",
+   "origin": "model",
+   "rect": [
+    2724.56,
+    1190.67,
+    2732.28,
+    1207.06
+   ],
+   "seed": {
+    "confidence": 0.289,
+    "rect": [
+     2724.56,
+     1190.67,
+     2732.28,
+     1207.06
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.519,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_012",
+   "origin": "model",
+   "rect": [
+    2557.5,
+    1190.72,
+    2564.94,
+    1205.72
+   ],
+   "seed": {
+    "confidence": 0.519,
+    "rect": [
+     2557.5,
+     1190.72,
+     2564.94,
+     1205.72
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.247,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_013",
+   "origin": "model",
+   "rect": [
+    2557.72,
+    1242.72,
+    2564.78,
+    1256.56
+   ],
+   "seed": {
+    "confidence": 0.247,
+    "rect": [
+     2557.72,
+     1242.72,
+     2564.78,
+     1256.56
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.241,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_014",
+   "origin": "model",
+   "rect": [
+    2115.11,
+    1243.17,
+    2122.17,
+    1256.56
+   ],
+   "seed": {
+    "confidence": 0.241,
+    "rect": [
+     2115.11,
+     1243.17,
+     2122.17,
+     1256.56
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.319,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_015",
+   "origin": "model",
+   "rect": [
+    2724.61,
+    1292.83,
+    2732.5,
+    1310.83
+   ],
+   "seed": {
+    "confidence": 0.319,
+    "rect": [
+     2724.61,
+     1292.83,
+     2732.5,
+     1310.83
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.305,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_016",
+   "origin": "model",
+   "rect": [
+    2115.33,
+    1294.56,
+    2122.11,
+    1308.72
+   ],
+   "seed": {
+    "confidence": 0.305,
+    "rect": [
+     2115.33,
+     1294.56,
+     2122.11,
+     1308.72
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.304,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_017",
+   "origin": "model",
+   "rect": [
+    2557.61,
+    1334.39,
+    2565.0,
+    1360.94
+   ],
+   "seed": {
+    "confidence": 0.304,
+    "rect": [
+     2557.61,
+     1334.39,
+     2565.0,
+     1360.94
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.371,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_018",
+   "origin": "model",
+   "rect": [
+    2114.83,
+    1334.44,
+    2122.33,
+    1361.22
+   ],
+   "seed": {
+    "confidence": 0.371,
+    "rect": [
+     2114.83,
+     1334.44,
+     2122.33,
+     1361.22
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.535,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_019",
+   "origin": "model",
+   "rect": [
+    2724.56,
+    1334.56,
+    2732.61,
+    1360.33
+   ],
+   "seed": {
+    "confidence": 0.535,
+    "rect": [
+     2724.56,
+     1334.56,
+     2732.61,
+     1360.33
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.275,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_020",
+   "origin": "model",
+   "rect": [
+    2115.06,
+    1384.17,
+    2122.17,
+    1399.11
+   ],
+   "seed": {
+    "confidence": 0.275,
+    "rect": [
+     2115.06,
+     1384.17,
+     2122.17,
+     1399.11
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.769,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_021",
+   "origin": "model",
+   "rect": [
+    1293.5,
+    1658.61,
+    1375.89,
+    1788.56
+   ],
+   "seed": {
+    "confidence": 0.769,
+    "rect": [
+     1293.5,
+     1658.61,
+     1375.89,
+     1788.56
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.247,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_022",
+   "origin": "model",
+   "rect": [
+    808.94,
+    1888.94,
+    816.39,
+    1897.5
+   ],
+   "seed": {
+    "confidence": 0.247,
+    "rect": [
+     808.94,
+     1888.94,
+     816.39,
+     1897.5
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.213,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_26_023",
+   "origin": "model",
+   "rect": [
+    817.17,
+    1889.0,
+    825.44,
+    1897.44
+   ],
+   "seed": {
+    "confidence": 0.213,
+    "rect": [
+     817.17,
+     1889.0,
+     825.44,
+     1897.44
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.381,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_26_024",
+   "origin": "model",
+   "rect": [
+    2843.94,
+    1982.0,
+    2990.61,
+    2125.11
+   ],
+   "seed": {
+    "confidence": 0.381,
+    "rect": [
+     2843.94,
+     1982.0,
+     2990.61,
+     2125.11
+    ]
+   },
+   "state": "pending"
+  }
+ ],
+ "page": 26,
+ "page_rect_pt": [
+  0,
+  0,
+  3024.4,
+  2160.0
+ ],
+ "pdf_sha256": "b2a41d039e7b81555b87fac45cd4f836abb1c8e3b1e6aa7a99f08d384fae083f",
+ "planset_key": "682_b2a41d03",
+ "project_id": "682",
+ "render": {
+  "h": 3888,
+  "image": "pages/682_b2a41d03_p26.jpg",
+  "w": 5444,
+  "zoom": 1.8
+ },
+ "rev": 2,
+ "rotation": 0,
+ "schema_version": 1,
+ "sheet_key": "682_b2a41d03_p26",
+ "skip_reason": "",
+ "status": "untouched",
+ "time_spent_s": 0,
+ "updated_at": "2026-08-20T05:57:52+00:00"
+}

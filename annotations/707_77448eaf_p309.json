@@ -1,0 +1,536 @@
+{
+ "areas": [
+  {
+   "edited": false,
+   "id": "a_p309_b0",
+   "origin": "model",
+   "rect": [
+    530.0,
+    50.0,
+    2702.0,
+    370.0
+   ],
+   "seed": {
+    "block_id": "p309_b0",
+    "category": "unknown",
+    "exclude_reason": "not an opening schedule (MEP/structural)",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "HIGH EFFICIENCY HEAT PUMP SCHEDULE",
+    "type": "unknown"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p309_b1",
+   "origin": "model",
+   "rect": [
+    534.0,
+    380.0,
+    1090.78,
+    634.0
+   ],
+   "seed": {
+    "block_id": "p309_b1",
+    "category": "unknown",
+    "exclude_reason": "not an opening schedule (MEP/structural)",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "AIR TERMINAL SCHEDULE",
+    "type": "unknown"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p309_b2",
+   "origin": "model",
+   "rect": [
+    1304.0,
+    380.0,
+    2722.0,
+    1002.0
+   ],
+   "seed": {
+    "block_id": "p309_b2",
+    "category": "unknown",
+    "exclude_reason": "not an opening schedule (MEP/structural)",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "ENERGY RECOVERY SCHEDULE (ER)",
+    "type": "unknown"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p309_b3",
+   "origin": "model",
+   "rect": [
+    308.0,
+    648.0,
+    986.11,
+    816.0
+   ],
+   "seed": {
+    "block_id": "p309_b3",
+    "category": "unknown",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "LINEAR DIFFUSER SCHEDULE",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p309_b4",
+   "origin": "model",
+   "rect": [
+    1042.0,
+    1010.0,
+    1744.0,
+    1117.78
+   ],
+   "seed": {
+    "block_id": "p309_b4",
+    "category": "unknown",
+    "exclude_reason": "not an opening schedule (MEP/structural)",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "UNIT HEATER SCHEDULE - ELECTRIC (UH)",
+    "type": "unknown"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p309_b5",
+   "origin": "model",
+   "rect": [
+    1196.0,
+    1197.78,
+    2640.0,
+    1334.0
+   ],
+   "seed": {
+    "block_id": "p309_b5",
+    "category": "unknown",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "SPLIT SYSTEM INDOOR UNIT SCHEDULE (SS)",
+    "type": "unknown"
+   },
+   "type": "unknown",
+   "type_source": "seed"
+  }
+ ],
+ "file": "project_707_20260703_132627_e627e150.pdf",
+ "notes": "",
+ "openings": [
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.357,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_309_000",
+   "origin": "model",
+   "rect": [
+    574.44,
+    58.17,
+    589.61,
+    74.06
+   ],
+   "seed": {
+    "confidence": 0.357,
+    "rect": [
+     574.44,
+     58.17,
+     589.61,
+     74.06
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.235,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_309_001",
+   "origin": "model",
+   "rect": [
+    669.22,
+    58.78,
+    682.33,
+    74.39
+   ],
+   "seed": {
+    "confidence": 0.235,
+    "rect": [
+     669.22,
+     58.78,
+     682.33,
+     74.39
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.406,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_309_002",
+   "origin": "model",
+   "rect": [
+    647.94,
+    58.78,
+    664.39,
+    74.56
+   ],
+   "seed": {
+    "confidence": 0.406,
+    "rect": [
+     647.94,
+     58.78,
+     664.39,
+     74.56
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.363,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny"
+   ],
+   "group_id": "",
+   "id": "o_309_003",
+   "origin": "model",
+   "rect": [
+    609.22,
+    58.89,
+    619.94,
+    74.17
+   ],
+   "seed": {
+    "confidence": 0.363,
+    "rect": [
+     609.22,
+     58.89,
+     619.94,
+     74.17
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.534,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_309_004",
+   "origin": "model",
+   "rect": [
+    2888.56,
+    223.72,
+    2925.72,
+    271.28
+   ],
+   "seed": {
+    "confidence": 0.534,
+    "rect": [
+     2888.56,
+     223.72,
+     2925.72,
+     271.28
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.3,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_309_005",
+   "origin": "model",
+   "rect": [
+    1598.78,
+    234.61,
+    1815.83,
+    365.67
+   ],
+   "seed": {
+    "confidence": 0.3,
+    "rect": [
+     1598.78,
+     234.61,
+     1815.83,
+     365.67
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.774,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_309_006",
+   "origin": "model",
+   "rect": [
+    2351.72,
+    440.72,
+    2415.06,
+    530.44
+   ],
+   "seed": {
+    "confidence": 0.774,
+    "rect": [
+     2351.72,
+     440.72,
+     2415.06,
+     530.44
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.559,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_309_007",
+   "origin": "model",
+   "rect": [
+    2522.0,
+    441.17,
+    2629.56,
+    529.67
+   ],
+   "seed": {
+    "confidence": 0.559,
+    "rect": [
+     2522.0,
+     441.17,
+     2629.56,
+     529.67
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.212,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_309_008",
+   "origin": "model",
+   "rect": [
+    2415.11,
+    441.67,
+    2522.44,
+    529.44
+   ],
+   "seed": {
+    "confidence": 0.212,
+    "rect": [
+     2415.11,
+     441.67,
+     2522.44,
+     529.44
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.77,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_309_009",
+   "origin": "model",
+   "rect": [
+    2632.61,
+    442.44,
+    2698.67,
+    531.06
+   ],
+   "seed": {
+    "confidence": 0.77,
+    "rect": [
+     2632.61,
+     442.44,
+     2698.67,
+     531.06
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.241,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_309_010",
+   "origin": "model",
+   "rect": [
+    409.17,
+    658.33,
+    420.06,
+    673.44
+   ],
+   "seed": {
+    "confidence": 0.241,
+    "rect": [
+     409.17,
+     658.33,
+     420.06,
+     673.44
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.251,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_309_011",
+   "origin": "model",
+   "rect": [
+    1690.0,
+    723.67,
+    1700.61,
+    737.78
+   ],
+   "seed": {
+    "confidence": 0.251,
+    "rect": [
+     1690.0,
+     723.67,
+     1700.61,
+     737.78
+    ]
+   },
+   "state": "pending"
+  }
+ ],
+ "page": 309,
+ "page_rect_pt": [
+  0,
+  0,
+  3024.4,
+  2160.0
+ ],
+ "pdf_sha256": "77448eafaa13802f6ff553ece49f2d2563aff1c8d6aceeae0d2dfbf7c28bf730",
+ "planset_key": "707_77448eaf",
+ "project_id": "707",
+ "render": {
+  "h": 3888,
+  "image": "pages/707_77448eaf_p309.jpg",
+  "w": 5444,
+  "zoom": 1.8
+ },
+ "rev": 2,
+ "rotation": 0,
+ "schema_version": 1,
+ "sheet_key": "707_77448eaf_p309",
+ "skip_reason": "",
+ "status": "untouched",
+ "time_spent_s": 0,
+ "updated_at": "2026-08-20T06:10:42+00:00"
+}

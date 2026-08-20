@@ -142,7 +142,7 @@
    "rect": [
     1275.17,
     253.72,
-    1330,
+    1330.0,
     379.89
    ],
    "seed": {
@@ -150,7 +150,7 @@
     "rect": [
      1275.17,
      253.72,
-     1330,
+     1330.0,
      379.89
     ]
    },
@@ -422,6 +422,37 @@
     ]
    },
    "state": "accepted"
+  },
+  {
+   "area_id": "a_p8_b0",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.584,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_8_008",
+   "origin": "model",
+   "rect": [
+    266.89,
+    254.61,
+    320.89,
+    379.89
+   ],
+   "seed": {
+    "confidence": 0.584,
+    "rect": [
+     266.89,
+     254.61,
+     320.89,
+     379.89
+    ]
+   },
+   "state": "accepted"
   }
  ],
  "page": 8,
@@ -440,12 +471,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 44,
+ "rev": 48,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "603_9434dcba_p8",
  "skip_reason": "",
  "status": "verified",
- "time_spent_s": 185,
- "updated_at": "2026-08-19T06:49:24+00:00"
+ "time_spent_s": 192,
+ "updated_at": "2026-08-20T05:57:52+00:00"
 }

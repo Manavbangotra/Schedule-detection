@@ -6,8 +6,8 @@
    "origin": "model",
    "rect": [
     230.48787743566845,
-    77.17031087312222,
-    938.4878774356683,
+    54.901978283504484,
+    1027.5612077941391,
     297.9985125687938
    ],
    "seed": {
@@ -35,6 +35,98 @@
    "seed": {},
    "type": "window_area",
    "type_source": "human"
+  },
+  {
+   "edited": false,
+   "id": "a_p4_b1",
+   "origin": "model",
+   "rect": [
+    210.0,
+    710.0,
+    544.0,
+    1128.0
+   ],
+   "seed": {
+    "block_id": "p4_b1",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "new_since_seed": true,
+    "title": "SF-1 - STOREFRONT ELEVATION",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p4_b2",
+   "origin": "model",
+   "rect": [
+    572.39,
+    710.0,
+    922.0,
+    954.72
+   ],
+   "seed": {
+    "block_id": "p4_b2",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "new_since_seed": true,
+    "title": "SF-2 - STOREFRONT ELEVATION",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p4_b3",
+   "origin": "model",
+   "rect": [
+    922.0,
+    710.0,
+    1242.0,
+    1126.0
+   ],
+   "seed": {
+    "block_id": "p4_b3",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "new_since_seed": true,
+    "title": "SF-3 - STOREFRONT ELEVATION",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p4_b4",
+   "origin": "model",
+   "rect": [
+    1265.0,
+    710.0,
+    1584.0,
+    1072.0
+   ],
+   "seed": {
+    "block_id": "p4_b4",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "new_since_seed": true,
+    "title": "SF-4 - STOREFRONT ELEVATION",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
   }
  ],
  "file": "project_5449_20260716_072036_582cccc6.pdf",
@@ -140,7 +232,7 @@
    "confidence": 0.796,
    "containment": 1.0,
    "detector_source": "sheet",
-   "edited": false,
+   "edited": true,
    "flags": [
     "outside_area"
    ],
@@ -403,7 +495,7 @@
     "confidence": 0.944,
     "rect": [
      1048.89,
-     495,
+     495.0,
      1123.94,
      641.22
     ]
@@ -471,11 +563,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmsyjxbq6",
+   "area_id": "a_p4_b3",
    "cls": "window",
    "cls_source": "human",
    "confidence": 0.275,
-   "containment": 1.0,
+   "containment": 0.727,
    "detector_source": "sheet",
    "edited": true,
    "flags": [
@@ -503,7 +595,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmsyjxbq6",
+   "area_id": "a_p4_b3",
    "cls": "door",
    "cls_source": "human",
    "confidence": 0.703,
@@ -534,7 +626,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmsyjxbq6",
+   "area_id": "a_p4_b1",
    "cls": "window",
    "cls_source": "human",
    "confidence": 0.496,
@@ -563,7 +655,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmsyjxbq6",
+   "area_id": "a_p4_b1",
    "cls": "window",
    "cls_source": "human",
    "confidence": 0.513,
@@ -592,7 +684,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmsyjxbq6",
+   "area_id": "a_p4_b1",
    "cls": "door",
    "cls_source": "human",
    "confidence": 0.59,
@@ -621,7 +713,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmsyjxbq6",
+   "area_id": "a_p4_b1",
    "cls": "window",
    "cls_source": "human",
    "confidence": 1,
@@ -642,11 +734,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_hmsyjxbq6",
+   "area_id": "a_p4_b3",
    "cls": "window",
    "cls_source": "human",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.813,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -766,6 +858,38 @@
    ],
    "seed": {},
    "state": "accepted"
+  },
+  {
+   "area_id": "a_hmsyjxbq6",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.27,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_4_009",
+   "origin": "model",
+   "rect": [
+    657.61,
+    424.72,
+    810.33,
+    641.17
+   ],
+   "seed": {
+    "confidence": 0.27,
+    "rect": [
+     657.61,
+     424.72,
+     810.33,
+     641.17
+    ]
+   },
+   "state": "accepted"
   }
  ],
  "page": 4,
@@ -784,12 +908,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 77,
+ "rev": 87,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "5449_9211017b_p4",
  "skip_reason": "",
  "status": "verified",
- "time_spent_s": 258,
- "updated_at": "2026-08-18T11:01:24+00:00"
+ "time_spent_s": 278,
+ "updated_at": "2026-08-20T05:57:51+00:00"
 }

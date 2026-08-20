@@ -1,0 +1,172 @@
+{
+ "areas": [
+  {
+   "edited": false,
+   "id": "a_p7_b0",
+   "origin": "model",
+   "rect": [
+    1738.0,
+    342.0,
+    2290.0,
+    504.0
+   ],
+   "seed": {
+    "block_id": "p7_b0",
+    "category": "window",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "WINDOW SCHEDULE SECOND FLOOR",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p7_b1",
+   "origin": "model",
+   "rect": [
+    1738.0,
+    516.0,
+    2286.0,
+    714.0
+   ],
+   "seed": {
+    "block_id": "p7_b1",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "DOOR SCHEDULE SECOND FLOOR",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  }
+ ],
+ "file": "project_660_20260623_185532_899b7fe1.pdf",
+ "notes": "",
+ "openings": [
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.25,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_7_000",
+   "origin": "model",
+   "rect": [
+    2405.72,
+    217.28,
+    2473.22,
+    293.17
+   ],
+   "seed": {
+    "confidence": 0.25,
+    "rect": [
+     2405.72,
+     217.28,
+     2473.22,
+     293.17
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.28,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_7_001",
+   "origin": "model",
+   "rect": [
+    832.0,
+    311.94,
+    884.61,
+    632.83
+   ],
+   "seed": {
+    "confidence": 0.28,
+    "rect": [
+     832.0,
+     311.94,
+     884.61,
+     632.83
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.275,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_7_002",
+   "origin": "model",
+   "rect": [
+    1002.17,
+    327.11,
+    1092.61,
+    447.78
+   ],
+   "seed": {
+    "confidence": 0.275,
+    "rect": [
+     1002.17,
+     327.11,
+     1092.61,
+     447.78
+    ]
+   },
+   "state": "pending"
+  }
+ ],
+ "page": 7,
+ "page_rect_pt": [
+  0,
+  0,
+  2592.2,
+  1728.3
+ ],
+ "pdf_sha256": "9581125a3fce20f6113c81c5236ae9df7248c82b207357868b9121c22fb9a1af",
+ "planset_key": "660_9581125a",
+ "project_id": "660",
+ "render": {
+  "h": 3111,
+  "image": "pages/660_9581125a_p7.jpg",
+  "w": 4666,
+  "zoom": 1.8
+ },
+ "rev": 2,
+ "rotation": 0,
+ "schema_version": 1,
+ "sheet_key": "660_9581125a_p7",
+ "skip_reason": "",
+ "status": "untouched",
+ "time_spent_s": 0,
+ "updated_at": "2026-08-20T05:57:52+00:00"
+}

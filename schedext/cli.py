@@ -116,6 +116,8 @@ def cmd_annotate_merge(apply: bool) -> None:
     mode = "APPLIED" if apply else "DRY RUN (pass --apply to write)"
     print(f"{mode}\n")
     print(f"  {totals['sheets']} sheets merged, {totals['seeded_new']} newly seeded")
+    if totals.get("skipped_deleted"):
+        print(f"  {totals['skipped_deleted']} sheet(s) skipped — deleted by hand, not resurrected")
     print(f"  {totals['kept_human']} human/edited objects kept untouched")
     print(f"  {totals['refreshed']} model objects refreshed")
     print(f"  {totals['added_pending']} new boxes added as pending")

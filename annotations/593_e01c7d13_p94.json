@@ -21,17 +21,85 @@
    },
    "type": "door_area",
    "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p94_b1",
+   "origin": "model",
+   "rect": [
+    1760.0,
+    32.0,
+    2078.78,
+    806.0
+   ],
+   "seed": {
+    "block_id": "p94_b1",
+    "category": "door",
+    "exclude_reason": "notes block",
+    "genre": "pictorial",
+    "kind": "notes",
+    "title": "DOOR SCHEDULE NOTES",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p94_b0",
+   "origin": "model",
+   "rect": [
+    78.0,
+    32.0,
+    1220.0,
+    684.0
+   ],
+   "seed": {
+    "block_id": "p94_b0",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "new_since_seed": true,
+    "title": "DOOR SCHEDULE",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p94_b2",
+   "origin": "model",
+   "rect": [
+    2078.78,
+    41.72,
+    2580.0,
+    822.0
+   ],
+   "seed": {
+    "block_id": "p94_b2",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "new_since_seed": true,
+    "title": "DOOR LEGEND",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
   }
  ],
  "file": "project_593_20260604_153057_54625a6c.pdf",
  "notes": "",
  "openings": [
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.281,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -59,11 +127,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.274,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -91,11 +159,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.278,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -123,11 +191,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.33,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -140,7 +208,7 @@
    "rect": [
     1072.06,
     69.83,
-    1088,
+    1088.0,
     201.17
    ],
    "seed": {
@@ -148,18 +216,18 @@
     "rect": [
      1072.06,
      69.83,
-     1088,
+     1088.0,
      201.17
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.254,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -187,11 +255,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.205,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -219,11 +287,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.451,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -248,11 +316,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.488,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -277,11 +345,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.563,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -306,11 +374,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.799,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -318,7 +386,7 @@
    "id": "o_94_009",
    "origin": "model",
    "rect": [
-    701,
+    701.0,
     101.67,
     726.44,
     199.83
@@ -326,7 +394,7 @@
    "seed": {
     "confidence": 0.799,
     "rect": [
-     701,
+     701.0,
      101.67,
      726.44,
      199.83
@@ -335,11 +403,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.525,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -347,16 +415,16 @@
    "id": "o_94_010",
    "origin": "model",
    "rect": [
-    728,
-    102,
+    728.0,
+    102.0,
     745.72,
     199.67
    ],
    "seed": {
     "confidence": 0.525,
     "rect": [
-     728,
-     102,
+     728.0,
+     102.0,
      745.72,
      199.67
     ]
@@ -364,11 +432,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.478,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -393,11 +461,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.441,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -422,11 +490,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.206,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -436,28 +504,28 @@
    "id": "o_94_013",
    "origin": "model",
    "rect": [
-    100,
+    100.0,
     102.67,
-    153,
+    153.0,
     199.89
    ],
    "seed": {
     "confidence": 0.206,
     "rect": [
-     100,
+     100.0,
      102.67,
-     153,
+     153.0,
      199.89
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b2",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.206,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -485,11 +553,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b2",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.77,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -516,11 +584,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.602,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -530,7 +598,7 @@
    "rect": [
     477.89,
     145.17,
-    520,
+    520.0,
     199.72
    ],
    "seed": {
@@ -538,18 +606,18 @@
     "rect": [
      477.89,
      145.17,
-     520,
+     520.0,
      199.72
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.779,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -574,11 +642,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.659,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -603,11 +671,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.317,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -634,11 +702,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.748,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -663,11 +731,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.7,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -692,11 +760,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b2",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.62,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -709,7 +777,7 @@
     2134.56,
     202.56,
     2145.89,
-    242
+    242.0
    ],
    "seed": {
     "confidence": 0.62,
@@ -717,17 +785,17 @@
      2134.56,
      202.56,
      2145.89,
-     242
+     242.0
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.325,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -754,11 +822,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.305,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -768,7 +836,7 @@
    "id": "o_94_024",
    "origin": "model",
    "rect": [
-    800,
+    800.0,
     232.17,
     817.67,
     265.5
@@ -776,7 +844,7 @@
    "seed": {
     "confidence": 0.305,
     "rect": [
-     800,
+     800.0,
      232.17,
      817.67,
      265.5
@@ -785,11 +853,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.223,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -816,11 +884,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.216,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -830,7 +898,7 @@
    "id": "o_94_026",
    "origin": "model",
    "rect": [
-    782,
+    782.0,
     234.89,
     799.06,
     266.22
@@ -838,7 +906,7 @@
    "seed": {
     "confidence": 0.216,
     "rect": [
-     782,
+     782.0,
      234.89,
      799.06,
      266.22
@@ -847,11 +915,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b2",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.765,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -878,11 +946,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b2",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.756,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -894,7 +962,7 @@
    "rect": [
     2134.44,
     264.17,
-    2146,
+    2146.0,
     304.44
    ],
    "seed": {
@@ -902,18 +970,18 @@
     "rect": [
      2134.44,
      264.17,
-     2146,
+     2146.0,
      304.44
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.206,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -940,11 +1008,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.295,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -971,11 +1039,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.464,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -1000,11 +1068,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.241,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1015,7 +1083,7 @@
    "origin": "model",
    "rect": [
     781.83,
-    266,
+    266.0,
     799.67,
     281.28
    ],
@@ -1023,7 +1091,7 @@
     "confidence": 0.241,
     "rect": [
      781.83,
-     266,
+     266.0,
      799.67,
      281.28
     ]
@@ -1031,11 +1099,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.249,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1062,11 +1130,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.29,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1076,7 +1144,7 @@
    "id": "o_94_034",
    "origin": "model",
    "rect": [
-    1124,
+    1124.0,
     285.89,
     1141.22,
     323.06
@@ -1084,7 +1152,7 @@
    "seed": {
     "confidence": 0.29,
     "rect": [
-     1124,
+     1124.0,
      285.89,
      1141.22,
      323.06
@@ -1093,11 +1161,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.434,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -1105,28 +1173,28 @@
    "id": "o_94_035",
    "origin": "model",
    "rect": [
-    782,
+    782.0,
     286.22,
-    799,
+    799.0,
     321.89
    ],
    "seed": {
     "confidence": 0.434,
     "rect": [
-     782,
+     782.0,
      286.22,
-     799,
+     799.0,
      321.89
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.202,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1138,7 +1206,7 @@
    "rect": [
     1070.39,
     289.67,
-    1088,
+    1088.0,
     321.94
    ],
    "seed": {
@@ -1146,18 +1214,18 @@
     "rect": [
      1070.39,
      289.67,
-     1088,
+     1088.0,
      321.94
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.231,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1168,7 +1236,7 @@
    "origin": "model",
    "rect": [
     854.17,
-    291,
+    291.0,
     871.5,
     323.11
    ],
@@ -1176,7 +1244,7 @@
     "confidence": 0.231,
     "rect": [
      854.17,
-     291,
+     291.0,
      871.5,
      323.11
     ]
@@ -1184,11 +1252,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b2",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.678,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1215,11 +1283,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b2",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.365,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -1229,7 +1297,7 @@
    "id": "o_94_039",
    "origin": "model",
    "rect": [
-    2158,
+    2158.0,
     325.72,
     2167.61,
     361.89
@@ -1237,7 +1305,7 @@
    "seed": {
     "confidence": 0.365,
     "rect": [
-     2158,
+     2158.0,
      325.72,
      2167.61,
      361.89
@@ -1246,11 +1314,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.396,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -1258,7 +1326,7 @@
    "id": "o_94_040",
    "origin": "model",
    "rect": [
-    854,
+    854.0,
     347.22,
     871.78,
     438.33
@@ -1266,7 +1334,7 @@
    "seed": {
     "confidence": 0.396,
     "rect": [
-     854,
+     854.0,
      347.22,
      871.78,
      438.33
@@ -1275,11 +1343,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.257,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1306,11 +1374,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.346,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1337,11 +1405,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.234,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1368,11 +1436,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.21,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1384,7 +1452,7 @@
    "rect": [
     1106.06,
     348.11,
-    1124,
+    1124.0,
     387.39
    ],
    "seed": {
@@ -1392,18 +1460,18 @@
     "rect": [
      1106.06,
      348.11,
-     1124,
+     1124.0,
      387.39
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.346,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1430,11 +1498,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.324,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1461,11 +1529,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.382,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -1490,11 +1558,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.282,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1505,7 +1573,7 @@
    "origin": "model",
    "rect": [
     799.72,
-    358,
+    358.0,
     817.72,
     437.22
    ],
@@ -1513,7 +1581,7 @@
     "confidence": 0.282,
     "rect": [
      799.72,
-     358,
+     358.0,
      817.72,
      437.22
     ]
@@ -1521,11 +1589,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.271,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1538,7 +1606,7 @@
     817.78,
     360.11,
     835.56,
-    436
+    436.0
    ],
    "seed": {
     "confidence": 0.271,
@@ -1546,17 +1614,17 @@
      817.78,
      360.11,
      835.56,
-     436
+     436.0
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.34,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1583,11 +1651,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.236,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1614,11 +1682,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.296,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1645,11 +1713,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.4,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -1674,11 +1742,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b2",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.726,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1705,11 +1773,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.201,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1736,11 +1804,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.246,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1753,7 +1821,7 @@
     1141.83,
     410.11,
     1159.72,
-    435
+    435.0
    ],
    "seed": {
     "confidence": 0.246,
@@ -1761,17 +1829,17 @@
      1141.83,
      410.11,
      1159.72,
-     435
+     435.0
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.227,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1798,11 +1866,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.344,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1815,7 +1883,7 @@
     854.11,
     434.28,
     871.5,
-    509
+    509.0
    ],
    "seed": {
     "confidence": 0.344,
@@ -1823,17 +1891,17 @@
      854.11,
      434.28,
      871.5,
-     509
+     509.0
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.406,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -1858,11 +1926,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.336,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1889,11 +1957,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.256,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1906,7 +1974,7 @@
     961.94,
     434.78,
     980.33,
-    509
+    509.0
    ],
    "seed": {
     "confidence": 0.256,
@@ -1914,17 +1982,17 @@
      961.94,
      434.78,
      980.33,
-     509
+     509.0
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.327,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1951,11 +2019,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.291,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -1966,7 +2034,7 @@
    "origin": "model",
    "rect": [
     890.22,
-    435,
+    435.0,
     907.61,
     508.39
    ],
@@ -1974,7 +2042,7 @@
     "confidence": 0.291,
     "rect": [
      890.22,
-     435,
+     435.0,
      907.61,
      508.39
     ]
@@ -1982,11 +2050,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.251,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2013,11 +2081,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.372,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -2042,11 +2110,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.266,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2073,11 +2141,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.297,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2089,7 +2157,7 @@
    "rect": [
     1070.39,
     435.61,
-    1088,
+    1088.0,
     508.28
    ],
    "seed": {
@@ -2097,18 +2165,18 @@
     "rect": [
      1070.39,
      435.61,
-     1088,
+     1088.0,
      508.28
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.436,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -2133,11 +2201,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.224,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2164,11 +2232,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.218,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2195,11 +2263,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.473,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -2224,11 +2292,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.398,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -2253,11 +2321,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.464,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -2282,11 +2350,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.297,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2313,11 +2381,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.323,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2344,11 +2412,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.288,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2375,11 +2443,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.415,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -2404,11 +2472,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.55,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -2433,11 +2501,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.22,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2464,11 +2532,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.207,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2495,11 +2563,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.255,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2512,7 +2580,7 @@
     1124.22,
     550.33,
     1141.39,
-    597
+    597.0
    ],
    "seed": {
     "confidence": 0.255,
@@ -2520,17 +2588,17 @@
      1124.22,
      550.33,
      1141.39,
-     597
+     597.0
     ]
    },
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.257,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2557,11 +2625,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.295,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2588,11 +2656,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.228,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -2619,11 +2687,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p94_b2",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.581,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -2660,7 +2728,7 @@
    "id": "o_94_086",
    "origin": "model",
    "rect": [
-    2411,
+    2411.0,
     840.83,
     2559.78,
     911.61
@@ -2668,7 +2736,7 @@
    "seed": {
     "confidence": 0.787,
     "rect": [
-     2411,
+     2411.0,
      840.83,
      2559.78,
      911.61
@@ -2690,7 +2758,7 @@
    "origin": "model",
    "rect": [
     1802.06,
-    1221,
+    1221.0,
     1921.67,
     1342.72
    ],
@@ -2698,7 +2766,7 @@
     "confidence": 0.551,
     "rect": [
      1802.06,
-     1221,
+     1221.0,
      1921.67,
      1342.72
     ]
@@ -2750,7 +2818,7 @@
     1801.94,
     1384.17,
     1852.22,
-    1501
+    1501.0
    ],
    "seed": {
     "confidence": 0.884,
@@ -2758,7 +2826,7 @@
      1801.94,
      1384.17,
      1852.22,
-     1501
+     1501.0
     ]
    },
    "state": "accepted"
@@ -2841,16 +2909,16 @@
    "origin": "model",
    "rect": [
     1789.72,
-    1546,
-    1869,
+    1546.0,
+    1869.0,
     1688.56
    ],
    "seed": {
     "confidence": 0.246,
     "rect": [
      1789.72,
-     1546,
-     1869,
+     1546.0,
+     1869.0,
      1688.56
     ]
    },
@@ -2874,7 +2942,7 @@
     1990.72,
     1549.5,
     2043.67,
-    1669
+    1669.0
    ],
    "seed": {
     "confidence": 0.347,
@@ -2882,7 +2950,7 @@
      1990.72,
      1549.5,
      2043.67,
-     1669
+     1669.0
     ]
    },
    "state": "accepted"
@@ -2936,6 +3004,38 @@
    ],
    "seed": {},
    "state": "accepted"
+  },
+  {
+   "area_id": "a_p94_b3",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.522,
+   "containment": 1.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_94_090",
+   "origin": "model",
+   "rect": [
+    1905.39,
+    1387.11,
+    1914.22,
+    1432.06
+   ],
+   "seed": {
+    "confidence": 0.522,
+    "rect": [
+     1905.39,
+     1387.11,
+     1914.22,
+     1432.06
+    ]
+   },
+   "state": "accepted"
   }
  ],
  "page": 94,
@@ -2954,12 +3054,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 22,
+ "rev": 30,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "593_e01c7d13_p94",
  "skip_reason": "",
  "status": "verified",
- "time_spent_s": 78,
- "updated_at": "2026-08-18T12:45:04+00:00"
+ "time_spent_s": 95,
+ "updated_at": "2026-08-20T05:57:52+00:00"
 }

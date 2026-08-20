@@ -1,0 +1,365 @@
+{
+ "areas": [
+  {
+   "edited": false,
+   "id": "a_p8_b0",
+   "origin": "model",
+   "rect": [
+    1826.0,
+    272.0,
+    2240.0,
+    398.0
+   ],
+   "seed": {
+    "block_id": "p8_b0",
+    "category": "window",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "WINDOW SCHEDULE FIRST FLOOR",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p8_b1",
+   "origin": "model",
+   "rect": [
+    1826.0,
+    455.0,
+    2496.0,
+    1606.0
+   ],
+   "seed": {
+    "block_id": "p8_b1",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "DOOR SCHEDULE FIRST FLOOR",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  }
+ ],
+ "file": "project_660_20260623_185532_899b7fe1.pdf",
+ "notes": "",
+ "openings": [
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.384,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_8_000",
+   "origin": "model",
+   "rect": [
+    2405.67,
+    119.67,
+    2439.83,
+    215.22
+   ],
+   "seed": {
+    "confidence": 0.384,
+    "rect": [
+     2405.67,
+     119.67,
+     2439.83,
+     215.22
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.207,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_8_001",
+   "origin": "model",
+   "rect": [
+    2405.89,
+    217.33,
+    2473.06,
+    292.89
+   ],
+   "seed": {
+    "confidence": 0.207,
+    "rect": [
+     2405.89,
+     217.33,
+     2473.06,
+     292.89
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.418,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_8_002",
+   "origin": "model",
+   "rect": [
+    503.67,
+    258.83,
+    516.78,
+    271.78
+   ],
+   "seed": {
+    "confidence": 0.418,
+    "rect": [
+     503.67,
+     258.83,
+     516.78,
+     271.78
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.24,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_8_003",
+   "origin": "model",
+   "rect": [
+    399.94,
+    258.89,
+    412.67,
+    271.61
+   ],
+   "seed": {
+    "confidence": 0.24,
+    "rect": [
+     399.94,
+     258.89,
+     412.67,
+     271.61
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.41,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_8_004",
+   "origin": "model",
+   "rect": [
+    2068.0,
+    285.5,
+    2076.94,
+    296.5
+   ],
+   "seed": {
+    "confidence": 0.41,
+    "rect": [
+     2068.0,
+     285.5,
+     2076.94,
+     296.5
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.331,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "in_excluded_area"
+   ],
+   "group_id": "",
+   "id": "o_8_005",
+   "origin": "model",
+   "rect": [
+    1982.72,
+    285.56,
+    1991.33,
+    296.5
+   ],
+   "seed": {
+    "confidence": 0.331,
+    "rect": [
+     1982.72,
+     285.56,
+     1991.33,
+     296.5
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.524,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_8_006",
+   "origin": "model",
+   "rect": [
+    503.39,
+    327.22,
+    516.89,
+    340.83
+   ],
+   "seed": {
+    "confidence": 0.524,
+    "rect": [
+     503.39,
+     327.22,
+     516.89,
+     340.83
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.225,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_8_007",
+   "origin": "model",
+   "rect": [
+    573.61,
+    327.61,
+    585.61,
+    339.78
+   ],
+   "seed": {
+    "confidence": 0.225,
+    "rect": [
+     573.61,
+     327.61,
+     585.61,
+     339.78
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.376,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_8_008",
+   "origin": "model",
+   "rect": [
+    573.94,
+    410.33,
+    586.17,
+    423.94
+   ],
+   "seed": {
+    "confidence": 0.376,
+    "rect": [
+     573.94,
+     410.33,
+     586.17,
+     423.94
+    ]
+   },
+   "state": "pending"
+  }
+ ],
+ "page": 8,
+ "page_rect_pt": [
+  0,
+  0,
+  2592.2,
+  1728.3
+ ],
+ "pdf_sha256": "9581125a3fce20f6113c81c5236ae9df7248c82b207357868b9121c22fb9a1af",
+ "planset_key": "660_9581125a",
+ "project_id": "660",
+ "render": {
+  "h": 3111,
+  "image": "pages/660_9581125a_p8.jpg",
+  "w": 4666,
+  "zoom": 1.8
+ },
+ "rev": 2,
+ "rotation": 0,
+ "schema_version": 1,
+ "sheet_key": "660_9581125a_p8",
+ "skip_reason": "",
+ "status": "untouched",
+ "time_spent_s": 0,
+ "updated_at": "2026-08-20T05:57:52+00:00"
+}

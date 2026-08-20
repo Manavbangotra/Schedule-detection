@@ -1,0 +1,362 @@
+{
+ "areas": [
+  {
+   "edited": false,
+   "id": "a_p246_b0",
+   "origin": "model",
+   "rect": [
+    1194.0,
+    50.0,
+    2544.0,
+    230.0
+   ],
+   "seed": {
+    "block_id": "p246_b0",
+    "category": "unknown",
+    "exclude_reason": "not an opening schedule (MEP/structural)",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "title": "FIRE PUMP SCHEDULE (FP, JP)",
+    "type": "unknown"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p246_b1",
+   "origin": "model",
+   "rect": [
+    1680.0,
+    246.0,
+    2594.0,
+    600.0
+   ],
+   "seed": {
+    "block_id": "p246_b1",
+    "category": "unknown",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "FIRE SPRINKLER USAGE SCHEDULE (SPR)",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  }
+ ],
+ "file": "project_707_20260703_132627_e627e150.pdf",
+ "notes": "",
+ "openings": [
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.22,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_246_000",
+   "origin": "model",
+   "rect": [
+    1555.56,
+    96.17,
+    1561.61,
+    102.44
+   ],
+   "seed": {
+    "confidence": 0.22,
+    "rect": [
+     1555.56,
+     96.17,
+     1561.61,
+     102.44
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.204,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_246_001",
+   "origin": "model",
+   "rect": [
+    1622.0,
+    96.39,
+    1629.06,
+    102.28
+   ],
+   "seed": {
+    "confidence": 0.204,
+    "rect": [
+     1622.0,
+     96.39,
+     1629.06,
+     102.28
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.33,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_246_002",
+   "origin": "model",
+   "rect": [
+    1568.83,
+    96.39,
+    1575.44,
+    102.28
+   ],
+   "seed": {
+    "confidence": 0.33,
+    "rect": [
+     1568.83,
+     96.39,
+     1575.44,
+     102.28
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.249,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_246_003",
+   "origin": "model",
+   "rect": [
+    1604.94,
+    96.39,
+    1611.89,
+    102.28
+   ],
+   "seed": {
+    "confidence": 0.249,
+    "rect": [
+     1604.94,
+     96.39,
+     1611.89,
+     102.28
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.247,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_246_004",
+   "origin": "model",
+   "rect": [
+    1388.28,
+    107.44,
+    1393.78,
+    112.28
+   ],
+   "seed": {
+    "confidence": 0.247,
+    "rect": [
+     1388.28,
+     107.44,
+     1393.78,
+     112.28
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.459,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny"
+   ],
+   "group_id": "",
+   "id": "o_246_005",
+   "origin": "model",
+   "rect": [
+    1557.06,
+    107.56,
+    1562.17,
+    112.44
+   ],
+   "seed": {
+    "confidence": 0.459,
+    "rect": [
+     1557.06,
+     107.56,
+     1562.17,
+     112.44
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.206,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_246_006",
+   "origin": "model",
+   "rect": [
+    1557.44,
+    117.89,
+    1562.56,
+    125.39
+   ],
+   "seed": {
+    "confidence": 0.206,
+    "rect": [
+     1557.44,
+     117.89,
+     1562.56,
+     125.39
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "required",
+   "confidence": 0.262,
+   "containment": 0.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_246_007",
+   "origin": "model",
+   "rect": [
+    1541.0,
+    118.0,
+    1546.61,
+    124.22
+   ],
+   "seed": {
+    "confidence": 0.262,
+    "rect": [
+     1541.0,
+     118.0,
+     1546.61,
+     124.22
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.548,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_246_008",
+   "origin": "model",
+   "rect": [
+    2888.44,
+    223.61,
+    2925.78,
+    271.39
+   ],
+   "seed": {
+    "confidence": 0.548,
+    "rect": [
+     2888.44,
+     223.61,
+     2925.78,
+     271.39
+    ]
+   },
+   "state": "pending"
+  }
+ ],
+ "page": 246,
+ "page_rect_pt": [
+  0,
+  0,
+  3024.4,
+  2160.0
+ ],
+ "pdf_sha256": "77448eafaa13802f6ff553ece49f2d2563aff1c8d6aceeae0d2dfbf7c28bf730",
+ "planset_key": "707_77448eaf",
+ "project_id": "707",
+ "render": {
+  "h": 3888,
+  "image": "pages/707_77448eaf_p246.jpg",
+  "w": 5444,
+  "zoom": 1.8
+ },
+ "rev": 2,
+ "rotation": 0,
+ "schema_version": 1,
+ "sheet_key": "707_77448eaf_p246",
+ "skip_reason": "",
+ "status": "untouched",
+ "time_spent_s": 0,
+ "updated_at": "2026-08-20T06:10:42+00:00"
+}

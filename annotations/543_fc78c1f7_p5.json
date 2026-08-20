@@ -55,7 +55,7 @@
    "confidence": 0.662,
    "containment": 1.0,
    "detector_source": "sheet",
-   "edited": false,
+   "edited": true,
    "flags": [
     "outside_area"
    ],
@@ -63,10 +63,10 @@
    "id": "o_5_000",
    "origin": "model",
    "rect": [
-    924.44,
-    80.17,
-    1031.67,
-    187.56
+    926.1750885021568,
+    81.90508850215677,
+    1033.4050885021568,
+    189.29508850215677
    ],
    "seed": {
     "confidence": 0.662,
@@ -163,7 +163,7 @@
      257.89,
      254.56,
      365.17,
-     358
+     358.0
     ]
    },
    "state": "accepted"
@@ -215,10 +215,10 @@
    "id": "o_5_005",
    "origin": "model",
    "rect": [
-    1114.17,
-    252.98491149784323,
-    1221.1328320690168,
-    376.93491149784325
+    1115.9050885021572,
+    254.72000000000008,
+    1222.867920571174,
+    378.67000000000013
    ],
    "seed": {
     "confidence": 0.317,
@@ -247,10 +247,10 @@
    "id": "o_5_006",
    "origin": "model",
    "rect": [
-    1311.33,
-    254.78,
-    1499.5363721552878,
-    379.61
+    1313.0650885021566,
+    256.5150885021568,
+    1501.2714606574445,
+    381.34508850215684
    ],
    "seed": {
     "confidence": 0.212,
@@ -280,7 +280,7 @@
    "rect": [
     529.22,
     360.22,
-    554,
+    554.0,
     398.5
    ],
    "seed": {
@@ -288,7 +288,7 @@
     "rect": [
      529.22,
      360.22,
-     554,
+     554.0,
      398.5
     ]
    },
@@ -372,7 +372,7 @@
     256.72,
     1069.83,
     311.33,
-    1216
+    1216.0
    ],
    "seed": {
     "confidence": 0.852,
@@ -380,7 +380,73 @@
      256.72,
      1069.83,
      311.33,
-     1216
+     1216.0
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p5_b0",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.317,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_5_005",
+   "origin": "model",
+   "rect": [
+    1114.17,
+    254.72,
+    1165.61,
+    378.67
+   ],
+   "seed": {
+    "confidence": 0.317,
+    "rect": [
+     1114.17,
+     254.72,
+     1165.61,
+     378.67
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p5_b0",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.212,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_5_006",
+   "origin": "model",
+   "rect": [
+    1311.33,
+    254.78,
+    1374.61,
+    379.61
+   ],
+   "seed": {
+    "confidence": 0.212,
+    "rect": [
+     1311.33,
+     254.78,
+     1374.61,
+     379.61
     ]
    },
    "state": "accepted"
@@ -402,12 +468,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 28,
+ "rev": 71,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "543_fc78c1f7_p5",
  "skip_reason": "",
  "status": "verified",
- "time_spent_s": 75,
- "updated_at": "2026-08-19T06:44:51+00:00"
+ "time_spent_s": 166,
+ "updated_at": "2026-08-20T05:57:51+00:00"
 }

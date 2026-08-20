@@ -71,6 +71,15 @@ NOT_A_SCHEDULE = re.compile(
     # a door sheet may legitimately carry a "DOOR HEADER TYPES" legend.
     r"\bJOIST\b|\bPIER\b|\bFAN\b|\bEXTINGUISHER\b|\bSTUD\b|\bRAFTER\b|"
     r"\bGIRDER\b|HEADER\s+SCHEDULE|"
+    # HVAC and fire-protection schedules, all measured on located sheets. A
+    # mechanical sheet carries a dozen of these and every one reads as a weak
+    # "<something> SCHEDULE", which with a TOC bookmark was enough to clear
+    # KEEP_SCORE. project_738 p98 alone contributed 10 untyped areas.
+    r"\bFURNACE\b|\bHEATER\b|\bCONDENSING\b|\bVIBRATION\b|\bISOLATION\b|"
+    r"\bDIFFUSER\b|\bDAMPER\b|\bVENTILATION\b|\bPUMP\b|\bRECOVERY\b|"
+    r"\bTERMINAL\b|\bACCESSOR(?:Y|IES)\b|\bRESTROOM\b|\bSPRINKLER\b|"
+    r"\bDUCTLESS\b|\bCOOLING\b|\bHEATING\b|\bHVAC\b|\bVVT\b|\bTENSION\b|"
+    r"\bANCHOR\b|SPLIT\s+SYSTEM|AIR\s+SOURCE|"
     # Code-compliance elevations. "UNPROTECTED OPENINGS - COURTYARD WEST
     # ELEVATION" is an IBC 705.8 exterior-wall study, not an opening legend --
     # it counts glazed area against a property line. OPENING is a subject word

@@ -35,6 +35,28 @@
    "seed": {},
    "type": "window_area",
    "type_source": "human"
+  },
+  {
+   "edited": false,
+   "id": "a_p3_b1",
+   "origin": "model",
+   "rect": [
+    204.0,
+    606.0,
+    934.0,
+    1368.0
+   ],
+   "seed": {
+    "block_id": "p3_b1",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "title": "DOOR FRAME LEGEND",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
   }
  ],
  "file": "project_5449_20260716_072036_582cccc6.pdf",
@@ -120,7 +142,7 @@
     590.72,
     112.72,
     645.39,
-    238
+    238.0
    ],
    "seed": {
     "confidence": 0.964,
@@ -128,7 +150,7 @@
      590.72,
      112.72,
      645.39,
-     238
+     238.0
     ]
    },
    "state": "accepted"
@@ -180,7 +202,7 @@
    "origin": "model",
    "rect": [
     497.83,
-    113,
+    113.0,
     552.78,
     237.61
    ],
@@ -188,7 +210,7 @@
     "confidence": 0.703,
     "rect": [
      497.83,
-     113,
+     113.0,
      552.78,
      237.61
     ]
@@ -211,7 +233,7 @@
    "origin": "model",
    "rect": [
     710.44,
-    119,
+    119.0,
     798.06,
     238.83
    ],
@@ -219,7 +241,7 @@
     "confidence": 0.834,
     "rect": [
      710.44,
-     119,
+     119.0,
      798.06,
      238.83
     ]
@@ -330,12 +352,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 26,
+ "rev": 28,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "5449_9211017b_p3",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 95,
- "updated_at": "2026-08-19T06:45:07+00:00"
+ "updated_at": "2026-08-20T05:57:51+00:00"
 }

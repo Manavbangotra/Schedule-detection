@@ -1,0 +1,411 @@
+{
+ "areas": [
+  {
+   "edited": false,
+   "id": "a_p197_b0",
+   "origin": "model",
+   "rect": [
+    1942.0,
+    608.22,
+    2714.0,
+    2134.0
+   ],
+   "seed": {
+    "block_id": "p197_b0",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "Door & Opening Schedule - Commons",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p197_b1",
+   "origin": "model",
+   "rect": [
+    116.0,
+    1042.0,
+    465.89,
+    1444.0
+   ],
+   "seed": {
+    "block_id": "p197_b1",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "Door Frame Elevations",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p197_b2",
+   "origin": "model",
+   "rect": [
+    545.78,
+    1142.78,
+    1162.0,
+    1390.0
+   ],
+   "seed": {
+    "block_id": "p197_b2",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "Door & Opening Schedule - Units",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  }
+ ],
+ "file": "project_707_20260703_132627_e627e150.pdf",
+ "notes": "",
+ "openings": [
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.902,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_197_000",
+   "origin": "model",
+   "rect": [
+    900.06,
+    161.06,
+    1006.06,
+    288.33
+   ],
+   "seed": {
+    "confidence": 0.902,
+    "rect": [
+     900.06,
+     161.06,
+     1006.06,
+     288.33
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.863,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_197_001",
+   "origin": "model",
+   "rect": [
+    1223.83,
+    162.22,
+    1328.17,
+    288.06
+   ],
+   "seed": {
+    "confidence": 0.863,
+    "rect": [
+     1223.83,
+     162.22,
+     1328.17,
+     288.06
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.51,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_197_002",
+   "origin": "model",
+   "rect": [
+    2238.39,
+    162.28,
+    2283.28,
+    287.61
+   ],
+   "seed": {
+    "confidence": 0.51,
+    "rect": [
+     2238.39,
+     162.28,
+     2283.28,
+     287.61
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.842,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_197_003",
+   "origin": "model",
+   "rect": [
+    607.5,
+    164.06,
+    652.56,
+    282.83
+   ],
+   "seed": {
+    "confidence": 0.842,
+    "rect": [
+     607.5,
+     164.06,
+     652.56,
+     282.83
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.849,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_197_004",
+   "origin": "model",
+   "rect": [
+    1900.11,
+    165.33,
+    1947.94,
+    286.11
+   ],
+   "seed": {
+    "confidence": 0.849,
+    "rect": [
+     1900.11,
+     165.33,
+     1947.94,
+     286.11
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.717,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_197_005",
+   "origin": "model",
+   "rect": [
+    2550.0,
+    167.33,
+    2592.94,
+    284.17
+   ],
+   "seed": {
+    "confidence": 0.717,
+    "rect": [
+     2550.0,
+     167.33,
+     2592.94,
+     284.17
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.253,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_197_006",
+   "origin": "model",
+   "rect": [
+    1222.39,
+    377.28,
+    1330.67,
+    502.78
+   ],
+   "seed": {
+    "confidence": 0.253,
+    "rect": [
+     1222.39,
+     377.28,
+     1330.67,
+     502.78
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.632,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_197_007",
+   "origin": "model",
+   "rect": [
+    575.44,
+    596.39,
+    678.11,
+    719.33
+   ],
+   "seed": {
+    "confidence": 0.632,
+    "rect": [
+     575.44,
+     596.39,
+     678.11,
+     719.33
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.294,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_197_008",
+   "origin": "model",
+   "rect": [
+    278.83,
+    598.11,
+    327.56,
+    717.44
+   ],
+   "seed": {
+    "confidence": 0.294,
+    "rect": [
+     278.83,
+     598.11,
+     327.56,
+     717.44
+    ]
+   },
+   "state": "pending"
+  },
+  {
+   "area_id": "a_p197_b1",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.329,
+   "containment": 1.0,
+   "detector_source": "block",
+   "edited": false,
+   "flags": [
+    "tiny",
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_197_009",
+   "origin": "model",
+   "rect": [
+    245.61,
+    1052.72,
+    256.39,
+    1066.06
+   ],
+   "seed": {
+    "confidence": 0.329,
+    "rect": [
+     245.61,
+     1052.72,
+     256.39,
+     1066.06
+    ]
+   },
+   "state": "pending"
+  }
+ ],
+ "page": 197,
+ "page_rect_pt": [
+  0,
+  0,
+  3024.4,
+  2160.0
+ ],
+ "pdf_sha256": "77448eafaa13802f6ff553ece49f2d2563aff1c8d6aceeae0d2dfbf7c28bf730",
+ "planset_key": "707_77448eaf",
+ "project_id": "707",
+ "render": {
+  "h": 3888,
+  "image": "pages/707_77448eaf_p197.jpg",
+  "w": 5444,
+  "zoom": 1.8
+ },
+ "rev": 2,
+ "rotation": 90,
+ "schema_version": 1,
+ "sheet_key": "707_77448eaf_p197",
+ "skip_reason": "",
+ "status": "untouched",
+ "time_spent_s": 0,
+ "updated_at": "2026-08-20T05:57:52+00:00"
+}

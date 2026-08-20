@@ -5,10 +5,10 @@
    "id": "a_p36_b0",
    "origin": "model",
    "rect": [
-    82,
-    204,
-    532,
-    464
+    82.0,
+    204.0,
+    532.0,
+    464.0
    ],
    "seed": {
     "block_id": "p36_b0",
@@ -262,7 +262,7 @@
      1317.44,
      299.83,
      1404.11,
-     382
+     382.0
     ]
    },
    "state": "accepted"
@@ -389,6 +389,39 @@
     ]
    },
    "state": "rejected"
+  },
+  {
+   "area_id": "a_p36_b1",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.347,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_36_005",
+   "origin": "model",
+   "rect": [
+    996.06,
+    239.39,
+    1037.06,
+    307.06
+   ],
+   "seed": {
+    "confidence": 0.347,
+    "rect": [
+     996.06,
+     239.39,
+     1037.06,
+     307.06
+    ]
+   },
+   "state": "pending"
   }
  ],
  "page": 36,
@@ -407,12 +440,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 18,
+ "rev": 20,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "632_c4340fa2_p36",
  "skip_reason": "",
- "status": "verified",
+ "status": "needs_recheck",
  "time_spent_s": 58,
- "updated_at": "2026-08-18T13:02:46+00:00"
+ "updated_at": "2026-08-20T05:57:52+00:00"
 }

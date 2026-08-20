@@ -5,10 +5,10 @@
    "id": "a_p125_b0",
    "origin": "model",
    "rect": [
-    588,
-    60,
-    1542,
-    1342
+    588.0,
+    60.0,
+    1542.0,
+    1342.0
    ],
    "seed": {
     "block_id": "p125_b0",
@@ -27,10 +27,10 @@
    "id": "a_p125_b1",
    "origin": "model",
    "rect": [
-    1742,
-    76,
-    2400,
-    1310
+    1742.0,
+    76.0,
+    2400.0,
+    1310.0
    ],
    "seed": {
     "block_id": "p125_b1",
@@ -703,7 +703,7 @@
    "rect": [
     2126.33,
     1139.83,
-    2376,
+    2376.0,
     1205.17
    ],
    "seed": {
@@ -711,7 +711,7 @@
     "rect": [
      2126.33,
      1139.83,
-     2376,
+     2376.0,
      1205.17
     ]
    },
@@ -735,7 +735,7 @@
     2124.89,
     1233.17,
     2376.17,
-    1308
+    1308.0
    ],
    "seed": {
     "confidence": 0.797,
@@ -743,7 +743,7 @@
      2124.89,
      1233.17,
      2376.17,
-     1308
+     1308.0
     ]
    },
    "state": "rejected"
@@ -864,7 +864,7 @@
    "seed": {
     "confidence": 0.74,
     "rect": [
-     208,
+     208.0,
      1325.5,
      264.22,
      1450.94
@@ -1445,6 +1445,40 @@
    ],
    "seed": {},
    "state": "accepted"
+  },
+  {
+   "area_id": "a_hmszsftqp",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.215,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "extreme_aspect",
+    "outside_area",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_125_004",
+   "origin": "model",
+   "rect": [
+    428.72,
+    413.78,
+    552.44,
+    433.72
+   ],
+   "seed": {
+    "confidence": 0.215,
+    "rect": [
+     428.72,
+     413.78,
+     552.44,
+     433.72
+    ]
+   },
+   "state": "pending"
   }
  ],
  "page": 125,
@@ -1463,12 +1497,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 61,
+ "rev": 63,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "699_b670e56b_p125",
  "skip_reason": "",
- "status": "verified",
+ "status": "needs_recheck",
  "time_spent_s": 321,
- "updated_at": "2026-08-19T07:51:24+00:00"
+ "updated_at": "2026-08-20T05:57:52+00:00"
 }

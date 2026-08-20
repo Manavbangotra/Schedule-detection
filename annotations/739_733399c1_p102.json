@@ -27,9 +27,9 @@
    "id": "a_p102_b2",
    "origin": "model",
    "rect": [
-    1400,
-    58,
-    2176,
+    1400.0,
+    58.0,
+    2176.0,
     195.89
    ],
    "seed": {
@@ -79,6 +79,50 @@
    "seed": {},
    "type": "window_area",
    "type_source": "human"
+  },
+  {
+   "edited": false,
+   "id": "a_p102_b0",
+   "origin": "model",
+   "rect": [
+    104.0,
+    58.0,
+    914.39,
+    640.0
+   ],
+   "seed": {
+    "block_id": "p102_b0",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "DOOR SCHEDULE DOOR TYPES LEGEND",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p102_b4",
+   "origin": "model",
+   "rect": [
+    50.0,
+    670.0,
+    931.78,
+    1700.0
+   ],
+   "seed": {
+    "block_id": "p102_b4",
+    "category": "window",
+    "exclude_reason": "",
+    "genre": "tabular",
+    "kind": "type_legend",
+    "title": "WINDOW SCHEDULE WINDOW TYPES LEGEND",
+    "type": "window_area"
+   },
+   "type": "window_area",
+   "type_source": "seed"
   }
  ],
  "file": "project_739_20260714_175755_37f7b6a9.pdf",
@@ -100,7 +144,7 @@
    "origin": "model",
    "rect": [
     2400.5,
-    38,
+    38.0,
     2458.94,
     113.28
    ],
@@ -108,7 +152,7 @@
     "confidence": 0.796,
     "rect": [
      2400.5,
-     38,
+     38.0,
      2458.94,
      113.28
     ]
@@ -209,11 +253,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p102_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.604,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -222,7 +266,7 @@
    "origin": "model",
    "rect": [
     131.72,
-    68,
+    68.0,
     145.5,
     85.5
    ],
@@ -230,7 +274,7 @@
     "confidence": 0.604,
     "rect": [
      131.72,
-     68,
+     68.0,
      145.5,
      85.5
     ]
@@ -253,7 +297,7 @@
    "origin": "model",
    "rect": [
     994.83,
-    68,
+    68.0,
     1008.72,
     84.83
    ],
@@ -261,7 +305,7 @@
     "confidence": 0.233,
     "rect": [
      994.83,
-     68,
+     68.0,
      1008.72,
      84.83
     ]
@@ -306,7 +350,7 @@
    "confidence": 0.831,
    "containment": 1.0,
    "detector_source": "block",
-   "edited": false,
+   "edited": true,
    "flags": [],
    "group_id": "",
    "id": "o_102_007",
@@ -315,7 +359,7 @@
     992.56,
     132.5,
     1051.72,
-    234.44
+    279.55230105607615
    ],
    "seed": {
     "confidence": 0.831,
@@ -393,7 +437,7 @@
    "confidence": 0.836,
    "containment": 1.0,
    "detector_source": "block",
-   "edited": false,
+   "edited": true,
    "flags": [],
    "group_id": "",
    "id": "o_102_010",
@@ -402,12 +446,12 @@
     1147,
     360.39,
     1199.94,
-    468.06
+    509.7021240517626
    ],
    "seed": {
     "confidence": 0.836,
     "rect": [
-     1147,
+     1147.0,
      360.39,
      1199.94,
      468.06
@@ -422,7 +466,7 @@
    "confidence": 0.602,
    "containment": 1.0,
    "detector_source": "sheet",
-   "edited": false,
+   "edited": true,
    "flags": [],
    "group_id": "",
    "id": "o_102_011",
@@ -431,12 +475,12 @@
     995,
     364.67,
     1098.11,
-    496.22
+    501.42526550647034
    ],
    "seed": {
     "confidence": 0.602,
     "rect": [
-     995,
+     995.0,
      364.67,
      1098.11,
      496.22
@@ -460,10 +504,10 @@
    "id": "o_102_012",
    "origin": "model",
    "rect": [
-    1729.33,
-    391.44,
-    1792.83,
-    514.7688487282463
+    1731.0650885021564,
+    391.43999999999994,
+    1794.5650885021564,
+    521.7092027368733
    ],
    "seed": {
     "confidence": 0.218,
@@ -548,7 +592,7 @@
    "origin": "model",
    "rect": [
     1530.83,
-    395,
+    395.0,
     1607.89,
     520.94
    ],
@@ -556,7 +600,7 @@
     "confidence": 0.635,
     "rect": [
      1530.83,
-     395,
+     395.0,
      1607.89,
      520.94
     ]
@@ -624,6 +668,39 @@
     ]
    },
    "state": "accepted"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.218,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_102_012",
+   "origin": "model",
+   "rect": [
+    1729.33,
+    391.44,
+    1792.83,
+    733.39
+   ],
+   "seed": {
+    "confidence": 0.218,
+    "rect": [
+     1729.33,
+     391.44,
+     1792.83,
+     733.39
+    ]
+   },
+   "state": "rejected"
   }
  ],
  "page": 102,
@@ -642,12 +719,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 19,
+ "rev": 40,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "739_733399c1_p102",
  "skip_reason": "",
  "status": "verified",
- "time_spent_s": 53,
- "updated_at": "2026-08-19T06:59:53+00:00"
+ "time_spent_s": 115,
+ "updated_at": "2026-08-20T05:57:53+00:00"
 }

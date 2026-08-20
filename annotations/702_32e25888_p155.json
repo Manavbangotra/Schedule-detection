@@ -13,13 +13,13 @@
    "seed": {
     "block_id": "p155_b0",
     "category": "unknown",
-    "exclude_reason": "",
+    "exclude_reason": "not an opening schedule (MEP/structural)",
     "genre": "pictorial",
     "kind": "schedule",
     "title": "SPLIT SYSTEM DX COOLING / HEAT PUMP SCHEDULE",
     "type": "unknown"
    },
-   "type": "unknown",
+   "type": "exclude",
    "type_source": "seed"
   },
   {
@@ -57,13 +57,13 @@
    "seed": {
     "block_id": "p155_b2",
     "category": "unknown",
-    "exclude_reason": "",
+    "exclude_reason": "not an opening schedule (MEP/structural)",
     "genre": "pictorial",
     "kind": "schedule",
     "title": "VVT DAMPER SCHEDULE",
     "type": "unknown"
    },
-   "type": "unknown",
+   "type": "exclude",
    "type_source": "seed"
   }
  ],
@@ -71,11 +71,11 @@
  "notes": "",
  "openings": [
   {
-   "area_id": "a_p155_b0",
+   "area_id": "",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.239,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -103,11 +103,11 @@
    "state": "pending"
   },
   {
-   "area_id": "a_p155_b0",
+   "area_id": "",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.436,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -134,11 +134,11 @@
    "state": "pending"
   },
   {
-   "area_id": "a_p155_b0",
+   "area_id": "",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.291,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -166,11 +166,11 @@
    "state": "pending"
   },
   {
-   "area_id": "a_p155_b0",
+   "area_id": "",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.365,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -197,11 +197,11 @@
    "state": "pending"
   },
   {
-   "area_id": "a_p155_b0",
+   "area_id": "",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.37,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -228,11 +228,11 @@
    "state": "pending"
   },
   {
-   "area_id": "a_p155_b0",
+   "area_id": "",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.921,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -257,11 +257,11 @@
    "state": "pending"
   },
   {
-   "area_id": "a_p155_b0",
+   "area_id": "",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.356,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -286,11 +286,11 @@
    "state": "pending"
   },
   {
-   "area_id": "a_p155_b0",
+   "area_id": "",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.707,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -315,11 +315,11 @@
    "state": "pending"
   },
   {
-   "area_id": "a_p155_b0",
+   "area_id": "",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.418,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -346,11 +346,11 @@
    "state": "pending"
   },
   {
-   "area_id": "a_p155_b0",
+   "area_id": "",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.498,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -375,11 +375,11 @@
    "state": "pending"
   },
   {
-   "area_id": "a_p155_b0",
+   "area_id": "",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.827,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -551,12 +551,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 2,
+ "rev": 4,
  "rotation": 90,
  "schema_version": 1,
  "sheet_key": "702_32e25888_p155",
  "skip_reason": "",
  "status": "skipped",
  "time_spent_s": 0,
- "updated_at": "2026-08-18T11:48:46+00:00"
+ "updated_at": "2026-08-20T06:10:42+00:00"
 }

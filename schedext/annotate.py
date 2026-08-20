@@ -492,6 +492,20 @@ def progress(sheets: dict[str, SheetAnnotation]) -> dict:
 
 # --- driver -----------------------------------------------------------------
 
+def is_deleted(key: str, ann_dir: Path = ANN_DIR) -> bool:
+    """True when a human deleted this sheet through the annotator.
+
+    Deletion writes ``.history/<key>/deleted.json`` as a tombstone before
+    unlinking. Without checking it, seeding and merging silently resurrect every
+    sheet the human pruned -- and since duplicates are pruned in bulk, the next
+    merge hands back the whole pile. Measured on this corpus: 32 of 34 seedable
+    sheets were resurrections.
+
+    Undo is manual and deliberate: delete the tombstone.
+    """
+    return (Path(ann_dir) / ".history" / key / "deleted.json").exists()
+
+
 def seed_corpus(viewer_index: Path, ann_dir: Path = ANN_DIR,
                 force: bool = False) -> dict:
     """Seed annotations for every sheet in the viewer index.
@@ -513,6 +527,10 @@ def seed_corpus(viewer_index: Path, ann_dir: Path = ANN_DIR,
             continue
         if path_for(key, ann_dir).exists() and not force:
             stats["skipped"] += 1
+            continue
+        if is_deleted(key, ann_dir) and not force:
+            stats["skipped"] += 1
+            stats["deleted"] = stats.get("deleted", 0) + 1
             continue
 
         meta = {
@@ -576,6 +594,9 @@ def merge_corpus(viewer_index: Path, ann_dir: Path = ANN_DIR,
 
         existing = load(key, ann_dir)
         if existing is None:
+            if is_deleted(key, ann_dir):
+                totals["skipped_deleted"] = totals.get("skipped_deleted", 0) + 1
+                continue
             totals["seeded_new"] += 1
             if apply:
                 save(fresh, ann_dir)

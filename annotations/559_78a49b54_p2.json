@@ -163,7 +163,7 @@
      257.89,
      254.56,
      365.17,
-     358
+     358.0
     ]
    },
    "state": "accepted"
@@ -280,7 +280,7 @@
    "rect": [
     529.22,
     360.22,
-    554,
+    554.0,
     398.5
    ],
    "seed": {
@@ -288,7 +288,7 @@
     "rect": [
      529.22,
      360.22,
-     554,
+     554.0,
      398.5
     ]
    },
@@ -372,7 +372,7 @@
     256.72,
     1069.83,
     311.33,
-    1216
+    1216.0
    ],
    "seed": {
     "confidence": 0.852,
@@ -380,7 +380,73 @@
      256.72,
      1069.83,
      311.33,
-     1216
+     1216.0
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.317,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_2_005",
+   "origin": "model",
+   "rect": [
+    1114.17,
+    254.72,
+    1165.61,
+    378.67
+   ],
+   "seed": {
+    "confidence": 0.317,
+    "rect": [
+     1114.17,
+     254.72,
+     1165.61,
+     378.67
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_p2_b0",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.212,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_2_006",
+   "origin": "model",
+   "rect": [
+    1311.33,
+    254.78,
+    1374.61,
+    379.61
+   ],
+   "seed": {
+    "confidence": 0.212,
+    "rect": [
+     1311.33,
+     254.78,
+     1374.61,
+     379.61
     ]
    },
    "state": "accepted"
@@ -402,12 +468,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 27,
+ "rev": 31,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "559_78a49b54_p2",
  "skip_reason": "",
  "status": "verified",
- "time_spent_s": 118,
- "updated_at": "2026-08-19T06:47:27+00:00"
+ "time_spent_s": 122,
+ "updated_at": "2026-08-20T05:57:52+00:00"
 }

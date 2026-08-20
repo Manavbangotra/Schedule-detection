@@ -124,6 +124,13 @@ MAX_ASSIGN_COST_PT = 900.0
 # Components larger than this share of the page are sheet borders or the
 # drawing frame, not schedule content.
 MAX_COMPONENT_AREA_RATIO = 0.55
+# A title sitting this far down the page is a *caption* under its drawing, not
+# a heading over it -- the architectural convention of naming a detail beneath
+# it. Six located sheets segmented to zero blocks for this reason alone,
+# including "WINDOW TYPES" (project_716 p14, title 95% down the page) and
+# "WINDOW ELEVATIONS" (project_699 p85, 96% down), which are exactly the
+# window legends this corpus is short of.
+CAPTION_BAND = 0.80
 
 
 def _assign_components(page: pymupdf.Page, titles: list[TitleHit],
@@ -145,13 +152,21 @@ def _assign_components(page: pymupdf.Page, titles: list[TitleHit],
         if rect.x0 >= titleblock_x:
             continue
 
+        caption_y = page.rect.y0 + page.rect.height * CAPTION_BAND
         best_index, best_cost = None, MAX_ASSIGN_COST_PT
         for index, title in enumerate(titles):
             anchor = title.as_rect
-            # Content never sits above its own title.
-            if rect.y1 < anchor.y0 - 2:
+            if rect.y0 >= anchor.y1 - 2:
+                # The normal case: content sits under its heading.
+                gap = max(0.0, rect.y0 - anchor.y1)
+            elif rect.y1 <= anchor.y0 + 2 and anchor.y0 > caption_y:
+                # Caption: the title is near the foot of the sheet, so its
+                # drawing is above it. Deliberately not allowed for titles
+                # higher up -- there, content above a title belongs to whatever
+                # heading precedes it, and claiming it would merge two blocks.
+                gap = max(0.0, anchor.y0 - rect.y1)
+            else:
                 continue
-            gap = max(0.0, rect.y0 - anchor.y1)
             cost = gap + abs(rect.x0 - anchor.x0) * X_MISALIGN_WEIGHT
             if cost < best_cost:
                 best_index, best_cost = index, cost
