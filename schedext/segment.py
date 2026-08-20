@@ -115,12 +115,31 @@ def _stats_rect(stats, label: int, origin, scale) -> pymupdf.Rect:
     )
 
 
-# A component is assigned to the title it most plausibly belongs to. Vertical
-# gap counts once, horizontal misalignment counts more -- on a multi-column
-# sheet a block's content starts at very nearly its title's left edge, so
-# x-offset is the strongest cue for "this belongs to that other column".
-X_MISALIGN_WEIGHT = 1.6
-MAX_ASSIGN_COST_PT = 900.0
+# A component is assigned to the title it most plausibly belongs to. Vertical gap
+# counts once, horizontal misalignment is weighted separately.
+#
+# These two numbers together imply a third that nobody wrote down: the furthest
+# a component's left edge may sit from its title's left edge, even at zero
+# vertical gap, is MAX_ASSIGN_COST_PT / X_MISALIGN_WEIGHT. At the old 900/1.6
+# that was 562pt on sheets 2592-3024pt wide -- and window regions, which are wide
+# short strips low on the sheet, need a median reach of 859pt.
+#
+# The consequence was measured, not guessed: of the word components whose centre
+# falls inside a human-verified region, the cost cap discarded 50.7% of window
+# and 31.7% of door components. The median cost of a component that genuinely
+# belongs to a window region was 1166 -- the cap sat below the median of the
+# distribution it was meant to accept.
+#
+# The human corrections say the same thing directionally: on edited areas the
+# right edge moved out by a median of 228pt while the left edge moved 1.7pt. The
+# region starts in the right place and stops too early, so the horizontal axis
+# was the one being over-penalised.
+#
+# Swept against eval/coverage.py: opening coverage 41.7% -> 65.5%, median region
+# area 6.1% -> 14.4% of the page (human regions are 7.2%). Raising the cap
+# further, or dropping the weight to 0, both score worse.
+X_MISALIGN_WEIGHT = 0.8
+MAX_ASSIGN_COST_PT = 3000.0
 # Components larger than this share of the page are sheet borders or the
 # drawing frame, not schedule content.
 MAX_COMPONENT_AREA_RATIO = 0.55
@@ -130,7 +149,14 @@ MAX_COMPONENT_AREA_RATIO = 0.55
 # including "WINDOW TYPES" (project_716 p14, title 95% down the page) and
 # "WINDOW ELEVATIONS" (project_699 p85, 96% down), which are exactly the
 # window legends this corpus is short of.
-CAPTION_BAND = 0.80
+#
+# Lowered from 0.80 after measurement: the rule also discards 12.9% of the window
+# components and 14.6% of the door components that provably belong inside a
+# human-verified region, because a title only has to be *below its own drawing*,
+# not near the foot of the sheet. Window regions sit around 0.67 down the page
+# and straddled the old threshold. 0.50 recovers them; coverage 65.5% -> 66.6%
+# with median region area slightly DOWN, at 14.1%.
+CAPTION_BAND = 0.50
 
 
 def _assign_components(page: pymupdf.Page, titles: list[TitleHit],
