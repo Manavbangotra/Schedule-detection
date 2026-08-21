@@ -42,9 +42,9 @@
    "origin": "model",
    "rect": [
     82.0,
-    902.0,
-    992.0,
-    1662.0
+    568.0,
+    2518.0,
+    1666.0
    ],
    "seed": {
     "block_id": "p1_b1",
@@ -531,11 +531,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p1_b1",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.644,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -607,12 +607,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 21,
+ "rev": 22,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "559_78a49b54_p1",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 45,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

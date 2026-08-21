@@ -29,14 +29,14 @@
    "rect": [
     780.0,
     36.0,
-    2394.0,
-    1474.0
+    1639.78,
+    1716.0
    ],
    "seed": {
     "block_id": "p28_b1",
     "category": "window",
     "exclude_reason": "",
-    "genre": "tabular",
+    "genre": "pictorial",
     "kind": "type_legend",
     "title": "GLAZING LEGEND",
     "type": "window_area"
@@ -49,17 +49,40 @@
    "id": "a_p28_b2",
    "origin": "model",
    "rect": [
-    24.0,
-    234.0,
-    742.0,
-    1252.0
+    1778.0,
+    59.0,
+    2180.0,
+    1640.0
    ],
    "seed": {
     "block_id": "p28_b2",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "DOOR SCHEDULE",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p28_b3",
+   "origin": "model",
+   "rect": [
+    14.0,
+    234.0,
+    742.0,
+    1718.0
+   ],
+   "seed": {
+    "block_id": "p28_b3",
     "category": "unknown",
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
+    "new_since_seed": true,
     "title": "FRAME TYPES",
     "type": "unknown"
    },
@@ -274,7 +297,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b2",
+   "area_id": "a_p28_b3",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.289,
@@ -306,7 +329,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b2",
+   "area_id": "a_p28_b3",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.722,
@@ -364,7 +387,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b2",
+   "area_id": "a_p28_b3",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.789,
@@ -395,7 +418,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b2",
+   "area_id": "a_p28_b3",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.772,
@@ -424,7 +447,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b2",
+   "area_id": "a_p28_b3",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.742,
@@ -453,7 +476,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b2",
+   "area_id": "a_p28_b3",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.77,
@@ -482,7 +505,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b2",
+   "area_id": "a_p28_b3",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.708,
@@ -511,7 +534,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b2",
+   "area_id": "a_p28_b3",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.245,
@@ -542,7 +565,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b2",
+   "area_id": "a_p28_b3",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.258,
@@ -574,7 +597,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b2",
+   "area_id": "a_p28_b3",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.396,
@@ -603,7 +626,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b2",
+   "area_id": "a_p28_b3",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.268,
@@ -692,11 +715,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b1",
-   "cls": "window",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.202,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -723,11 +746,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b1",
-   "cls": "window",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.354,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -752,7 +775,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b2",
+   "area_id": "a_p28_b3",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.63,
@@ -812,7 +835,7 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p28_b2",
+   "area_id": "a_p28_b3",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.781,
@@ -888,12 +911,12 @@
   "w": 4667,
   "zoom": 1.8
  },
- "rev": 21,
+ "rev": 22,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "738_f66be1e1_p28",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 71,
- "updated_at": "2026-08-20T07:04:50+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

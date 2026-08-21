@@ -546,10 +546,10 @@
    "id": "o_80_016",
    "origin": "model",
    "rect": [
-    277.61,
-    949.56,
-    359.06,
-    1080.72
+    279.63439387178346,
+    955.6331816153502,
+    361.08439387178345,
+    1086.7931816153502
    ],
    "seed": {
     "confidence": 0.496,
@@ -724,6 +724,38 @@
    ],
    "seed": {},
    "state": "accepted"
+  },
+  {
+   "area_id": "a_hmt16sz4i",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.27,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_80_009",
+   "origin": "model",
+   "rect": [
+    657.61,
+    424.72,
+    810.33,
+    641.17
+   ],
+   "seed": {
+    "confidence": 0.27,
+    "rect": [
+     657.61,
+     424.72,
+     810.33,
+     641.17
+    ]
+   },
+   "state": "accepted"
   }
  ],
  "page": 80,
@@ -742,12 +774,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 52,
+ "rev": 66,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "629_aedcc21e_p80",
  "skip_reason": "",
  "status": "verified",
- "time_spent_s": 168,
- "updated_at": "2026-08-20T07:17:24+00:00"
+ "time_spent_s": 193,
+ "updated_at": "2026-08-20T10:39:53+00:00"
 }

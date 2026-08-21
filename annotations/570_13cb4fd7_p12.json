@@ -8,7 +8,7 @@
     44.0,
     34.0,
     1656.0,
-    784.0
+    579.5
    ],
    "seed": {
     "block_id": "p12_b0",
@@ -52,7 +52,7 @@
     1688.0,
     510.0,
     2782.0,
-    1152.0
+    853.39
    ],
    "seed": {
     "block_id": "p12_b2",
@@ -71,21 +71,21 @@
    "id": "a_p12_b3",
    "origin": "model",
    "rect": [
-    756.5,
-    988.0,
-    1616.0,
-    2080.0
+    48.0,
+    596.0,
+    745.89,
+    1112.22
    ],
    "seed": {
     "block_id": "p12_b3",
-    "category": "window",
-    "exclude_reason": "tabular schedule: text table, no drawn openings",
-    "genre": "tabular",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
     "kind": "schedule",
-    "title": "WINDOW SCHEDULE",
-    "type": "exclude"
+    "title": "COMMON DOOR HARDWARE SCHEDULE",
+    "type": "door_area"
    },
-   "type": "exclude",
+   "type": "door_area",
    "type_source": "seed"
   },
   {
@@ -100,6 +100,28 @@
    ],
    "seed": {
     "block_id": "p12_b5",
+    "category": "window",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "WINDOW SCHEDULE",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p12_b4",
+   "origin": "model",
+   "rect": [
+    1593.0,
+    853.39,
+    2728.0,
+    1382.0
+   ],
+   "seed": {
+    "block_id": "p12_b4",
     "category": "both",
     "exclude_reason": "",
     "genre": "pictorial",
@@ -112,16 +134,16 @@
   },
   {
    "edited": false,
-   "id": "a_p12_b4",
+   "id": "a_p12_b6",
    "origin": "model",
    "rect": [
     50.0,
-    1060.0,
+    1234.89,
     756.5,
     1676.0
    ],
    "seed": {
-    "block_id": "p12_b4",
+    "block_id": "p12_b6",
     "category": "door",
     "exclude_reason": "",
     "genre": "pictorial",
@@ -134,20 +156,21 @@
   },
   {
    "edited": false,
-   "id": "a_p12_b6",
+   "id": "a_p12_b7",
    "origin": "model",
    "rect": [
     1634.0,
-    1552.0,
-    2202.0,
-    2058.0
+    1414.0,
+    2724.0,
+    2094.0
    ],
    "seed": {
-    "block_id": "p12_b6",
+    "block_id": "p12_b7",
     "category": "window",
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
+    "new_since_seed": true,
     "title": "WINDOW TYPES",
     "type": "window_area"
    },
@@ -670,11 +693,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
+   "area_id": "a_p12_b4",
    "cls": "",
    "cls_source": "required",
    "confidence": 0.289,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -730,9 +753,9 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p12_b5",
-   "cls": "",
-   "cls_source": "required",
+   "area_id": "a_p12_b7",
+   "cls": "window",
+   "cls_source": "inherited",
    "confidence": 0.693,
    "containment": 1.0,
    "detector_source": "sheet",
@@ -761,9 +784,9 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p12_b5",
-   "cls": "",
-   "cls_source": "required",
+   "area_id": "a_p12_b7",
+   "cls": "window",
+   "cls_source": "inherited",
    "confidence": 0.3,
    "containment": 1.0,
    "detector_source": "sheet",
@@ -792,9 +815,9 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p12_b5",
-   "cls": "",
-   "cls_source": "required",
+   "area_id": "a_p12_b7",
+   "cls": "window",
+   "cls_source": "inherited",
    "confidence": 0.783,
    "containment": 1.0,
    "detector_source": "sheet",
@@ -823,9 +846,9 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p12_b5",
-   "cls": "",
-   "cls_source": "required",
+   "area_id": "a_p12_b7",
+   "cls": "window",
+   "cls_source": "inherited",
    "confidence": 0.432,
    "containment": 1.0,
    "detector_source": "block",
@@ -852,9 +875,9 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p12_b5",
-   "cls": "",
-   "cls_source": "required",
+   "area_id": "a_p12_b7",
+   "cls": "window",
+   "cls_source": "inherited",
    "confidence": 0.857,
    "containment": 1.0,
    "detector_source": "sheet",
@@ -881,11 +904,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p12_b7",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.359,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -912,11 +935,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p12_b7",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.872,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -943,11 +966,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p12_b7",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.559,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -974,11 +997,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p12_b7",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.331,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -1076,12 +1099,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 17,
+ "rev": 18,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "570_13cb4fd7_p12",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 70,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

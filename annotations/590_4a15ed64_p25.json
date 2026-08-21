@@ -12,14 +12,14 @@
    ],
    "seed": {
     "block_id": "p25_b0",
-    "category": "door",
+    "category": "window",
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "title": "Door Types",
-    "type": "door_area"
+    "title": "WINDOW ELEVATIONS",
+    "type": "window_area"
    },
-   "type": "door_area",
+   "type": "window_area",
    "type_source": "seed"
   },
   {
@@ -34,14 +34,14 @@
    ],
    "seed": {
     "block_id": "p25_b1",
-    "category": "window",
+    "category": "door",
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "title": "WINDOW ELEVATIONS",
-    "type": "window_area"
+    "title": "Door Types",
+    "type": "door_area"
    },
-   "type": "window_area",
+   "type": "door_area",
    "type_source": "seed"
   },
   {
@@ -64,9 +64,9 @@
    "origin": "model",
    "rect": [
     350.0,
-    1836.0,
-    830.0,
-    2116.0
+    1829.22,
+    2736.0,
+    2120.0
    ],
    "seed": {
     "block_id": "p25_b2",
@@ -74,7 +74,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "new_since_seed": true,
     "title": "STOREFRONT ELEVATIONS",
     "type": "door_area"
    },
@@ -87,7 +86,7 @@
  "openings": [
   {
    "area_id": "a_p25_b0",
-   "cls": "door",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.836,
    "containment": 1.0,
@@ -116,7 +115,7 @@
   },
   {
    "area_id": "a_p25_b0",
-   "cls": "door",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.893,
    "containment": 1.0,
@@ -145,7 +144,7 @@
   },
   {
    "area_id": "a_p25_b0",
-   "cls": "door",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.789,
    "containment": 1.0,
@@ -174,7 +173,7 @@
   },
   {
    "area_id": "a_p25_b0",
-   "cls": "door",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.856,
    "containment": 1.0,
@@ -203,7 +202,7 @@
   },
   {
    "area_id": "a_p25_b0",
-   "cls": "door",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.68,
    "containment": 1.0,
@@ -232,7 +231,7 @@
   },
   {
    "area_id": "a_p25_b0",
-   "cls": "door",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.886,
    "containment": 1.0,
@@ -261,7 +260,7 @@
   },
   {
    "area_id": "a_p25_b0",
-   "cls": "door",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.78,
    "containment": 1.0,
@@ -290,7 +289,7 @@
   },
   {
    "area_id": "a_p25_b0",
-   "cls": "door",
+   "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.899,
    "containment": 1.0,
@@ -410,7 +409,7 @@
   },
   {
    "area_id": "a_p25_b1",
-   "cls": "window",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.906,
    "containment": 1.0,
@@ -441,7 +440,7 @@
   },
   {
    "area_id": "a_p25_b1",
-   "cls": "window",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.821,
    "containment": 1.0,
@@ -472,7 +471,7 @@
   },
   {
    "area_id": "a_p25_b1",
-   "cls": "window",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.654,
    "containment": 1.0,
@@ -503,7 +502,7 @@
   },
   {
    "area_id": "a_p25_b1",
-   "cls": "window",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.782,
    "containment": 1.0,
@@ -534,7 +533,7 @@
   },
   {
    "area_id": "a_p25_b1",
-   "cls": "window",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.413,
    "containment": 1.0,
@@ -565,7 +564,7 @@
   },
   {
    "area_id": "a_p25_b1",
-   "cls": "window",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.329,
    "containment": 1.0,
@@ -795,12 +794,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 47,
+ "rev": 48,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "590_4a15ed64_p25",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 151,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

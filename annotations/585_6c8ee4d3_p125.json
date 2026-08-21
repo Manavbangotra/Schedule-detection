@@ -5,10 +5,10 @@
    "id": "a_p125_b0",
    "origin": "model",
    "rect": [
-    1414.0,
-    1086.0,
+    54.0,
+    50.0,
     2308.0,
-    1274.0
+    1391.78
    ],
    "seed": {
     "block_id": "p125_b0",
@@ -27,8 +27,8 @@
    "id": "a_p125_b1",
    "origin": "model",
    "rect": [
-    1454.0,
-    1391.78,
+    48.0,
+    1490.0,
     2308.0,
     1698.0
    ],
@@ -38,7 +38,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "schedule",
-    "new_since_seed": true,
     "title": "Window Schedule",
     "type": "window_area"
    },
@@ -50,11 +49,11 @@
  "notes": "",
  "openings": [
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p125_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.639,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -81,11 +80,11 @@
    "state": "pending"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p125_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.504,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -112,11 +111,11 @@
    "state": "pending"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p125_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.793,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -143,11 +142,11 @@
    "state": "pending"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p125_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.91,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -174,11 +173,11 @@
    "state": "pending"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p125_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.788,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -205,11 +204,11 @@
    "state": "pending"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p125_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.913,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -236,11 +235,11 @@
    "state": "pending"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p125_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.476,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -267,11 +266,11 @@
    "state": "pending"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p125_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.45,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -334,7 +333,7 @@
    "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.263,
-   "containment": 0.974,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -365,7 +364,7 @@
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.853,
-   "containment": 1.0,
+   "containment": 0.782,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -394,7 +393,7 @@
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.499,
-   "containment": 1.0,
+   "containment": 0.79,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -423,7 +422,7 @@
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.482,
-   "containment": 1.0,
+   "containment": 0.794,
    "detector_source": "block",
    "edited": false,
    "flags": [],
@@ -464,12 +463,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 5,
+ "rev": 6,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "585_6c8ee4d3_p125",
  "skip_reason": "",
  "status": "skipped",
  "time_spent_s": 0,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

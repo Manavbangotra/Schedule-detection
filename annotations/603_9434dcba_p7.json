@@ -21,6 +21,29 @@
    },
    "type": "door_area",
    "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p7_b1",
+   "origin": "model",
+   "rect": [
+    72.0,
+    294.11,
+    2518.0,
+    1672.0
+   ],
+   "seed": {
+    "block_id": "p7_b1",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "new_since_seed": true,
+    "title": "DOOR SCHEDULE:",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
   }
  ],
  "file": "project_603_20260609_112607_d4caa93f.pdf",
@@ -758,12 +781,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 36,
+ "rev": 37,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "603_9434dcba_p7",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 98,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

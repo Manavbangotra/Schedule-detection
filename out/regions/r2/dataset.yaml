@@ -1,0 +1,10 @@
+# Stage-1 regions. Whole pages, human-verified boxes only.
+# Split by planset, hash-stable, shared with the stage-2 dataset so a
+# planset never lands in train for one stage and val for the other.
+path: /home/sunday/Downloads/takeoff_plansets_s3/out/regions/r2
+train: train.txt
+val: val.txt
+names:
+  0: window_region
+  1: door_region
+  2: exclude_region

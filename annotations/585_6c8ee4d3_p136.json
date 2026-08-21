@@ -1,0 +1,285 @@
+{
+ "areas": [
+  {
+   "edited": true,
+   "id": "a_hmt1e2w15",
+   "origin": "human",
+   "rect": [
+    1396.746244236204,
+    772.1143834597649,
+    2257.3501413059644,
+    1061.8741633199463
+   ],
+   "seed": {},
+   "type": "door_area",
+   "type_source": "human"
+  }
+ ],
+ "file": "project_585_20260602_170809_cb03e5f7.pdf",
+ "notes": "",
+ "openings": [
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.711,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_136_000",
+   "origin": "model",
+   "rect": [
+    897.5,
+    326.78,
+    948.06,
+    395.89
+   ],
+   "seed": {
+    "confidence": 0.711,
+    "rect": [
+     897.5,
+     326.78,
+     948.06,
+     395.89
+    ]
+   },
+   "state": "rejected"
+  },
+  {
+   "area_id": "a_hmt1e2w15",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.795,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_136_001",
+   "origin": "model",
+   "rect": [
+    2024.78,
+    831.39,
+    2083,
+    968.17
+   ],
+   "seed": {
+    "confidence": 0.795,
+    "rect": [
+     2024.78,
+     831.39,
+     2083,
+     968.17
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_hmt1e2w15",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.916,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_136_002",
+   "origin": "model",
+   "rect": [
+    1878.78,
+    832.17,
+    1987.94,
+    971.11
+   ],
+   "seed": {
+    "confidence": 0.916,
+    "rect": [
+     1878.78,
+     832.17,
+     1987.94,
+     971.11
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_hmt1e2w15",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.911,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_136_003",
+   "origin": "model",
+   "rect": [
+    1442.78,
+    832.94,
+    1503.72,
+    968.39
+   ],
+   "seed": {
+    "confidence": 0.911,
+    "rect": [
+     1442.78,
+     832.94,
+     1503.72,
+     968.39
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_hmt1e2w15",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.733,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [],
+   "group_id": "",
+   "id": "o_136_004",
+   "origin": "model",
+   "rect": [
+    1640.61,
+    833,
+    1693.56,
+    967.94
+   ],
+   "seed": {
+    "confidence": 0.733,
+    "rect": [
+     1640.61,
+     833,
+     1693.56,
+     967.94
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_hmt1e2w15",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.34,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_136_005",
+   "origin": "model",
+   "rect": [
+    1544.06,
+    833.28,
+    1598.39,
+    968.22
+   ],
+   "seed": {
+    "confidence": 0.34,
+    "rect": [
+     1544.06,
+     833.28,
+     1598.39,
+     968.22
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "a_hmt1e2w15",
+   "cls": "door",
+   "cls_source": "inherited",
+   "confidence": 0.291,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf"
+   ],
+   "group_id": "",
+   "id": "o_136_006",
+   "origin": "model",
+   "rect": [
+    1734.61,
+    834,
+    1837.78,
+    966.94
+   ],
+   "seed": {
+    "confidence": 0.291,
+    "rect": [
+     1734.61,
+     834,
+     1837.78,
+     966.94
+    ]
+   },
+   "state": "accepted"
+  },
+  {
+   "area_id": "",
+   "cls": "",
+   "cls_source": "inherited",
+   "confidence": 0.272,
+   "containment": 0.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "low_conf",
+    "outside_area"
+   ],
+   "group_id": "",
+   "id": "o_136_007",
+   "origin": "model",
+   "rect": [
+    2424.56,
+    1042.28,
+    2445.72,
+    1063.28
+   ],
+   "seed": {
+    "confidence": 0.272,
+    "rect": [
+     2424.56,
+     1042.28,
+     2445.72,
+     1063.28
+    ]
+   },
+   "state": "rejected"
+  }
+ ],
+ "page": 136,
+ "page_rect_pt": [
+  0,
+  0,
+  2592.2,
+  1728.3
+ ],
+ "pdf_sha256": "6c8ee4d3dc0a7ce510d2cbd64a727e2f46b9866b7ace4b5544430fea27d1f295",
+ "planset_key": "585_6c8ee4d3",
+ "project_id": "585",
+ "render": {
+  "h": 3111,
+  "image": "pages/585_6c8ee4d3_p136.jpg",
+  "w": 4666,
+  "zoom": 1.8
+ },
+ "rev": 8,
+ "rotation": 270,
+ "schema_version": 1,
+ "sheet_key": "585_6c8ee4d3_p136",
+ "skip_reason": "",
+ "status": "verified",
+ "time_spent_s": 21,
+ "updated_at": "2026-08-20T10:40:19+00:00"
+}

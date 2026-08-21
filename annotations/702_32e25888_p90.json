@@ -5,10 +5,10 @@
    "id": "a_p90_b0",
    "origin": "model",
    "rect": [
-    1354.0,
+    222.0,
     36.0,
-    2340.0,
-    780.0
+    2994.0,
+    684.5
    ],
    "seed": {
     "block_id": "p90_b0",
@@ -27,18 +27,18 @@
    "id": "a_p90_b1",
    "origin": "model",
    "rect": [
-    1889.72,
-    1026.0,
-    2782.0,
-    1197.72
+    48.0,
+    1197.72,
+    2052.11,
+    2134.0
    ],
    "seed": {
     "block_id": "p90_b1",
     "category": "door",
-    "exclude_reason": "tabular schedule: text table, no drawn openings",
-    "genre": "tabular",
-    "kind": "schedule",
-    "title": "DOOR SCHEDULE",
+    "exclude_reason": "notes block",
+    "genre": "pictorial",
+    "kind": "notes",
+    "title": "HARDWARE LEGEND DOOR SCHEDULE NOTES",
     "type": "exclude"
    },
    "type": "exclude",
@@ -49,10 +49,10 @@
    "id": "a_p90_b2",
    "origin": "model",
    "rect": [
-    1390.0,
-    1197.72,
     2052.11,
-    1984.0
+    1197.72,
+    2828.0,
+    2132.0
    ],
    "seed": {
     "block_id": "p90_b2",
@@ -60,7 +60,7 @@
     "exclude_reason": "notes block",
     "genre": "pictorial",
     "kind": "notes",
-    "title": "HARDWARE LEGEND DOOR SCHEDULE NOTES",
+    "title": "DOOR SCHEDULE NOTES",
     "type": "exclude"
    },
    "type": "exclude",
@@ -1132,12 +1132,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 27,
+ "rev": 28,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "702_32e25888_p90",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 99,
- "updated_at": "2026-08-20T07:04:49+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

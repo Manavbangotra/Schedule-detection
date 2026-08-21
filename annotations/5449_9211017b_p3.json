@@ -41,16 +41,16 @@
    "id": "a_p3_b1",
    "origin": "model",
    "rect": [
-    204.0,
-    606.0,
-    934.0,
-    1368.0
+    176.0,
+    474.11,
+    2954.0,
+    2140.0
    ],
    "seed": {
     "block_id": "p3_b1",
     "category": "door",
     "exclude_reason": "",
-    "genre": "pictorial",
+    "genre": "tabular",
     "kind": "type_legend",
     "title": "DOOR FRAME LEGEND",
     "type": "door_area"
@@ -352,12 +352,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 29,
+ "rev": 30,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "5449_9211017b_p3",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 95,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

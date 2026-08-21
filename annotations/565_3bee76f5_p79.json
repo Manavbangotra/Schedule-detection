@@ -13,10 +13,33 @@
    "seed": {
     "block_id": "p79_b0",
     "category": "window",
-    "exclude_reason": "",
-    "genre": "pictorial",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
     "kind": "schedule",
     "title": "WINDOW SCHEDULE",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p79_b1",
+   "origin": "model",
+   "rect": [
+    34.0,
+    48.0,
+    1509.22,
+    2136.0
+   ],
+   "seed": {
+    "block_id": "p79_b1",
+    "category": "window",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "new_since_seed": true,
+    "title": "WINDOW LEGEND",
     "type": "window_area"
    },
    "type": "window_area",
@@ -27,7 +50,7 @@
  "notes": "",
  "openings": [
   {
-   "area_id": "a_p79_b0",
+   "area_id": "a_p79_b1",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.842,
@@ -58,7 +81,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p79_b0",
+   "area_id": "a_p79_b1",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.672,
@@ -89,7 +112,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p79_b0",
+   "area_id": "a_p79_b1",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.88,
@@ -120,7 +143,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p79_b0",
+   "area_id": "a_p79_b1",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.71,
@@ -151,7 +174,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p79_b0",
+   "area_id": "a_p79_b1",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.836,
@@ -182,7 +205,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p79_b0",
+   "area_id": "a_p79_b1",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.747,
@@ -213,7 +236,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p79_b0",
+   "area_id": "a_p79_b1",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.838,
@@ -244,7 +267,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p79_b0",
+   "area_id": "a_p79_b1",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.932,
@@ -275,7 +298,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p79_b0",
+   "area_id": "a_p79_b1",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.716,
@@ -306,7 +329,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p79_b0",
+   "area_id": "a_p79_b1",
    "cls": "window",
    "cls_source": "inherited",
    "confidence": 0.465,
@@ -353,12 +376,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 14,
+ "rev": 15,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "565_3bee76f5_p79",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 52,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

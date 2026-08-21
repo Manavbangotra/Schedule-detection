@@ -41,9 +41,9 @@
    "id": "a_p8_b1",
    "origin": "model",
    "rect": [
-    826.0,
-    1739.28,
-    1746.0,
+    44.0,
+    1736.0,
+    2614.0,
     2148.0
    ],
    "seed": {
@@ -52,7 +52,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "new_since_seed": true,
     "title": "DOOR TYPE LEGEND",
     "type": "door_area"
    },
@@ -395,7 +394,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p8_b1",
+   "area_id": "a_p8_b0",
    "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.824,
@@ -424,7 +423,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p8_b1",
+   "area_id": "a_p8_b0",
    "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.248,
@@ -455,7 +454,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p8_b1",
+   "area_id": "a_p8_b0",
    "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.849,
@@ -521,12 +520,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 19,
+ "rev": 20,
  "rotation": 90,
  "schema_version": 1,
  "sheet_key": "744_2273d2d4_p8",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 60,
- "updated_at": "2026-08-20T07:04:50+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

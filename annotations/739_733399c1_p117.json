@@ -27,13 +27,35 @@
    "id": "a_p117_b1",
    "origin": "model",
    "rect": [
-    94.0,
-    364.0,
-    679.39,
-    1084.0
+    968.0,
+    58.0,
+    2264.0,
+    324.0
    ],
    "seed": {
     "block_id": "p117_b1",
+    "category": "window",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "title": "WINDOW TYPES LEGEND",
+    "type": "window_area"
+   },
+   "type": "window_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p117_b2",
+   "origin": "model",
+   "rect": [
+    94.0,
+    364.0,
+    679.39,
+    853.0
+   ],
+   "seed": {
+    "block_id": "p117_b2",
     "category": "door",
     "exclude_reason": "tabular schedule: text table, no drawn openings",
     "genre": "tabular",
@@ -46,43 +68,21 @@
   },
   {
    "edited": false,
-   "id": "a_p117_b2",
+   "id": "a_p117_b3",
    "origin": "model",
    "rect": [
     710.0,
     364.0,
-    1556.0,
+    2258.0,
     853.0
    ],
    "seed": {
-    "block_id": "p117_b2",
+    "block_id": "p117_b3",
     "category": "window",
     "exclude_reason": "tabular schedule: text table, no drawn openings",
     "genre": "tabular",
     "kind": "schedule",
     "title": "WINDOW SCHEDULE",
-    "type": "exclude"
-   },
-   "type": "exclude",
-   "type_source": "seed"
-  },
-  {
-   "edited": false,
-   "id": "a_p117_b3",
-   "origin": "model",
-   "rect": [
-    50.0,
-    1268.0,
-    595.28,
-    1700.0
-   ],
-   "seed": {
-    "block_id": "p117_b3",
-    "category": "door",
-    "exclude_reason": "tabular schedule: text table, no drawn openings",
-    "genre": "tabular",
-    "kind": "schedule",
-    "title": "UNIT DOOR SCHEDULE UNIT DOOR SCHEDULE",
     "type": "exclude"
    },
    "type": "exclude",
@@ -115,6 +115,52 @@
    "seed": {},
    "type": "door_area",
    "type_source": "human"
+  },
+  {
+   "edited": false,
+   "id": "a_p117_b4",
+   "origin": "model",
+   "rect": [
+    595.28,
+    932.0,
+    2502.0,
+    1694.0
+   ],
+   "seed": {
+    "block_id": "p117_b4",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "schedule",
+    "new_since_seed": true,
+    "title": "UNIT DOOR SCHEDULE",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p117_b5",
+   "origin": "model",
+   "rect": [
+    50.0,
+    1268.0,
+    595.28,
+    1700.0
+   ],
+   "seed": {
+    "block_id": "p117_b5",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "new_since_seed": true,
+    "title": "UNIT DOOR SCHEDULE UNIT DOOR SCHEDULE",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
   }
  ],
  "file": "project_739_20260714_175755_37f7b6a9.pdf",
@@ -654,12 +700,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 11,
+ "rev": 12,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "739_733399c1_p117",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 39,
- "updated_at": "2026-08-20T07:04:50+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

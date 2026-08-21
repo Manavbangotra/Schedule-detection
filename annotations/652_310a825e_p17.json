@@ -41,7 +41,7 @@
    "id": "a_p17_b0",
    "origin": "model",
    "rect": [
-    1490.0,
+    42.0,
     90.0,
     2300.0,
     730.0
@@ -343,12 +343,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 34,
+ "rev": 35,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "652_310a825e_p17",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 151,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

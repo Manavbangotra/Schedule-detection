@@ -5,17 +5,40 @@
    "id": "a_p26_b0",
    "origin": "model",
    "rect": [
-    1760.0,
-    622.0,
-    2394.0,
-    1232.0
+    418.0,
+    32.0,
+    2580.0,
+    785.0
    ],
    "seed": {
     "block_id": "p26_b0",
     "category": "door",
     "exclude_reason": "",
     "genre": "pictorial",
+    "kind": "type_legend",
+    "title": "DOOR TYPES",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p26_b1",
+   "origin": "model",
+   "rect": [
+    18.0,
+    785.0,
+    2394.0,
+    1710.0
+   ],
+   "seed": {
+    "block_id": "p26_b1",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
     "kind": "schedule",
+    "new_since_seed": true,
     "title": "DOOR SCHEDULE",
     "type": "door_area"
    },
@@ -27,11 +50,11 @@
  "notes": "",
  "openings": [
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p26_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.327,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -59,11 +82,11 @@
    "state": "pending"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p26_b0",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.239,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -91,11 +114,11 @@
    "state": "pending"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p26_b1",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.728,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -122,7 +145,7 @@
    "state": "pending"
   },
   {
-   "area_id": "a_p26_b0",
+   "area_id": "a_p26_b1",
    "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.214,
@@ -153,11 +176,11 @@
    "state": "pending"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p26_b1",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.464,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -184,11 +207,11 @@
    "state": "pending"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p26_b1",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.463,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -215,11 +238,11 @@
    "state": "pending"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p26_b1",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.726,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -246,11 +269,11 @@
    "state": "pending"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p26_b1",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.404,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -293,12 +316,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 5,
+ "rev": 6,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "593_e01c7d13_p26",
  "skip_reason": "",
  "status": "skipped",
  "time_spent_s": 0,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

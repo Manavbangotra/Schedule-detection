@@ -5,10 +5,10 @@
    "id": "a_p28_b0",
    "origin": "model",
    "rect": [
-    1668.0,
+    1413.11,
     52.0,
     3000.0,
-    390.0
+    272.61
    ],
    "seed": {
     "block_id": "p28_b0",
@@ -27,21 +27,21 @@
    "id": "a_p28_b1",
    "origin": "model",
    "rect": [
-    1828.0,
-    440.0,
-    2752.0,
-    716.5
+    388.0,
+    196.0,
+    913.22,
+    1722.0
    ],
    "seed": {
     "block_id": "p28_b1",
     "category": "door",
-    "exclude_reason": "tabular schedule: text table, no drawn openings",
-    "genre": "tabular",
-    "kind": "schedule",
-    "title": "BUILDING DOOR SCHEDULE",
-    "type": "exclude"
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "title": "DOOR TYPES",
+    "type": "door_area"
    },
-   "type": "exclude",
+   "type": "door_area",
    "type_source": "seed"
   },
   {
@@ -49,18 +49,18 @@
    "id": "a_p28_b2",
    "origin": "model",
    "rect": [
-    1488.0,
-    914.0,
-    2408.0,
-    1658.0
+    1413.22,
+    430.0,
+    2752.0,
+    716.5
    ],
    "seed": {
     "block_id": "p28_b2",
     "category": "door",
-    "exclude_reason": "notes block",
-    "genre": "pictorial",
-    "kind": "notes",
-    "title": "GENERAL DOOR SCHEDULE NOTES",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "BUILDING DOOR SCHEDULE",
     "type": "exclude"
    },
    "type": "exclude",
@@ -79,6 +79,52 @@
    "seed": {},
    "type": "door_area",
    "type_source": "human"
+  },
+  {
+   "edited": false,
+   "id": "a_p28_b3",
+   "origin": "model",
+   "rect": [
+    1242.72,
+    914.0,
+    2534.0,
+    1326.0
+   ],
+   "seed": {
+    "block_id": "p28_b3",
+    "category": "door",
+    "exclude_reason": "notes block",
+    "genre": "pictorial",
+    "kind": "notes",
+    "new_since_seed": true,
+    "title": "GENERAL DOOR SCHEDULE NOTES",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p28_b4",
+   "origin": "model",
+   "rect": [
+    913.22,
+    1326.0,
+    2304.0,
+    1722.0
+   ],
+   "seed": {
+    "block_id": "p28_b4",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "new_since_seed": true,
+    "title": "Frame Types",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
   }
  ],
  "file": "project_524_20260521_124928_ffc4b080.pdf",
@@ -312,11 +358,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p28_b1",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.655,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -343,11 +389,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p28_b1",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.654,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -498,11 +544,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p28_b4",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.46,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -529,11 +575,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p28_b4",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.271,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -561,11 +607,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p28_b4",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.203,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -593,11 +639,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p28_b4",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.603,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -624,11 +670,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p28_b4",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.524,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -785,12 +831,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 26,
+ "rev": 27,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "524_82ca7fae_p28",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 94,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

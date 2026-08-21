@@ -1,0 +1,54 @@
+{
+  "tag": "r2",
+  "images": 100,
+  "train": {
+    "images": 78,
+    "positives": 30,
+    "negatives": 48,
+    "boxes": 91,
+    "by_class": {
+      "door_region": 41,
+      "window_region": 23,
+      "exclude_region": 27
+    }
+  },
+  "val": {
+    "images": 22,
+    "positives": 10,
+    "negatives": 12,
+    "boxes": 43,
+    "by_class": {
+      "door_region": 20,
+      "window_region": 14,
+      "exclude_region": 9
+    }
+  },
+  "plansets": {
+    "train": 40,
+    "val": 7
+  },
+  "duplicates_dropped": [
+    [
+      "543_fc78c1f7_p3",
+      "558_e59b8693_p1"
+    ],
+    [
+      "543_fc78c1f7_p3",
+      "559_78a49b54_p1"
+    ],
+    [
+      "543_fc78c1f7_p5",
+      "559_78a49b54_p2"
+    ],
+    [
+      "585_6c8ee4d3_p11",
+      "585_6c8ee4d3_p27"
+    ]
+  ],
+  "dropped_areas": {
+    "degenerate_box": 1,
+    "unverified_new_since_seed": 12,
+    "unknown": 2,
+    "mixed": 2
+  }
+}

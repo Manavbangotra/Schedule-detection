@@ -5,18 +5,18 @@
    "id": "a_p63_b0",
    "origin": "model",
    "rect": [
-    190.0,
-    120.0,
-    752.0,
-    276.0
+    806.0,
+    50.0,
+    2774.0,
+    661.61
    ],
    "seed": {
     "block_id": "p63_b0",
-    "category": "window",
+    "category": "door",
     "exclude_reason": "tabular schedule: text table, no drawn openings",
     "genre": "tabular",
     "kind": "schedule",
-    "title": "CLUBHOUSE WINDOW SCHEDULE",
+    "title": "CLUBHOUSE STOREFRONT SCHEDULE",
     "type": "exclude"
    },
    "type": "exclude",
@@ -27,18 +27,18 @@
    "id": "a_p63_b1",
    "origin": "model",
    "rect": [
-    851.11,
+    190.0,
     120.0,
-    1512.0,
-    1020.0
+    752.0,
+    276.0
    ],
    "seed": {
     "block_id": "p63_b1",
-    "category": "door",
+    "category": "window",
     "exclude_reason": "tabular schedule: text table, no drawn openings",
     "genre": "tabular",
     "kind": "schedule",
-    "title": "CLUBHOUSE STOREFRONT SCHEDULE",
+    "title": "CLUBHOUSE WINDOW SCHEDULE",
     "type": "exclude"
    },
    "type": "exclude",
@@ -79,13 +79,13 @@
    "seed": {
     "block_id": "p63_b3",
     "category": "door",
-    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "exclude_reason": "",
     "genre": "tabular",
-    "kind": "schedule",
-    "title": "DOOR SCHEDULE - CLUBHOUSE",
-    "type": "exclude"
+    "kind": "type_legend",
+    "title": "DOOR TYPES",
+    "type": "door_area"
    },
-   "type": "exclude",
+   "type": "door_area",
    "type_source": "seed"
   },
   {
@@ -101,13 +101,13 @@
    "seed": {
     "block_id": "p63_b4",
     "category": "door",
-    "exclude_reason": "",
+    "exclude_reason": "hardware block",
     "genre": "pictorial",
-    "kind": "type_legend",
-    "title": "DOOR TYPES",
-    "type": "door_area"
+    "kind": "hardware",
+    "title": "DOOR HARDWARE TYPES",
+    "type": "exclude"
    },
-   "type": "door_area",
+   "type": "exclude",
    "type_source": "seed"
   },
   {
@@ -818,11 +818,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.358,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -849,11 +849,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.234,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -881,11 +881,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.588,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -912,11 +912,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.719,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -943,11 +943,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.364,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": true,
    "flags": [
@@ -974,11 +974,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.364,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -1005,11 +1005,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.279,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": true,
    "flags": [
@@ -1037,11 +1037,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.739,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -1066,11 +1066,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.853,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "block",
    "edited": true,
    "flags": [],
@@ -1254,11 +1254,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.618,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -1285,11 +1285,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.731,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -1316,11 +1316,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.696,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -1347,11 +1347,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.775,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [],
@@ -1470,11 +1470,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -1491,11 +1491,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -1512,11 +1512,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -1533,11 +1533,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p63_b4",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -1570,12 +1570,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 117,
+ "rev": 118,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "486_a1aea1a4_p63",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 4285,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

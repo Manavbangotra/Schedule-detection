@@ -28,6 +28,14 @@ out/dataset/*/eval_preview/
 out/dataset/*/crops/
 out/dataset/*/preview/
 out/dataset/*/labels.cache
+# The stage-1 region dataset, same reasoning as the stage-2 one above: it is the
+# training set, and the GPU box has no plansets to regenerate it from.
+!out/regions/
+out/regions/*/runs/
+out/regions/*/_overfit/
+out/regions/*/labels.cache
+# r1 was superseded by r2, which excludes areas added after a sheet was verified.
+out/regions/r1/
 
 # 300MB of rendered page PNGs, regenerable with `cli viewer --no-serve`
 viewer/pages/

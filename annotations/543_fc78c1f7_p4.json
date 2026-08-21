@@ -35,11 +35,11 @@
    "seed": {
     "block_id": "p4_b1",
     "category": "door",
-    "exclude_reason": "tabular schedule: text table, no drawn openings",
-    "genre": "tabular",
+    "exclude_reason": "",
+    "genre": "pictorial",
     "kind": "schedule",
     "title": "DOOR SCHEDULE:",
-    "type": "exclude"
+    "type": "door_area"
    },
    "type": "door_area",
    "type_source": "human"
@@ -1381,12 +1381,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 122,
+ "rev": 123,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "543_fc78c1f7_p4",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 416,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

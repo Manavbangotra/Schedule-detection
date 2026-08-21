@@ -5,7 +5,7 @@
    "id": "a_p83_b0",
    "origin": "model",
    "rect": [
-    2020.0,
+    1603.61,
     42.0,
     2804.0,
     328.0
@@ -27,13 +27,35 @@
    "id": "a_p83_b1",
    "origin": "model",
    "rect": [
-    1786.0,
-    412.0,
+    34.0,
+    76.0,
+    1603.0,
+    2136.0
+   ],
+   "seed": {
+    "block_id": "p83_b1",
+    "category": "door",
+    "exclude_reason": "hardware block",
+    "genre": "pictorial",
+    "kind": "hardware",
+    "title": "DOOR HARDWARE LEGEND",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p83_b2",
+   "origin": "model",
+   "rect": [
+    1603.0,
+    334.0,
     2812.0,
     646.0
    ],
    "seed": {
-    "block_id": "p83_b1",
+    "block_id": "p83_b2",
     "category": "door",
     "exclude_reason": "tabular schedule: text table, no drawn openings",
     "genre": "tabular",
@@ -46,43 +68,21 @@
   },
   {
    "edited": false,
-   "id": "a_p83_b2",
+   "id": "a_p83_b3",
    "origin": "model",
    "rect": [
-    1786.0,
+    1770.0,
     774.0,
     2804.0,
-    996.0
+    1864.0
    ],
    "seed": {
-    "block_id": "p83_b2",
+    "block_id": "p83_b3",
     "category": "door",
     "exclude_reason": "tabular schedule: text table, no drawn openings",
     "genre": "tabular",
     "kind": "schedule",
     "title": "AMENITY DOOR SCHEDULE",
-    "type": "exclude"
-   },
-   "type": "exclude",
-   "type_source": "seed"
-  },
-  {
-   "edited": false,
-   "id": "a_p83_b3",
-   "origin": "model",
-   "rect": [
-    644.0,
-    1220.0,
-    1196.0,
-    1974.0
-   ],
-   "seed": {
-    "block_id": "p83_b3",
-    "category": "door",
-    "exclude_reason": "hardware block",
-    "genre": "pictorial",
-    "kind": "hardware",
-    "title": "DOOR HARDWARE LEGEND",
     "type": "exclude"
    },
    "type": "exclude",
@@ -990,12 +990,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 42,
+ "rev": 43,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "565_3bee76f5_p83",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 1595,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

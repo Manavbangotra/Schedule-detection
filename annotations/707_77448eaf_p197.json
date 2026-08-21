@@ -5,10 +5,10 @@
    "id": "a_p197_b0",
    "origin": "model",
    "rect": [
-    1942,
-    608.22,
-    2714,
-    2134
+    465.89,
+    112.0,
+    1369.22,
+    1390.0
    ],
    "seed": {
     "block_id": "p197_b0",
@@ -16,7 +16,7 @@
     "exclude_reason": "tabular schedule: text table, no drawn openings",
     "genre": "tabular",
     "kind": "schedule",
-    "title": "Door & Opening Schedule - Commons",
+    "title": "Door & Opening Schedule - Units",
     "type": "exclude"
    },
    "type": "exclude",
@@ -35,6 +35,28 @@
    "seed": {
     "block_id": "p197_b1",
     "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "Door & Opening Schedule - Commons",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p197_b2",
+   "origin": "model",
+   "rect": [
+    116.0,
+    1042.0,
+    465.89,
+    1444.0
+   ],
+   "seed": {
+    "block_id": "p197_b2",
+    "category": "door",
     "exclude_reason": "",
     "genre": "tabular",
     "kind": "type_legend",
@@ -43,39 +65,17 @@
    },
    "type": "door_area",
    "type_source": "seed"
-  },
-  {
-   "edited": false,
-   "id": "a_p197_b2",
-   "origin": "model",
-   "rect": [
-    545.78,
-    1142.78,
-    1162,
-    1390
-   ],
-   "seed": {
-    "block_id": "p197_b2",
-    "category": "door",
-    "exclude_reason": "tabular schedule: text table, no drawn openings",
-    "genre": "tabular",
-    "kind": "schedule",
-    "title": "Door & Opening Schedule - Units",
-    "type": "exclude"
-   },
-   "type": "exclude",
-   "type_source": "seed"
   }
  ],
  "file": "project_707_20260703_132627_e627e150.pdf",
  "notes": "",
  "openings": [
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.902,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -102,11 +102,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.863,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -133,11 +133,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.51,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": true,
    "flags": [
@@ -164,11 +164,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.842,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -195,11 +195,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.849,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -226,11 +226,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.717,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -240,7 +240,7 @@
    "id": "o_197_005",
    "origin": "model",
    "rect": [
-    2550,
+    2550.0,
     167.33,
     2592.94,
     284.17
@@ -248,7 +248,7 @@
    "seed": {
     "confidence": 0.717,
     "rect": [
-     2550,
+     2550.0,
      167.33,
      2592.94,
      284.17
@@ -257,11 +257,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.253,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -289,11 +289,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.632,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -320,11 +320,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 0.294,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "sheet",
    "edited": false,
    "flags": [
@@ -352,11 +352,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "",
-   "cls": "",
+   "area_id": "a_p197_b2",
+   "cls": "door",
    "cls_source": "inherited",
    "confidence": 0.329,
-   "containment": 0.0,
+   "containment": 1.0,
    "detector_source": "block",
    "edited": false,
    "flags": [
@@ -384,11 +384,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -405,11 +405,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -426,11 +426,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -447,11 +447,11 @@
    "state": "rejected"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -468,11 +468,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -489,11 +489,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -510,11 +510,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -531,11 +531,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
+   "area_id": "",
    "cls": "garage_door",
    "cls_source": "human",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -552,11 +552,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -573,11 +573,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p197_b1",
-   "cls": "door",
+   "area_id": "",
+   "cls": "",
    "cls_source": "inherited",
    "confidence": 1,
-   "containment": 1.0,
+   "containment": 0.0,
    "detector_source": "human",
    "edited": true,
    "flags": [],
@@ -610,12 +610,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 28,
+ "rev": 29,
  "rotation": 90,
  "schema_version": 1,
  "sheet_key": "707_77448eaf_p197",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 118,
- "updated_at": "2026-08-20T07:23:56+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

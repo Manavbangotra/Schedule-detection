@@ -41,13 +41,35 @@
    "id": "a_p4_b1",
    "origin": "model",
    "rect": [
-    210.0,
-    710.0,
-    544.0,
-    1128.0
+    1265.0,
+    654.0,
+    2618.0,
+    954.72
    ],
    "seed": {
     "block_id": "p4_b1",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "title": "SF-4 - STOREFRONT ELEVATION",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p4_b2",
+   "origin": "model",
+   "rect": [
+    210.0,
+    710.0,
+    544.0,
+    878.0
+   ],
+   "seed": {
+    "block_id": "p4_b2",
     "category": "door",
     "exclude_reason": "",
     "genre": "pictorial",
@@ -60,7 +82,7 @@
   },
   {
    "edited": false,
-   "id": "a_p4_b2",
+   "id": "a_p4_b3",
    "origin": "model",
    "rect": [
     572.39,
@@ -69,7 +91,7 @@
     954.72
    ],
    "seed": {
-    "block_id": "p4_b2",
+    "block_id": "p4_b3",
     "category": "door",
     "exclude_reason": "",
     "genre": "pictorial",
@@ -82,16 +104,16 @@
   },
   {
    "edited": false,
-   "id": "a_p4_b3",
+   "id": "a_p4_b4",
    "origin": "model",
    "rect": [
     922.0,
     710.0,
     1242.0,
-    1126.0
+    954.72
    ],
    "seed": {
-    "block_id": "p4_b3",
+    "block_id": "p4_b4",
     "category": "door",
     "exclude_reason": "",
     "genre": "pictorial",
@@ -104,21 +126,45 @@
   },
   {
    "edited": false,
-   "id": "a_p4_b4",
+   "id": "a_p4_b5",
    "origin": "model",
    "rect": [
-    1265.0,
-    710.0,
-    1584.0,
-    1072.0
+    176.0,
+    954.72,
+    765.39,
+    2140.0
    ],
    "seed": {
-    "block_id": "p4_b4",
+    "block_id": "p4_b5",
     "category": "door",
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "title": "SF-4 - STOREFRONT ELEVATION",
+    "new_since_seed": true,
+    "title": "ISF-1 - INTERIOR STOREFRONT ELEVATION",
+    "type": "door_area"
+   },
+   "type": "door_area",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
+   "id": "a_p4_b6",
+   "origin": "model",
+   "rect": [
+    1004.22,
+    954.72,
+    3024.0,
+    2146.0
+   ],
+   "seed": {
+    "block_id": "p4_b6",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "new_since_seed": true,
+    "title": "ISF-3 - INTERIOR STOREFRONT ELEVATION",
     "type": "door_area"
    },
    "type": "door_area",
@@ -559,11 +605,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p4_b3",
+   "area_id": "a_hmsyjxbq6",
    "cls": "window",
    "cls_source": "human",
    "confidence": 0.275,
-   "containment": 0.727,
+   "containment": 1.0,
    "detector_source": "sheet",
    "edited": true,
    "flags": [
@@ -591,7 +637,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p4_b3",
+   "area_id": "a_hmsyjxbq6",
    "cls": "door",
    "cls_source": "human",
    "confidence": 0.703,
@@ -622,11 +668,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p4_b1",
+   "area_id": "a_p4_b5",
    "cls": "window",
    "cls_source": "human",
    "confidence": 0.496,
-   "containment": 1.0,
+   "containment": 0.946,
    "detector_source": "block",
    "edited": true,
    "flags": [],
@@ -651,11 +697,11 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p4_b1",
+   "area_id": "a_p4_b5",
    "cls": "window",
    "cls_source": "human",
    "confidence": 0.513,
-   "containment": 1.0,
+   "containment": 0.978,
    "detector_source": "block",
    "edited": true,
    "flags": [],
@@ -680,7 +726,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p4_b1",
+   "area_id": "a_p4_b5",
    "cls": "door",
    "cls_source": "human",
    "confidence": 0.59,
@@ -709,7 +755,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p4_b1",
+   "area_id": "a_hmsyjxbq6",
    "cls": "window",
    "cls_source": "human",
    "confidence": 1,
@@ -730,7 +776,7 @@
    "state": "accepted"
   },
   {
-   "area_id": "a_p4_b3",
+   "area_id": "a_p4_b4",
    "cls": "window",
    "cls_source": "human",
    "confidence": 1,
@@ -904,12 +950,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 88,
+ "rev": 89,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "5449_9211017b_p4",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 278,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

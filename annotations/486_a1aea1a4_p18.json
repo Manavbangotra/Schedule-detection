@@ -27,35 +27,13 @@
    "id": "a_p18_b1",
    "origin": "model",
    "rect": [
-    176.0,
-    812.0,
     877.11,
-    1480.0
+    458.5,
+    2774.0,
+    1276.0
    ],
    "seed": {
     "block_id": "p18_b1",
-    "category": "door",
-    "exclude_reason": "tabular schedule: text table, no drawn openings",
-    "genre": "tabular",
-    "kind": "schedule",
-    "title": "DOOR SCHEDULE - DWELLING UNITS",
-    "type": "exclude"
-   },
-   "type": "exclude",
-   "type_source": "seed"
-  },
-  {
-   "edited": false,
-   "id": "a_p18_b2",
-   "origin": "model",
-   "rect": [
-    877.11,
-    812.0,
-    1574.0,
-    1020.0
-   ],
-   "seed": {
-    "block_id": "p18_b2",
     "category": "door",
     "exclude_reason": "tabular schedule: text table, no drawn openings",
     "genre": "tabular",
@@ -68,11 +46,33 @@
   },
   {
    "edited": false,
+   "id": "a_p18_b2",
+   "origin": "model",
+   "rect": [
+    176.0,
+    812.0,
+    877.11,
+    1480.0
+   ],
+   "seed": {
+    "block_id": "p18_b2",
+    "category": "door",
+    "exclude_reason": "tabular schedule: text table, no drawn openings",
+    "genre": "tabular",
+    "kind": "schedule",
+    "title": "DOOR SCHEDULE - DWELLING UNITS",
+    "type": "exclude"
+   },
+   "type": "exclude",
+   "type_source": "seed"
+  },
+  {
+   "edited": false,
    "id": "a_p18_b3",
    "origin": "model",
    "rect": [
-    2268.0,
-    1404.0,
+    1720.0,
+    1292.0,
     2994.0,
     2112.0
    ],
@@ -80,7 +80,7 @@
     "block_id": "p18_b3",
     "category": "door",
     "exclude_reason": "hardware block",
-    "genre": "tabular",
+    "genre": "pictorial",
     "kind": "hardware",
     "title": "DOOR HARDWARE TYPES",
     "type": "exclude"
@@ -1073,12 +1073,12 @@
   "w": 5444,
   "zoom": 1.8
  },
- "rev": 46,
+ "rev": 47,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "486_a1aea1a4_p18",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 161,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

@@ -6,9 +6,9 @@
    "origin": "model",
    "rect": [
     78.0,
-    210.0,
-    822.0,
-    810.0
+    204.0,
+    1108.72,
+    812.0
    ],
    "seed": {
     "block_id": "p35_b0",
@@ -32,7 +32,15 @@
     2175.800981704596,
     1290.905845604641
    ],
-   "seed": {},
+   "seed": {
+    "block_id": "p35_b1",
+    "category": "door",
+    "exclude_reason": "",
+    "genre": "pictorial",
+    "kind": "type_legend",
+    "title": "DOOR TYPES",
+    "type": "door_area"
+   },
    "type": "door_area",
    "type_source": "human"
   }
@@ -555,12 +563,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 14,
+ "rev": 15,
  "rotation": 270,
  "schema_version": 1,
  "sheet_key": "632_c4340fa2_p35",
  "skip_reason": "",
  "status": "verified",
  "time_spent_s": 50,
- "updated_at": "2026-08-20T07:04:48+00:00"
+ "updated_at": "2026-08-20T10:18:57+00:00"
 }

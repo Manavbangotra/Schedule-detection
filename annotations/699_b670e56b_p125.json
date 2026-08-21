@@ -5,7 +5,7 @@
    "id": "a_p125_b0",
    "origin": "model",
    "rect": [
-    588,
+    118,
     60,
     1542,
     878.78
@@ -96,7 +96,6 @@
     "exclude_reason": "",
     "genre": "pictorial",
     "kind": "type_legend",
-    "new_since_seed": true,
     "title": "DOOR & WINDOW FRAME TYPES",
     "type": "mixed"
    },
@@ -1559,6 +1558,37 @@
    ],
    "seed": {},
    "state": "accepted"
+  },
+  {
+   "area_id": "a_p125_b2",
+   "cls": "window",
+   "cls_source": "inherited",
+   "confidence": 0.554,
+   "containment": 1.0,
+   "detector_source": "sheet",
+   "edited": false,
+   "flags": [
+    "new_since_verify"
+   ],
+   "group_id": "",
+   "id": "o_125_018",
+   "origin": "model",
+   "rect": [
+    194.39,
+    1023.78,
+    406.28,
+    1149.61
+   ],
+   "seed": {
+    "confidence": 0.554,
+    "rect": [
+     194.39,
+     1023.78,
+     406.28,
+     1149.61
+    ]
+   },
+   "state": "pending"
   }
  ],
  "page": 125,
@@ -1577,12 +1607,12 @@
   "w": 4666,
   "zoom": 1.8
  },
- "rev": 86,
+ "rev": 88,
  "rotation": 0,
  "schema_version": 1,
  "sheet_key": "699_b670e56b_p125",
  "skip_reason": "",
- "status": "verified",
- "time_spent_s": 414,
- "updated_at": "2026-08-20T07:26:04+00:00"
+ "status": "skipped",
+ "time_spent_s": 416,
+ "updated_at": "2026-08-20T10:39:08+00:00"
 }
