@@ -1,0 +1,226 @@
+{
+  "weights": "out/dataset/v2/runs/arm-coco-s-1280.pt",
+  "conf": 0.25,
+  "imgsz": 1280,
+  "merged": false,
+  "augment": false,
+  "val_images": 31,
+  "map50_class_agnostic": 0.7046,
+  "precision": 0.7725,
+  "recall": 0.7487,
+  "per_class": {
+    "window": {
+      "ap50": 0.4844,
+      "val_boxes": 73
+    },
+    "door": {
+      "ap50": 0.7758,
+      "val_boxes": 122
+    }
+  },
+  "per_planset": {
+    "543_fc78c1f7": {
+      "ap50": 0.8293,
+      "val_boxes": 53
+    },
+    "658_38ee4786": {
+      "ap50": 0.4169,
+      "val_boxes": 34
+    },
+    "733_871e0c28": {
+      "ap50": 0.7564,
+      "val_boxes": 33
+    },
+    "739_733399c1": {
+      "ap50": 0.7146,
+      "val_boxes": 60
+    },
+    "744_2273d2d4": {
+      "ap50": 0.8681,
+      "val_boxes": 15
+    }
+  },
+  "exact_count_rate": 0.3103,
+  "within_one_rate": 0.5172,
+  "hard_negatives": {
+    "areas": 2,
+    "fired": 2,
+    "boxes": 4
+  },
+  "counts": [
+    {
+      "planset": "543_fc78c1f7",
+      "area": "door_area",
+      "truth": 11,
+      "pred": 10
+    },
+    {
+      "planset": "543_fc78c1f7",
+      "area": "window_area",
+      "truth": 4,
+      "pred": 5
+    },
+    {
+      "planset": "543_fc78c1f7",
+      "area": "door_area",
+      "truth": 7,
+      "pred": 7
+    },
+    {
+      "planset": "543_fc78c1f7",
+      "area": "door_area",
+      "truth": 21,
+      "pred": 31
+    },
+    {
+      "planset": "543_fc78c1f7",
+      "area": "window_area",
+      "truth": 7,
+      "pred": 11
+    },
+    {
+      "planset": "543_fc78c1f7",
+      "area": "door_area",
+      "truth": 3,
+      "pred": 0
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "window_area",
+      "truth": 4,
+      "pred": 6
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "window_area",
+      "truth": 9,
+      "pred": 0
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "door_area",
+      "truth": 5,
+      "pred": 0
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "window_area",
+      "truth": 3,
+      "pred": 1
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "door_area",
+      "truth": 7,
+      "pred": 8
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "door_area",
+      "truth": 2,
+      "pred": 4
+    },
+    {
+      "planset": "658_38ee4786",
+      "area": "door_area",
+      "truth": 4,
+      "pred": 4
+    },
+    {
+      "planset": "733_871e0c28",
+      "area": "door_area",
+      "truth": 19,
+      "pred": 17
+    },
+    {
+      "planset": "733_871e0c28",
+      "area": "window_area",
+      "truth": 14,
+      "pred": 10
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "door_area",
+      "truth": 6,
+      "pred": 5
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "window_area",
+      "truth": 2,
+      "pred": 2
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "door_area",
+      "truth": 3,
+      "pred": 3
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "window_area",
+      "truth": 21,
+      "pred": 15
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "door_area",
+      "truth": 3,
+      "pred": 1
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "door_area",
+      "truth": 7,
+      "pred": 5
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "door_area",
+      "truth": 4,
+      "pred": 4
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "window_area",
+      "truth": 2,
+      "pred": 3
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "door_area",
+      "truth": 6,
+      "pred": 6
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "window_area",
+      "truth": 2,
+      "pred": 3
+    },
+    {
+      "planset": "739_733399c1",
+      "area": "door_area",
+      "truth": 4,
+      "pred": 4
+    },
+    {
+      "planset": "744_2273d2d4",
+      "area": "door_area",
+      "truth": 7,
+      "pred": 16
+    },
+    {
+      "planset": "744_2273d2d4",
+      "area": "window_area",
+      "truth": 5,
+      "pred": 5
+    },
+    {
+      "planset": "744_2273d2d4",
+      "area": "door_area",
+      "truth": 3,
+      "pred": 3
+    }
+  ]
+}

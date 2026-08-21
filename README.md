@@ -34,7 +34,27 @@ labelled a block titled `DOOR TYPES` as windows.
 
 ## Current state
 
-The dataset is exported and verified; the detector is not yet trained.
+**Stage 2 is trained.** `coco-s` (yolo11s, 9.4M) on dataset v2 is the pick.
+Shipped weights: `out/dataset/v2/cv/full/runs/coco-s/weights/best.pt`.
+
+| | incumbent `best.pt` | **`coco-s`** |
+|---|---|---|
+| class-agnostic mAP50 | 0.407 | **0.737 +/- 0.085** |
+| exact opening count | 18.5% | **29.7% +/- 15.3pp** |
+| window AP50 | 0.160 | **0.514 +/- 0.158** |
+| door AP50 | 0.457 | **0.764 +/- 0.071** |
+
+5-fold cross-validated over balanced planset folds, so every planset is held out
+exactly once. The +/- is the fold-to-fold spread, and it is **load-bearing**: at
++/- 0.085 mAP50, only the gap to the incumbent (0.287, 3.4 sigma) is real. Model
+size, image size, dataset version and initialisation were all measured and all
+came out inside the noise. `TRAINING.md` has the full campaign; the short version
+is **stop tuning, start annotating.**
+
+Read it as a much better *seeder*, not automation: ~76% of the boxes it draws are
+real and it finds ~73% of openings, against ~56%/~57% for the incumbent. Roughly
+a third to a half less hand-correction, not a solved problem.
+
 
 | | |
 |---|---|
@@ -44,10 +64,13 @@ The dataset is exported and verified; the detector is not yet trained.
 | Split | 62 train / 28 val, **by planset**, hash-stable |
 | Overfit gate | **passed** — mAP50 0.995 on 8 memorised images |
 
-The incumbent `best.pt` on held-out plansets: class-agnostic mAP50 **0.407**,
-precision 0.563, recall 0.571, exact opening count 18.5%. Per class it is
-lopsided — door 0.457, window 0.160. That is the number to beat, and the full
-measurement is in `TRAINING.md`.
+The biggest remaining lever is **data, not method**. 70 training images is very
+small for detection, and stage 1 locates schedule sheets in **197 of 230
+plansets — 654 sheets**, of which only 25 plansets / 51 sheets are annotated.
+Seeding the next annotation round with `coco-s` via `cli detect --weights` starts
+from 0.737 instead of the 0.407 the first round used.
+
+GPU and VRAM practicalities are in `GPU-SETUP.md`.
 
 ## Setup
 

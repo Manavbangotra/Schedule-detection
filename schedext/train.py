@@ -46,6 +46,10 @@ ARMS = {
     "best": {"weights": BEST_PT, "note": "incumbent, YOLOv12-L 26.4M"},
     "coco-l": {"weights": "yolo12l.pt", "note": "COCO at the same size as best.pt"},
     "coco-s": {"weights": "yolo11s.pt", "note": "COCO small — recommended"},
+    # v1 showed 9.4M beats 26.4M, so the peak is somewhere at or below
+    # coco-s. These two bracket it rather than assume it.
+    "coco-n": {"weights": "yolo11n.pt", "note": "COCO nano 2.6M — capacity floor"},
+    "coco-m": {"weights": "yolo11m.pt", "note": "COCO medium 20.1M"},
 }
 
 # Departures from ultralytics defaults, each for a measured reason.

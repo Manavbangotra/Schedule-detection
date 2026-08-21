@@ -30,7 +30,11 @@ from pathlib import Path
 
 CLASSES = ["window", "door"]
 IOU = 0.50
-CONF = 0.25          # what the pipeline would actually run at
+CONF = 0.25
+# Inference size must match what the model trained at, or the comparison is
+# rigged: a model trained at 1280 scored at 1024 sees objects at the wrong
+# scale and looks worse than it is.
+IMGSZ = 1024          # what the pipeline would actually run at
 PREVIEW_LIMIT = 24
 
 
@@ -174,7 +178,8 @@ def match(preds, truths, class_agnostic: bool):
 # --- main -------------------------------------------------------------------
 
 def evaluate(weights: str, root: Path, conf: float = CONF,
-             previews: bool = True, merge: bool = False) -> dict:
+             previews: bool = True, merge: bool = False,
+             augment: bool = False, imgsz: int = IMGSZ) -> dict:
     from ultralytics import YOLO
 
     meta = {}
@@ -207,7 +212,8 @@ def evaluate(weights: str, root: Path, conf: float = CONF,
         width, height = int(row.get("width", 0)), int(row.get("height", 0))
         truths = _load_labels(root / "labels" / f"{image.stem}.txt", width, height)
 
-        result = model.predict(str(image), imgsz=1024, conf=conf, verbose=False)[0]
+        result = model.predict(str(image), imgsz=imgsz, conf=conf, verbose=False,
+                               augment=augment)[0]
         preds = [
             (float(c), folded[int(k)], tuple(float(v) for v in b))
             for c, k, b in zip(result.boxes.conf, result.boxes.cls, result.boxes.xyxy)
@@ -245,7 +251,9 @@ def evaluate(weights: str, root: Path, conf: float = CONF,
     report = {
         "weights": weights,
         "conf": conf,
+        "imgsz": imgsz,
         "merged": merge,
+        "augment": augment,
         "val_images": len(entries),
         "map50_class_agnostic": round(average_precision(agnostic_records, agnostic_truth), 4),
         "precision": round(tp / len(agnostic_records), 4) if agnostic_records else 0.0,
@@ -341,6 +349,13 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--tag", default="v1")
     parser.add_argument("--conf", type=float, default=CONF)
     parser.add_argument("--no-previews", action="store_true")
+    parser.add_argument("--imgsz", type=int, default=IMGSZ,
+                        help="inference size. MUST match the training imgsz")
+    parser.add_argument("--augment", action="store_true",
+                        help="test-time augmentation: ultralytics runs multi-scale "
+                             "+ flipped passes and fuses them. Inference cost only, "
+                             "no retraining. It can inflate box counts, so check "
+                             "exact-count as well as mAP before keeping it")
     parser.add_argument("--merge", action="store_true",
                         help="collapse sash/lite duplicates first — how a raw "
                              "multi-class detector like best.pt is actually used")
@@ -352,8 +367,11 @@ def main(argv: list[str]) -> int:
         return 1
 
     report = evaluate(args.weights, root, args.conf,
-                      not args.no_previews, args.merge)
-    name = Path(args.weights).stem + ("_merged" if args.merge else "")
+                      not args.no_previews, args.merge, args.augment,
+                      args.imgsz)
+    name = (Path(args.weights).stem + ("_merged" if args.merge else "")
+            + ("_tta" if args.augment else "")
+            + (f"_{args.imgsz}" if args.imgsz != IMGSZ else ""))
     (root / f"eval_{name}.json").write_text(json.dumps(report, indent=2))
     print(render(report))
     print(f"\nwrote {root / f'eval_{name}.json'}")

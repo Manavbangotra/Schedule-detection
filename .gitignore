@@ -44,3 +44,10 @@ viewer/pages/
 annotations/.history/
 
 *.tgz
+
+# CV fold artifacts. The list files hold ABSOLUTE paths (ultralytics resolves a
+# leading "./" against the txt file's own directory, which is wrong one level
+# down), so they are machine-specific and must not be committed. All of it is
+# regenerable: make_folds.py then run_cv.py. Only the measured summary is kept.
+out/dataset/*/cv/*
+!out/dataset/*/cv/cv_*.json

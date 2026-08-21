@@ -1,0 +1,770 @@
+[
+  {
+    "weights": "out\\dataset\\v2\\cv\\fold0\\runs\\coco-s\\weights\\best.pt",
+    "conf": 0.25,
+    "imgsz": 1024,
+    "merged": false,
+    "augment": false,
+    "val_images": 18,
+    "map50_class_agnostic": 0.7128,
+    "precision": 0.524,
+    "recall": 0.7956,
+    "per_class": {
+      "window": {
+        "ap50": 0.4454,
+        "val_boxes": 96
+      },
+      "door": {
+        "ap50": 0.8025,
+        "val_boxes": 41
+      }
+    },
+    "per_planset": {
+      "5449_9211017b": {
+        "ap50": 0.5063,
+        "val_boxes": 33
+      },
+      "585_6c8ee4d3": {
+        "ap50": 0.9594,
+        "val_boxes": 8
+      },
+      "632_c4340fa2": {
+        "ap50": 1.0,
+        "val_boxes": 19
+      },
+      "652_310a825e": {
+        "ap50": 0.8163,
+        "val_boxes": 7
+      },
+      "699_b670e56b": {
+        "ap50": 0.696,
+        "val_boxes": 70
+      }
+    },
+    "exact_count_rate": 0.2,
+    "within_one_rate": 0.4,
+    "hard_negatives": {
+      "areas": 3,
+      "fired": 3,
+      "boxes": 11
+    },
+    "counts": [
+      {
+        "planset": "699_b670e56b",
+        "area": "window_area",
+        "truth": 30,
+        "pred": 58
+      },
+      {
+        "planset": "699_b670e56b",
+        "area": "window_area",
+        "truth": 9,
+        "pred": 9
+      },
+      {
+        "planset": "699_b670e56b",
+        "area": "window_area",
+        "truth": 20,
+        "pred": 36
+      },
+      {
+        "planset": "699_b670e56b",
+        "area": "window_area",
+        "truth": 11,
+        "pred": 14
+      },
+      {
+        "planset": "5449_9211017b",
+        "area": "door_area",
+        "truth": 6,
+        "pred": 10
+      },
+      {
+        "planset": "5449_9211017b",
+        "area": "window_area",
+        "truth": 9,
+        "pred": 9
+      },
+      {
+        "planset": "5449_9211017b",
+        "area": "window_area",
+        "truth": 11,
+        "pred": 16
+      },
+      {
+        "planset": "5449_9211017b",
+        "area": "door_area",
+        "truth": 4,
+        "pred": 7
+      },
+      {
+        "planset": "5449_9211017b",
+        "area": "door_area",
+        "truth": 3,
+        "pred": 5
+      },
+      {
+        "planset": "632_c4340fa2",
+        "area": "door_area",
+        "truth": 14,
+        "pred": 14
+      },
+      {
+        "planset": "632_c4340fa2",
+        "area": "window_area",
+        "truth": 5,
+        "pred": 7
+      },
+      {
+        "planset": "585_6c8ee4d3",
+        "area": "door_area",
+        "truth": 6,
+        "pred": 7
+      },
+      {
+        "planset": "585_6c8ee4d3",
+        "area": "window_area",
+        "truth": 2,
+        "pred": 7
+      },
+      {
+        "planset": "652_310a825e",
+        "area": "door_area",
+        "truth": 5,
+        "pred": 6
+      },
+      {
+        "planset": "652_310a825e",
+        "area": "window_area",
+        "truth": 2,
+        "pred": 3
+      }
+    ]
+  },
+  {
+    "weights": "out\\dataset\\v2\\cv\\fold1\\runs\\coco-s\\weights\\best.pt",
+    "conf": 0.25,
+    "imgsz": 1024,
+    "merged": false,
+    "augment": false,
+    "val_images": 32,
+    "map50_class_agnostic": 0.6625,
+    "precision": 0.8087,
+    "recall": 0.6838,
+    "per_class": {
+      "window": {
+        "ap50": 0.3217,
+        "val_boxes": 55
+      },
+      "door": {
+        "ap50": 0.7671,
+        "val_boxes": 81
+      }
+    },
+    "per_planset": {
+      "524_82ca7fae": {
+        "ap50": 1.0,
+        "val_boxes": 6
+      },
+      "590_4a15ed64": {
+        "ap50": 0.7113,
+        "val_boxes": 19
+      },
+      "658_38ee4786": {
+        "ap50": 0.4562,
+        "val_boxes": 34
+      },
+      "702_32e25888": {
+        "ap50": 0.9412,
+        "val_boxes": 17
+      },
+      "739_733399c1": {
+        "ap50": 0.6512,
+        "val_boxes": 60
+      }
+    },
+    "exact_count_rate": 0.5,
+    "within_one_rate": 0.6154,
+    "hard_negatives": {
+      "areas": 6,
+      "fired": 5,
+      "boxes": 18
+    },
+    "counts": [
+      {
+        "planset": "739_733399c1",
+        "area": "door_area",
+        "truth": 6,
+        "pred": 5
+      },
+      {
+        "planset": "739_733399c1",
+        "area": "window_area",
+        "truth": 2,
+        "pred": 2
+      },
+      {
+        "planset": "739_733399c1",
+        "area": "door_area",
+        "truth": 3,
+        "pred": 3
+      },
+      {
+        "planset": "739_733399c1",
+        "area": "window_area",
+        "truth": 21,
+        "pred": 11
+      },
+      {
+        "planset": "739_733399c1",
+        "area": "door_area",
+        "truth": 3,
+        "pred": 3
+      },
+      {
+        "planset": "739_733399c1",
+        "area": "door_area",
+        "truth": 7,
+        "pred": 5
+      },
+      {
+        "planset": "739_733399c1",
+        "area": "door_area",
+        "truth": 4,
+        "pred": 4
+      },
+      {
+        "planset": "739_733399c1",
+        "area": "window_area",
+        "truth": 2,
+        "pred": 2
+      },
+      {
+        "planset": "739_733399c1",
+        "area": "door_area",
+        "truth": 6,
+        "pred": 5
+      },
+      {
+        "planset": "739_733399c1",
+        "area": "window_area",
+        "truth": 2,
+        "pred": 2
+      },
+      {
+        "planset": "739_733399c1",
+        "area": "door_area",
+        "truth": 4,
+        "pred": 4
+      },
+      {
+        "planset": "658_38ee4786",
+        "area": "window_area",
+        "truth": 4,
+        "pred": 8
+      },
+      {
+        "planset": "658_38ee4786",
+        "area": "window_area",
+        "truth": 9,
+        "pred": 0
+      },
+      {
+        "planset": "658_38ee4786",
+        "area": "door_area",
+        "truth": 5,
+        "pred": 0
+      },
+      {
+        "planset": "658_38ee4786",
+        "area": "window_area",
+        "truth": 3,
+        "pred": 1
+      },
+      {
+        "planset": "658_38ee4786",
+        "area": "door_area",
+        "truth": 7,
+        "pred": 6
+      },
+      {
+        "planset": "658_38ee4786",
+        "area": "door_area",
+        "truth": 2,
+        "pred": 2
+      },
+      {
+        "planset": "658_38ee4786",
+        "area": "door_area",
+        "truth": 4,
+        "pred": 4
+      },
+      {
+        "planset": "590_4a15ed64",
+        "area": "door_area",
+        "truth": 8,
+        "pred": 12
+      },
+      {
+        "planset": "590_4a15ed64",
+        "area": "window_area",
+        "truth": 6,
+        "pred": 4
+      },
+      {
+        "planset": "590_4a15ed64",
+        "area": "door_area",
+        "truth": 5,
+        "pred": 5
+      },
+      {
+        "planset": "702_32e25888",
+        "area": "window_area",
+        "truth": 6,
+        "pred": 8
+      },
+      {
+        "planset": "702_32e25888",
+        "area": "door_area",
+        "truth": 4,
+        "pred": 4
+      },
+      {
+        "planset": "702_32e25888",
+        "area": "door_area",
+        "truth": 6,
+        "pred": 6
+      },
+      {
+        "planset": "702_32e25888",
+        "area": "garage_area",
+        "truth": 1,
+        "pred": 1
+      },
+      {
+        "planset": "524_82ca7fae",
+        "area": "door_area",
+        "truth": 6,
+        "pred": 8
+      }
+    ]
+  },
+  {
+    "weights": "out\\dataset\\v2\\cv\\fold2\\runs\\coco-s\\weights\\best.pt",
+    "conf": 0.25,
+    "imgsz": 1024,
+    "merged": false,
+    "augment": false,
+    "val_images": 18,
+    "map50_class_agnostic": 0.8522,
+    "precision": 0.6839,
+    "recall": 0.8947,
+    "per_class": {
+      "window": {
+        "ap50": 0.5746,
+        "val_boxes": 67
+      },
+      "door": {
+        "ap50": 0.7794,
+        "val_boxes": 66
+      }
+    },
+    "per_planset": {
+      "461_1249fd34": {
+        "ap50": 0.825,
+        "val_boxes": 34
+      },
+      "538_f28abb70": {
+        "ap50": 0.9174,
+        "val_boxes": 59
+      },
+      "565_3bee76f5": {
+        "ap50": 0.7157,
+        "val_boxes": 25
+      },
+      "744_2273d2d4": {
+        "ap50": 0.9175,
+        "val_boxes": 15
+      }
+    },
+    "exact_count_rate": 0.3333,
+    "within_one_rate": 0.6111,
+    "hard_negatives": {
+      "areas": 0,
+      "fired": 0,
+      "boxes": 0
+    },
+    "counts": [
+      {
+        "planset": "538_f28abb70",
+        "area": "door_area",
+        "truth": 7,
+        "pred": 7
+      },
+      {
+        "planset": "538_f28abb70",
+        "area": "window_area",
+        "truth": 6,
+        "pred": 7
+      },
+      {
+        "planset": "538_f28abb70",
+        "area": "door_area",
+        "truth": 3,
+        "pred": 4
+      },
+      {
+        "planset": "538_f28abb70",
+        "area": "door_area",
+        "truth": 4,
+        "pred": 4
+      },
+      {
+        "planset": "538_f28abb70",
+        "area": "door_area",
+        "truth": 8,
+        "pred": 9
+      },
+      {
+        "planset": "538_f28abb70",
+        "area": "window_area",
+        "truth": 9,
+        "pred": 14
+      },
+      {
+        "planset": "538_f28abb70",
+        "area": "window_area",
+        "truth": 14,
+        "pred": 21
+      },
+      {
+        "planset": "538_f28abb70",
+        "area": "door_area",
+        "truth": 8,
+        "pred": 13
+      },
+      {
+        "planset": "461_1249fd34",
+        "area": "door_area",
+        "truth": 13,
+        "pred": 13
+      },
+      {
+        "planset": "461_1249fd34",
+        "area": "garage_area",
+        "truth": 3,
+        "pred": 3
+      },
+      {
+        "planset": "461_1249fd34",
+        "area": "window_area",
+        "truth": 4,
+        "pred": 5
+      },
+      {
+        "planset": "461_1249fd34",
+        "area": "door_area",
+        "truth": 11,
+        "pred": 19
+      },
+      {
+        "planset": "461_1249fd34",
+        "area": "window_area",
+        "truth": 3,
+        "pred": 5
+      },
+      {
+        "planset": "565_3bee76f5",
+        "area": "window_area",
+        "truth": 10,
+        "pred": 10
+      },
+      {
+        "planset": "565_3bee76f5",
+        "area": "window_area",
+        "truth": 15,
+        "pred": 18
+      },
+      {
+        "planset": "744_2273d2d4",
+        "area": "door_area",
+        "truth": 7,
+        "pred": 13
+      },
+      {
+        "planset": "744_2273d2d4",
+        "area": "window_area",
+        "truth": 5,
+        "pred": 6
+      },
+      {
+        "planset": "744_2273d2d4",
+        "area": "door_area",
+        "truth": 3,
+        "pred": 3
+      }
+    ]
+  },
+  {
+    "weights": "out\\dataset\\v2\\cv\\fold3\\runs\\coco-s\\weights\\best.pt",
+    "conf": 0.25,
+    "imgsz": 1024,
+    "merged": false,
+    "augment": false,
+    "val_images": 18,
+    "map50_class_agnostic": 0.7972,
+    "precision": 0.7651,
+    "recall": 0.8507,
+    "per_class": {
+      "window": {
+        "ap50": 0.7457,
+        "val_boxes": 40
+      },
+      "door": {
+        "ap50": 0.8262,
+        "val_boxes": 94
+      }
+    },
+    "per_planset": {
+      "543_fc78c1f7": {
+        "ap50": 0.8029,
+        "val_boxes": 53
+      },
+      "603_9434dcba": {
+        "ap50": 0.9325,
+        "val_boxes": 39
+      },
+      "707_77448eaf": {
+        "ap50": 0.5961,
+        "val_boxes": 28
+      },
+      "716_1426c195": {
+        "ap50": 0.9036,
+        "val_boxes": 14
+      }
+    },
+    "exact_count_rate": 0.3529,
+    "within_one_rate": 0.5882,
+    "hard_negatives": {
+      "areas": 1,
+      "fired": 0,
+      "boxes": 0
+    },
+    "counts": [
+      {
+        "planset": "543_fc78c1f7",
+        "area": "door_area",
+        "truth": 11,
+        "pred": 10
+      },
+      {
+        "planset": "543_fc78c1f7",
+        "area": "window_area",
+        "truth": 4,
+        "pred": 4
+      },
+      {
+        "planset": "543_fc78c1f7",
+        "area": "door_area",
+        "truth": 7,
+        "pred": 7
+      },
+      {
+        "planset": "543_fc78c1f7",
+        "area": "door_area",
+        "truth": 21,
+        "pred": 32
+      },
+      {
+        "planset": "543_fc78c1f7",
+        "area": "window_area",
+        "truth": 7,
+        "pred": 8
+      },
+      {
+        "planset": "543_fc78c1f7",
+        "area": "door_area",
+        "truth": 3,
+        "pred": 1
+      },
+      {
+        "planset": "603_9434dcba",
+        "area": "door_area",
+        "truth": 8,
+        "pred": 8
+      },
+      {
+        "planset": "603_9434dcba",
+        "area": "window_area",
+        "truth": 5,
+        "pred": 5
+      },
+      {
+        "planset": "603_9434dcba",
+        "area": "door_area",
+        "truth": 15,
+        "pred": 21
+      },
+      {
+        "planset": "603_9434dcba",
+        "area": "window_area",
+        "truth": 8,
+        "pred": 10
+      },
+      {
+        "planset": "603_9434dcba",
+        "area": "door_area",
+        "truth": 2,
+        "pred": 2
+      },
+      {
+        "planset": "603_9434dcba",
+        "area": "garage_area",
+        "truth": 1,
+        "pred": 4
+      },
+      {
+        "planset": "707_77448eaf",
+        "area": "door_area",
+        "truth": 18,
+        "pred": 11
+      },
+      {
+        "planset": "707_77448eaf",
+        "area": "window_area",
+        "truth": 10,
+        "pred": 10
+      },
+      {
+        "planset": "716_1426c195",
+        "area": "door_area",
+        "truth": 4,
+        "pred": 3
+      },
+      {
+        "planset": "716_1426c195",
+        "area": "door_area",
+        "truth": 3,
+        "pred": 5
+      },
+      {
+        "planset": "716_1426c195",
+        "area": "window_area",
+        "truth": 7,
+        "pred": 8
+      }
+    ]
+  },
+  {
+    "weights": "out\\dataset\\v2\\cv\\fold4\\runs\\coco-s\\weights\\best.pt",
+    "conf": 0.25,
+    "imgsz": 1024,
+    "merged": false,
+    "augment": false,
+    "val_images": 15,
+    "map50_class_agnostic": 0.6591,
+    "precision": 0.7462,
+    "recall": 0.7029,
+    "per_class": {
+      "window": {
+        "ap50": 0.4808,
+        "val_boxes": 65
+      },
+      "door": {
+        "ap50": 0.643,
+        "val_boxes": 73
+      }
+    },
+    "per_planset": {
+      "486_a1aea1a4": {
+        "ap50": 0.8022,
+        "val_boxes": 44
+      },
+      "570_13cb4fd7": {
+        "ap50": 0.8182,
+        "val_boxes": 11
+      },
+      "593_e01c7d13": {
+        "ap50": 0.4351,
+        "val_boxes": 44
+      },
+      "733_871e0c28": {
+        "ap50": 0.6683,
+        "val_boxes": 33
+      },
+      "738_f66be1e1": {
+        "ap50": 0.8333,
+        "val_boxes": 6
+      }
+    },
+    "exact_count_rate": 0.1,
+    "within_one_rate": 0.4,
+    "hard_negatives": {
+      "areas": 5,
+      "fired": 3,
+      "boxes": 14
+    },
+    "counts": [
+      {
+        "planset": "486_a1aea1a4",
+        "area": "window_area",
+        "truth": 11,
+        "pred": 9
+      },
+      {
+        "planset": "486_a1aea1a4",
+        "area": "door_area",
+        "truth": 12,
+        "pred": 11
+      },
+      {
+        "planset": "486_a1aea1a4",
+        "area": "window_area",
+        "truth": 10,
+        "pred": 13
+      },
+      {
+        "planset": "486_a1aea1a4",
+        "area": "door_area",
+        "truth": 11,
+        "pred": 13
+      },
+      {
+        "planset": "593_e01c7d13",
+        "area": "door_area",
+        "truth": 9,
+        "pred": 6
+      },
+      {
+        "planset": "593_e01c7d13",
+        "area": "window_area",
+        "truth": 35,
+        "pred": 28
+      },
+      {
+        "planset": "733_871e0c28",
+        "area": "door_area",
+        "truth": 19,
+        "pred": 17
+      },
+      {
+        "planset": "733_871e0c28",
+        "area": "window_area",
+        "truth": 14,
+        "pred": 14
+      },
+      {
+        "planset": "570_13cb4fd7",
+        "area": "door_area",
+        "truth": 11,
+        "pred": 12
+      },
+      {
+        "planset": "738_f66be1e1",
+        "area": "door_area",
+        "truth": 6,
+        "pred": 7
+      }
+    ]
+  }
+]

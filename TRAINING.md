@@ -92,6 +92,96 @@ A 5-planset val set is too small for a single number, so this reports the shape:
 - predictions burned onto the val crops in `eval_preview/` (green = truth,
   blue = window, red = door)
 
+### Measured result — trained on v2, cross-validated
+
+The single 5-planset split is too small to rank models. 5-fold CV over balanced
+planset folds (`schedext/eval/make_folds.py` + `run_cv.py`), every planset held
+out exactly once:
+
+    coco-s @ imgsz 1024, 5 folds, all 23 plansets / 678 boxes
+
+      class-agnostic mAP50   0.7368 +/- 0.0853   (0.659 - 0.852)
+      window AP50            0.5136 +/- 0.1582   (0.322 - 0.746)
+      door AP50              0.7636 +/- 0.0711   (0.643 - 0.826)
+      exact opening count    29.7%  +/- 15.3pp   (10%   - 50%)
+      within +/- 1           52.3%  +/- 11.3pp   (40%   - 62%)
+
+**The noise floor is +/- 0.085 mAP50.** Measured against it, nearly every arm
+comparison below is a tie:
+
+| comparison | gap | verdict |
+|---|---|---|
+| v1 vs v2 data | 0.002 | noise |
+| imgsz 1024 vs 1280 | 0.011 | noise |
+| coco-n 2.6M vs coco-s 9.4M | 0.013 | noise |
+| coco-s vs best | 0.033 | noise |
+| coco-s vs coco-m 20.1M | 0.041 | noise |
+| **trained vs incumbent** | **0.287** | **real, 3.4 sigma** |
+
+`coco-s @ 1024` is the pick because nothing beats it and it is the cheapest and
+smallest, **not** because it measurably wins. Do not re-rank these on one split.
+
+Two corrections this forced on claims made elsewhere in this file:
+
+- **The hard-negative veto is noisier than it looks.** `coco-s` itself averages
+  8.6 false boxes per fold (43 over 5). Disqualifying an arm for firing 6 or 9 on
+  a single split was overconfident. Keep the veto as a smell test, not a gate.
+- **The single split is pessimistic.** CV mean 0.737 vs single-split 0.694,
+  because each fold trains on ~83 images against the split's 70. More training
+  data is the one lever that clearly clears the noise.
+
+### The capacity curve — size mattered, pretraining did not
+
+| params | arm | mAP50 | exact count | window AP50 |
+|---|---|---|---|---|
+| 2.6M | coco-n | 0.681 | 31.0% | 0.435 |
+| **9.4M** | **coco-s** | **0.694** | **34.5%** | **0.455** |
+| 20.1M | coco-m | 0.653 | 31.0% | 0.374 |
+| 26.4M | coco-l (v1) | 0.658 | 14.8% | 0.365 |
+| 26.4M | best | 0.661 | 20.7% | 0.413 |
+
+An inverted U peaking at 9.4M, though only the 26.4M arms fall outside the noise
+band. `best` vs `coco-l` -- the facade-pretraining question the three-arm design
+was built to answer -- is **0.661 vs 0.658: no effect.** Size is what mattered.
+
+### imgsz sweep — where the headline metric actively misleads
+
+| imgsz | mAP50 | window AP50 | exact count | false boxes |
+|---|---|---|---|---|
+| **1024** | 0.694 | 0.455 | **34.5%** | **4** |
+| 1280 | 0.705 | 0.484 | 31.0% | 4 |
+| 1536 | **0.738** | **0.540** | 24.1% | **15** |
+
+Resolution buys detection and costs counting, monotonically. **1536 scores
+highest on mAP and is the worst model for the job**: it gets the count right on a
+quarter of areas and fires 15 times on title blocks. Ranking on mAP alone would
+have shipped it. Never lower imgsz below 1024 (p10 box short side is 23px there,
+14px at 640) -- and do not raise it either.
+
+### Test-time augmentation — measured, rejected
+
+Paired over the same folds (`schedext/eval/tta_check.py`), which cancels the
+fold-to-fold variance that would otherwise swamp an effect this small:
+
+      class-agnostic mAP50   +0.0206 +/- 0.0258   (4/5 folds improved)
+      recall                 +0.0455 +/- 0.0217   (5/5 improved)
+      precision              -0.1690 +/- 0.0271   (0/5 improved)
+      exact opening count    -0.1541 +/- 0.0971   (0/5 improved)
+      within +/- 1           -0.2679 +/- 0.1235   (0/5 improved)
+      false boxes            +43 across all folds
+
+TTA raises mAP and ruins the count -- it finds more openings and far more junk,
+doubling false boxes. **Rejected.** `--augment` exists in `evaluate.py` so the
+result stays reproducible, not because it should be used.
+
+### The shipped model
+
+`out/dataset/v2/cv/full/runs/coco-s/weights/best.pt` -- same recipe, trained on
+**all 101 images** so the 5 val plansets (29% of boxes) finally contribute.
+It has **no held-out score by construction**; its honest expected accuracy is the
+CV mean above, 0.737 +/- 0.085. `arm-coco-s.pt` is kept beside it as the
+measured fallback.
+
 ### Baseline to beat — `best.pt` on the same held-out plansets
 
 Measured, not estimated. `--merge` first collapses the whole-unit-plus-every-sash
