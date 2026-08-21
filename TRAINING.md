@@ -40,11 +40,11 @@ time it sees a full sheet.
 `torch.cuda.is_available()` picks the device — the same command is correct on
 CPU and GPU. Three arms run on identical data and split:
 
-| Arm | Init | Params | What it isolates |
-|---|---|---|---|
-| `best` | `best.pt` | 26.4M | the incumbent |
-| `coco-l` | `yolo12l.pt` | 26.4M | whether the facade training helped or hurt |
-| `coco-s` | `yolo11s.pt` | 9.4M | whether the capacity hurts — **the pick** |
+| Arm | Init | Params | What it isolates | Result |
+|---|---|---|---|---|
+| `best` | `best.pt` | 26.4M | the incumbent | not run |
+| `coco-l` | `yolo12l.pt` | 26.4M | whether the facade training helped or hurt | **lost** |
+| `coco-s` | `yolo11s.pt` | 9.4M | whether the capacity hurts | **WINNER** |
 
 `best.pt` was itself trained from `yolo12l.pt` for 100 epochs on facade
 photographs, so it is COCO *plus photographic drift*, not a separate lineage.
@@ -91,6 +91,55 @@ A 5-planset val set is too small for a single number, so this reports the shape:
   blocks is useless
 - predictions burned onto the val crops in `eval_preview/` (green = truth,
   blue = window, red = door)
+
+### Measured result — trained 2026-08-20
+
+Both arms at `imgsz=1024`, 300 epochs, `batch=2` (see `GPU-SETUP.md`: 26.4M at
+batch=4 does not fit a 12GB card and spills to system RAM). `nbs=8` unchanged,
+so accumulate rises to 4 and the effective batch stays 8.
+
+| | incumbent (merged) | **`coco-s`** 9.4M | `coco-l` 26.4M |
+|---|---|---|---|
+| class-agnostic mAP50 | 0.407 | **0.696** | 0.658 |
+| precision | 0.563 | **0.789** | 0.588 |
+| recall | 0.571 | **0.725** | 0.699 |
+| exact opening count | 18.5% | **33.3%** | 14.8% |
+| within +/- 1 | — | **48.1%** | 29.6% |
+| door AP50 (123 boxes) | 0.457 | 0.778 | **0.791** |
+| window AP50 (73 boxes) | 0.160 | **0.377** | 0.365 |
+| false boxes on hard negatives | 5 | **1** | **6** |
+
+**`coco-s` wins; `coco-l` is disqualified.** 6 false boxes on the hard negatives
+is worse than the incumbent, and a detector that fires on title blocks is
+unusable no matter its mAP. `coco-l` also lands *below* the incumbent on exact
+count because it over-predicts — 21 real openings in one door area drew 44 boxes.
+
+The mAP gap (0.696 vs 0.658) is inside the noise band for a 28-image val set, but
+the tie-breakers are not: exact count is 2.3x better and precision 34% better.
+
+**Capacity hurts at this dataset size, as predicted.** `coco-l` peaked at epoch
+**87** and never improved across 173 further epochs. `coco-s` peaked at 186.
+
+Per planset, `coco-s` ranges 0.516 to 1.000 — still the "works on 4 of 5" shape.
+`658_38ee4786` predicts **zero** openings on two areas: a drafting style absent
+from 25 plansets. That is a data gap, not a model defect.
+
+### Two findings that contradict the recipe above
+
+**1. The `close_mosaic` clean phase did not pay off, and deadlocks on Windows.**
+`coco-s` peaked at epoch 186, during mosaic; its clean phase (260-300) topped out
+at 0.5952 and never recovered the 0.6262. `coco-l` peaked at 87. So the
+`patience=300` "always lands" schedule bought nothing on either arm and cost
+~8h on `coco-l`. Worse, `coco-l` **hung indefinitely** at `Closing dataloader
+mosaic` (epoch 260) — a DataLoader worker deadlock. Nothing was lost, because
+`best.pt` is written continuously, but budget for it: either accept the default
+`patience=60`, or run `close_mosaic` with `--workers 0`.
+
+**2. Data is the binding constraint, not the recipe.** 62 training images is very
+small for detection. Stage 1 locates schedule sheets in **197 of 230 plansets —
+654 sheets**, of which only 25 plansets / 51 sheets are annotated. Annotating
+more, seeded by `coco-s` via `cli detect --weights` (0.696 vs the 0.407 the first
+round was seeded with), is the highest-leverage move available.
 
 ### Baseline to beat — `best.pt` on the same held-out plansets
 

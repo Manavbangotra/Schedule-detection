@@ -34,9 +34,30 @@ labelled a block titled `DOOR TYPES` as windows.
 
 ## Current state
 
-The dataset is exported and verified; the detector is not yet trained.
+**Stage 2 is trained.** `coco-s` (yolo11s, 9.4M) is the pick and beats the
+incumbent on every measure. Weights: `out/dataset/v1/runs/coco-s/weights/best.pt`.
 
-| | |
+| | incumbent `best.pt` | **`coco-s`** |
+|---|---|---|
+| class-agnostic mAP50 | 0.407 | **0.696** |
+| precision | 0.563 | **0.789** |
+| recall | 0.571 | **0.725** |
+| exact opening count | 18.5% | **33.3%** |
+| door AP50 | 0.457 | **0.778** |
+| window AP50 | 0.160 | **0.377** |
+| false boxes on hard negatives | 5 | **1** |
+
+Measured on the 28 held-out val images, 5 plansets the model never saw. The
+incumbent is scored merged, which is the only way it is ever deployed; `coco-s`
+is scored raw, because it is trained on already-merged single-box labels and has
+nothing to collapse.
+
+Read it as a much better *seeder*, not automation. Two thirds of areas still
+have the wrong count, window remains the weak class, and planset
+`658_38ee4786` still predicts zero openings on two areas — a drafting style
+absent from 25 plansets.
+
+| dataset | |
 |---|---|
 | Verified sheets | 41 / 41, across 25 plansets |
 | Training images | 90 — 77 with boxes, 13 deliberate background |
@@ -44,10 +65,17 @@ The dataset is exported and verified; the detector is not yet trained.
 | Split | 62 train / 28 val, **by planset**, hash-stable |
 | Overfit gate | **passed** — mAP50 0.995 on 8 memorised images |
 
-The incumbent `best.pt` on held-out plansets: class-agnostic mAP50 **0.407**,
-precision 0.563, recall 0.571, exact opening count 18.5%. Per class it is
-lopsided — door 0.457, window 0.160. That is the number to beat, and the full
-measurement is in `TRAINING.md`.
+`coco-l` (yolo12l, 26.4M) was also trained and **lost**: mAP50 0.658, and it
+fires 6 false boxes on the hard negatives — worse than the incumbent's 5, which
+disqualifies it. Its exact opening count (14.8%) is *below* the incumbent's,
+because it over-predicts: one door area with 21 real openings drew 44 boxes. It
+peaked at epoch 87 and never improved over 173 further epochs. At 62 training
+images the extra capacity hurts, exactly as `TRAINING.md` predicted.
+
+The biggest remaining lever is data, not method: 62 training images is very small
+for detection, and stage 1 locates schedule sheets in **197 plansets / 654
+sheets**, of which only 25 / 51 are annotated. Full measurements in `TRAINING.md`;
+GPU and VRAM practicalities in `GPU-SETUP.md`.
 
 ## Setup
 
