@@ -130,6 +130,12 @@ def build(manifest_path: Path, results_dir: Path, out_dir: Path,
                     "detections": [
                         {
                             "rect": [d["x0_px"], d["y0_px"], d["x1_px"], d["y1_px"]],
+                            # Carried through so a later pass can attach the
+                            # schedule row this opening belongs to. It is the
+                            # only stable handle back to openings.csv; the rect
+                            # here is in render pixels, not the points that CSV
+                            # holds, so geometry cannot be used to re-pair them.
+                            "opening_id": d.get("opening_id", ""),
                             "confidence": d["confidence"],
                             "source": d["source"],
                             "in_block": d["in_block"],

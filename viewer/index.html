@@ -87,7 +87,7 @@ button:hover{background:var(--surface-2)}
       <span><i style="border-color:var(--box-door)"></i>door</span>
       <span><i style="border-color:var(--box-window)"></i>window</span>
       <span><i style="border-color:var(--box-other)"></i>other</span>
-      <span><i style="border-color:var(--box-det)"></i>best.pt</span>
+      <span><i style="border-color:var(--box-det)"></i>detections</span>
     </div>
   </div>
   <div class="list" id="list"></div>
@@ -116,7 +116,7 @@ fetch('index.json').then(r=>r.json()).then(d=>{
   const items=d.sheets.reduce((n,s)=>n+s.items.length,0);
   const boxed=d.sheets.reduce((n,s)=>n+s.items.filter(i=>i.rect).length,0);
   const dets=d.sheets.reduce((n,s)=>n+(s.detections||[]).length,0);
-  $('#counts').textContent=`${d.sheets.length} sheets · ${items} text items · ${dets} best.pt boxes`;
+  $('#counts').textContent=`${d.sheets.length} sheets · ${items} text items · ${dets} detections`;
   renderList();
   if(d.sheets.length) select(0);
 });
@@ -166,10 +166,16 @@ function drawBoxes(s){
       {title:b.title,lines:[`${b.category} · ${b.kind} · ${b.genre}`,b.block_id]}));
   if($('#showDet').checked)
     (s.detections||[]).forEach(d=>add(d.rect,'det'+(d.in_block?'':' out'),
-      d.confidence.toFixed(2),
-      {title:`best.pt · ${d.confidence.toFixed(2)}`,lines:[
+      // Once an opening is linked to its schedule row, its mark and size are
+      // far more use on the drawing than the confidence.
+      d.size_text?`${d.mark} · ${d.size_text}`:d.confidence.toFixed(2),
+      {title:d.mark?`${d.mark} — ${d.size_text||'no size'}`
+                   :`detection · ${d.confidence.toFixed(2)}`,lines:[
         d.in_block?`in ${d.block_title}`:'outside any schedule block',
-        `category: ${d.category}`, `found by ${d.source} pass`]}));
+        `category: ${d.category}`,
+        d.size_text?`size ${d.size_text}${d.shape_agrees===false?'  (shape differs — pair or sidelites?)':''}`
+                   :'not linked to a schedule row',
+        `confidence ${d.confidence.toFixed(2)} · found by ${d.source} pass`]}));
   if($('#showItems').checked)
     s.items.forEach(i=>add(i.rect,'item '+catClass(i.category)+(i.needs_review?' rev':''),
       i.mark,{title:`${i.mark} — ${i.category}`,lines:[

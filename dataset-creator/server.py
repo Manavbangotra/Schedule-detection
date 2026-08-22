@@ -29,7 +29,28 @@ from schedext import annotate                 # noqa: E402
 
 DATA = HERE / "data"
 STATIC = HERE / "static"
-WEIGHTS = "/var/www/html/WindowsDoorsClassification/best.pt"
+def _find_weights() -> str:
+    """Which detector seeds the proposals in this UI.
+
+    Prefer the trained stage-2 model over the incumbent: it is measured at
+    mAP50 0.737 against best.pt's 0.407, so a human verifying its proposals has
+    roughly half as much to correct. Order is explicit override, then the newest
+    trained tag, then the incumbent wherever it lives.
+    """
+    env = os.environ.get("SCHEDEXT_WEIGHTS")
+    if env and Path(env).exists():
+        return env
+    for tag in sorted((ROOT / "out" / "dataset").glob("v*"), reverse=True):
+        for rel in ("cv/full/runs/coco-s/weights/best.pt",
+                    "runs/coco-s/weights/best.pt"):
+            candidate = tag / rel
+            if candidate.exists():
+                return str(candidate)
+    from schedext.train import BEST_PT       # portable incumbent resolution
+    return BEST_PT
+
+
+WEIGHTS = _find_weights()
 
 # The shared store. Pointing at the repo-level annotations/ rather than a copy
 # under data/ is deliberate -- see the module docstring.
